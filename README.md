@@ -1,4 +1,4 @@
-# Donjons et Rois: les règles du jeu
+# Donjons et Rois : les règles du jeu
 Le jeu « Donjons et Rois» est un jeu de plateau d’atmosphère féodale pour 2 à 4 joueurs incarnant des rois qui s’opposent dans la construction de donjons. A chaque tour de jeu, à coups multiples, un roi ordonne, au choix, la dispersion, la concentration,  le recrutement de ses troupes ou la construction de donjon.
 
 Du jeu « Realm » de P. Orbanes (https://boardgamegeek.com/boardgame/3024/realm) est repris la notion d'ordre de dispersion/concentration/production, mais avec des réalisations complètement différentes.
