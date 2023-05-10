@@ -9,7 +9,7 @@ Copyright (C) 2023 [lucas.borboleta@free.fr](mailto:lucas.borboleta@free.fr) ; l
 
 Voir les fichiers "Word" ou "PDF" pour le détail des règles. 
 
-![](./pictures/logo.png)
+![](./pictures/donjons-logo-2.png)
 
 Ce projet est en cours de développement. Les mécaniques sont définies pour 2, 3 ou 4 joueurs. Par contre, leurs paramétrages et leurs tests sont à poursuivre.
 
