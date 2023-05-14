@@ -12,11 +12,3 @@ Voir les fichiers "Word" ou "PDF" pour le détail des règles.
 ![](./pictures/donjons-logo-2.png)
 
 Ce projet est en cours de développement. Les mécaniques sont définies pour 2, 3 ou 4 joueurs. Par contre, leurs paramétrages et leurs tests sont à poursuivre.
-
-Côté graphisme, il y a plusieurs types de tuiles hexagonales à dessiner:
-
-- Les tuiles numérotées qui forment le paysage de base. Disposer de 2 ou 3 teintes aiderait visuellement.
-- Les tuiles montagnes : elles sont infranchissables !
-- Les tuiles objectifs : ces sont des endroits propices à la construction de donjons !
-
-Le graphisme des cartes de mise en place doit attendre la finalisation du paramétrages des mécaniques.
