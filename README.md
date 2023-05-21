@@ -13,4 +13,4 @@ Voir les fichiers "Word" ou "PDF" pour le détail des règles.
 
 Ce projet est en cours de développement. Les mécaniques sont définies pour 2, 3 ou 4 joueurs. Par contre, leurs paramétrages et leurs tests sont à poursuivre.
 
-![](./pictures/Donjons-et-Barons-2023-0515-1454.jpg)
+![](./pictures/Donjons-et-Barons-2023-0521-1746.jpg)
