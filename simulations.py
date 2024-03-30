@@ -188,15 +188,38 @@ def make_statisitcs_on_points(mountain_count=0, player_count=2):
         point_system["mine"]        = (5, 2)
 
     if False:
-        # Just counting donjons per player
+        # Just donjon counting
         point_system = {}
         point_system["donjon"]       = (1, 37)
 
-    if True:
+    if False:
         # Two flavors
         point_system = {}
         point_system["poor"]       = (1, 30)
         point_system["rich"]       = (2, 7)
+
+    if False:
+        # Three flavors
+        point_system = {}
+        point_system["r1"]       = (1, 27)
+        point_system["r2"]       = (2, 7)
+        point_system["r3"]       = (3, 3)
+
+    if False:
+        # Four flavors
+        point_system = {}
+        point_system["r1"]       = (1, 26)
+        point_system["r2"]       = (2, 6)
+        point_system["r3"]       = (3, 3)
+        point_system["r4"]       = (4, 2)
+
+    if True:
+        # Four almost equal flavors
+        point_system = {}
+        point_system["r1"]       = (1, 9)
+        point_system["r2"]       = (2, 9)
+        point_system["r3"]       = (3, 9)
+        point_system["r4"]       = (4, 10)
     
     total_occurences = 0
     points_list = []
