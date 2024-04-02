@@ -77,6 +77,49 @@ print(f"hexagon_adjacents = {hexagon_adjacents}")
     
 print()
 print("prepare data: done")
+
+
+def compute_connex_partition(adjacents):
+    partition = list()
+    
+    points = list(adjacents.keys())
+    points.sort()
+    
+    minimal_points = {}
+    for x in points:
+        minimal_points[x] = min(x, *adjacents[x])
+        
+    new_min_found = True
+    while new_min_found: 
+        new_min_found = False
+        
+        for x in points:
+            min_x = minimal_points[x]
+            
+            new_min_x_found = False
+            
+            for y in adjacents[x]:
+                if minimal_points[y] < min_x:
+                    new_min_x_found = True
+                    min_x = minimal_points[y]
+                    
+            if new_min_x_found:
+                new_min_found = True
+                minimal_points[x] = min_x
+                for y in adjacents[x]:
+                    minimal_points[y] = min_x               
+
+    class_dict = {x:set() for x in minimal_points.values()}
+    for x in points:
+        class_dict[minimal_points[x]].add(x)
+        
+    for class_set in class_dict.values():
+        if len(class_set) != 0:
+            class_list = list(class_set)
+            class_list.sort(key=int)
+            partition.append(class_list)
+    
+    return partition
        
 
 def make_statisitcs_on_donjon_count(mountain_count=0):
@@ -300,6 +343,55 @@ def make_statisitcs_on_points(mountain_count=0, player_count=2):
     print("make_statisitcs_on_points: done")
 
     
+def make_statisitcs_on_partition(mountain_count=0):
+
+    print()
+    print("make_statisitcs_on_partition: ...")
+    
+    partition_size_sample = []
+
+    test_count = 100_000
+    for test_index in range(test_count):
+        
+        free_set = set(hexagon_names)
+        mountain_set = set(random.sample(list(free_set), mountain_count))
+        free_set = free_set - mountain_set
+        assert len(free_set) == len(hexagon_names) - mountain_count
+        
+        adjacents = {}
+        for (x, x_set) in hexagon_adjacents.items():
+            if x not in mountain_set:
+                new_x_set = set()
+                for y in x_set:
+                    if y not in mountain_set:
+                        new_x_set.add(y)
+                
+                adjacents[x] = new_x_set
+        
+        partition = compute_connex_partition(adjacents)
+        partition_size_sample.append(len(partition)) 
+        
+        if False:
+            print()
+            print(f"test_index = {test_index}") 
+            for (part_index, part) in enumerate(partition):
+                print(f"part {part_index} of length {len(part)} = {part}")      
+        
+                
+    print()
+    print(f"--- mountain_count: {mountain_count} ---")
+    print(f"    count = {len(partition_size_sample)}")
+    print(f"     mode = {statistics.mode(partition_size_sample)}")
+    print(f"     mean = {statistics.mean(partition_size_sample):.1f}")
+    print(f"quartiles = {statistics.quantiles(partition_size_sample, n=4)}")
+    print(f"  deciles = {statistics.quantiles(partition_size_sample, n=10)}")
+    print(f"      min = {min(partition_size_sample)}")
+    print(f"      max = {max(partition_size_sample)}")
+ 
+    
+    print()
+    print("make_statisitcs_on_partition: done")
+    
         
     
 if False:
@@ -328,7 +420,7 @@ if False:
     make_statisitcs_on_points(mountain_count=9)
     make_statisitcs_on_points(mountain_count=10)
 
-if True:
+if False:
     make_statisitcs_on_points(mountain_count=0, player_count=2)
     make_statisitcs_on_points(mountain_count=0, player_count=3)
     make_statisitcs_on_points(mountain_count=0, player_count=4)
@@ -336,6 +428,15 @@ if True:
     make_statisitcs_on_points(mountain_count=4, player_count=2)
     make_statisitcs_on_points(mountain_count=4, player_count=3)
     make_statisitcs_on_points(mountain_count=4, player_count=4)
+    
+if True:
+    partition = compute_connex_partition(hexagon_adjacents)
+    for (part_index, part) in enumerate(partition):
+        print(f"part {part_index} of length {len(part)} = {part}")
+     
+if True:
+    make_statisitcs_on_partition(mountain_count=4)
+        
      
 print()
 _ = input("main: done ; press enter to terminate")
