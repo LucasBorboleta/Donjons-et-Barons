@@ -79,6 +79,74 @@ print()
 print("prepare data: done")
 
 
+def compute_distances(adjacents):
+    distances = []
+    
+    partition = compute_connex_partition(adjacents)
+    assert len(partition) == 1
+    
+    points = list(adjacents.keys())
+
+    adjacents_dict = {}
+    
+    for x in points:
+        for y in points:
+            adjacents_dict[(x, y)] = None
+    
+    for x in points:
+        adjacents_dict[(x, x)] = 0
+
+    for x in points:
+        for y in adjacents[x]:
+            adjacents_dict[(x, y)] = 1
+            adjacents_dict[(y, x)] = 1
+            
+
+    x_points = copy.copy(points)
+    y_points = copy.copy(points)
+    z_points = copy.copy(points)
+
+    has_new_dxy = True
+    while has_new_dxy:
+        has_new_dxy = False
+        random.shuffle(x_points)
+        for x in x_points:
+            for y in y_points:
+                if x > y:
+                    if adjacents_dict[(x, y)] is None:
+                        has_new_dxy = True
+                        for z in z_points:
+                            if z != x and z != y and adjacents_dict[(x, z)] is not None and adjacents_dict[(z, y)] is not None:
+                                dxy = adjacents_dict[(x, z)] + adjacents_dict[(z, y)]
+                                adjacents_dict[(x, y)] = dxy
+                                adjacents_dict[(y, x)] = dxy
+                                break
+            
+    has_new_dxy = True
+    while has_new_dxy:
+        has_new_dxy = False
+        for x in x_points:
+            for y in y_points:
+                if x > y:
+                    dxy = adjacents_dict[(x, y)]
+                    for z in z_points:
+                        if z != x and z != y:
+                            new_dxy = adjacents_dict[(x, z)] + adjacents_dict[(z, y)]
+                            if new_dxy < dxy:
+                                has_new_dxy = True
+                                dxy = new_dxy
+                    adjacents_dict[(x, y)] = dxy
+                    adjacents_dict[(y, x)] = dxy
+                        
+                        
+    for x in points:
+        for y in points:
+            if x > y:
+                distances.append(adjacents_dict[(x, y)])
+        
+    return distances
+
+
 def compute_connex_partition(adjacents):
     partition = list()
     
@@ -122,10 +190,10 @@ def compute_connex_partition(adjacents):
     return partition
        
 
-def make_statisitcs_on_donjon_count(mountain_count=0):
+def make_statistics_on_donjon_count(mountain_count=0):
     
     print()
-    print("make_statisitcs_on_donjon_count: ...")
+    print("make_statistics_on_donjon_count: ...")
 
     test_count = 100_000
     
@@ -194,14 +262,14 @@ def make_statisitcs_on_donjon_count(mountain_count=0):
         
 
     print()
-    print("make_statisitcs_on_donjon_count: done")
+    print("make_statistics_on_donjon_count: done")
 
            
 
-def make_statisitcs_on_points(mountain_count=0, player_count=2):
+def make_statistics_on_points(mountain_count=0, player_count=2):
     
     print()
-    print("make_statisitcs_on_points: ...")
+    print("make_statistics_on_points: ...")
     
     if False:
         # Zipf law with 1.5 exponent
@@ -340,15 +408,16 @@ def make_statisitcs_on_points(mountain_count=0, player_count=2):
        
 
     print()
-    print("make_statisitcs_on_points: done")
+    print("make_statistics_on_points: done")
 
     
-def make_statisitcs_on_partition(mountain_count=0):
+def make_statistics_on_partition(mountain_count=0):
 
     print()
-    print("make_statisitcs_on_partition: ...")
+    print("make_statistics_on_partition: ...")
     
     partition_size_sample = []
+    partition_multiparts_count = 0
 
     test_count = 100_000
     for test_index in range(test_count):
@@ -371,15 +440,18 @@ def make_statisitcs_on_partition(mountain_count=0):
         partition = compute_connex_partition(adjacents)
         partition_size_sample.append(len(partition)) 
         
-        if False:
+        if len(partition) > 1:
+            partition_multiparts_count += 1
             print()
             print(f"test_index = {test_index}") 
+            print(f"mountain_set = {mountain_set}") 
             for (part_index, part) in enumerate(partition):
                 print(f"part {part_index} of length {len(part)} = {part}")      
         
                 
     print()
     print(f"--- mountain_count: {mountain_count} ---")
+    print(f"    partition_multiparts_count = {partition_multiparts_count} ; {partition_multiparts_count/test_count*100:.1f}%")
     print(f"    count = {len(partition_size_sample)}")
     print(f"     mode = {statistics.mode(partition_size_sample)}")
     print(f"     mean = {statistics.mean(partition_size_sample):.1f}")
@@ -390,53 +462,118 @@ def make_statisitcs_on_partition(mountain_count=0):
  
     
     print()
-    print("make_statisitcs_on_partition: done")
+    print("make_statistics_on_partition: done")
+
+    
+def make_statistics_on_distances(mountain_count=0):
+
+    print()
+    print("make_statistics_on_distances: ...")
+    
+    distance_mean_sample = []
+    distance_std_sample = []
+    distance_q25_sample = []
+    distance_q50_sample = []
+    distance_q75_sample = []
+    distance_q90_sample = []
+    distance_max_sample = []
+
+    test_count = 1_000
+    for test_index in range(test_count):
+        
+        free_set = set(hexagon_names)
+        mountain_set = set(random.sample(list(free_set), mountain_count))
+        free_set = free_set - mountain_set
+        assert len(free_set) == len(hexagon_names) - mountain_count
+        
+        adjacents = {}
+        for (x, x_set) in hexagon_adjacents.items():
+            if x not in mountain_set:
+                new_x_set = set()
+                for y in x_set:
+                    if y not in mountain_set:
+                        new_x_set.add(y)
+                
+                adjacents[x] = new_x_set
+                
+                    
+        partition = compute_connex_partition(adjacents)
+        if len(partition) > 1:
+            continue
+        
+        distances = compute_distances(adjacents)
+
+        distance_max_sample.append(max(distances))     
+        distance_mean_sample.append(statistics.mean(distances))       
+        distance_std_sample.append(statistics.stdev(distances))      
+        distance_q25_sample.append(statistics.quantiles(distances, n=4)[0])       
+        distance_q50_sample.append(statistics.quantiles(distances, n=4)[1])       
+        distance_q75_sample.append(statistics.quantiles(distances, n=4)[-1])       
+        distance_q90_sample.append(statistics.quantiles(distances, n=10)[-1])       
+                
+    print()
+    print(f"--- mountain_count: {mountain_count} ---")
+    print(f"         count  = {len(distance_mean_sample)}")
+    print(f"   mean of max  = {statistics.mean(distance_max_sample):.1f}")
+    print(f"   mean of mean = {statistics.mean(distance_mean_sample):.1f}")
+    print(f"   mean of std  = {statistics.mean(distance_std_sample):.1f}")
+    print(f"   mean of q25  = {statistics.mean(distance_q25_sample):.1f}")
+    print(f"   mean of q50  = {statistics.mean(distance_q50_sample):.1f}")
+    print(f"   mean of q75  = {statistics.mean(distance_q75_sample):.1f}")
+    print(f"   mean of q90  = {statistics.mean(distance_q90_sample):.1f}")
+ 
+    print()
+    print("make_statistics_on_distances: done")
     
         
     
 if False:
-    make_statisitcs_on_donjon_count(mountain_count=0)
-    make_statisitcs_on_donjon_count(mountain_count=1)
-    make_statisitcs_on_donjon_count(mountain_count=2)
-    make_statisitcs_on_donjon_count(mountain_count=3)
-    make_statisitcs_on_donjon_count(mountain_count=4)
-    make_statisitcs_on_donjon_count(mountain_count=5)
-    make_statisitcs_on_donjon_count(mountain_count=6)
-    make_statisitcs_on_donjon_count(mountain_count=7)
-    make_statisitcs_on_donjon_count(mountain_count=8)
-    make_statisitcs_on_donjon_count(mountain_count=9)
-    make_statisitcs_on_donjon_count(mountain_count=10)
+    make_statistics_on_donjon_count(mountain_count=0)
+    make_statistics_on_donjon_count(mountain_count=1)
+    make_statistics_on_donjon_count(mountain_count=2)
+    make_statistics_on_donjon_count(mountain_count=3)
+    make_statistics_on_donjon_count(mountain_count=4)
+    make_statistics_on_donjon_count(mountain_count=5)
+    make_statistics_on_donjon_count(mountain_count=6)
+    make_statistics_on_donjon_count(mountain_count=7)
+    make_statistics_on_donjon_count(mountain_count=8)
+    make_statistics_on_donjon_count(mountain_count=9)
+    make_statistics_on_donjon_count(mountain_count=10)
 
 if False:
-    make_statisitcs_on_points(mountain_count=0)
-    make_statisitcs_on_points(mountain_count=1)
-    make_statisitcs_on_points(mountain_count=2)
-    make_statisitcs_on_points(mountain_count=3)
-    make_statisitcs_on_points(mountain_count=4)
-    make_statisitcs_on_points(mountain_count=5)
-    make_statisitcs_on_points(mountain_count=6)
-    make_statisitcs_on_points(mountain_count=7)
-    make_statisitcs_on_points(mountain_count=8)
-    make_statisitcs_on_points(mountain_count=9)
-    make_statisitcs_on_points(mountain_count=10)
+    make_statistics_on_points(mountain_count=0)
+    make_statistics_on_points(mountain_count=1)
+    make_statistics_on_points(mountain_count=2)
+    make_statistics_on_points(mountain_count=3)
+    make_statistics_on_points(mountain_count=4)
+    make_statistics_on_points(mountain_count=5)
+    make_statistics_on_points(mountain_count=6)
+    make_statistics_on_points(mountain_count=7)
+    make_statistics_on_points(mountain_count=8)
+    make_statistics_on_points(mountain_count=9)
+    make_statistics_on_points(mountain_count=10)
 
 if False:
-    make_statisitcs_on_points(mountain_count=0, player_count=2)
-    make_statisitcs_on_points(mountain_count=0, player_count=3)
-    make_statisitcs_on_points(mountain_count=0, player_count=4)
+    make_statistics_on_points(mountain_count=0, player_count=2)
+    make_statistics_on_points(mountain_count=0, player_count=3)
+    make_statistics_on_points(mountain_count=0, player_count=4)
 
-    make_statisitcs_on_points(mountain_count=4, player_count=2)
-    make_statisitcs_on_points(mountain_count=4, player_count=3)
-    make_statisitcs_on_points(mountain_count=4, player_count=4)
+    make_statistics_on_points(mountain_count=4, player_count=2)
+    make_statistics_on_points(mountain_count=4, player_count=3)
+    make_statistics_on_points(mountain_count=4, player_count=4)
     
-if True:
+if False:
     partition = compute_connex_partition(hexagon_adjacents)
     for (part_index, part) in enumerate(partition):
         print(f"part {part_index} of length {len(part)} = {part}")
      
-if True:
-    make_statisitcs_on_partition(mountain_count=4)
-        
+if False:
+    make_statistics_on_partition(mountain_count=4)
      
+if True:
+    make_statistics_on_distances(mountain_count=0)
+    make_statistics_on_distances(mountain_count=4)
+ 
+        
 print()
 _ = input("main: done ; press enter to terminate")
