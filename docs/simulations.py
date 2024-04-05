@@ -459,7 +459,7 @@ def make_statistics_on_partition(mountain_count=0):
     print("make_statistics_on_partition: done")
 
     
-def make_statistics_on_distances(mountain_count=0):
+def make_statistics_on_distances(mountain_count=0, test_count=100_000):
 
     print()
     print("make_statistics_on_distances: ...")
@@ -472,7 +472,7 @@ def make_statistics_on_distances(mountain_count=0):
     distance_q90_sample = []
     distance_max_sample = []
 
-    test_count = 100_000
+    
     for test_index in range(test_count):
         
         free_set = set(hexagon_names)
@@ -565,7 +565,7 @@ if False:
     make_statistics_on_partition(mountain_count=4)
      
 if True:
-    make_statistics_on_distances(mountain_count=0)
+    make_statistics_on_distances(mountain_count=0, test_count=1)
     make_statistics_on_distances(mountain_count=4)
  
         
