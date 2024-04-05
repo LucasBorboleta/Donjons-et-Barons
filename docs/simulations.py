@@ -13,53 +13,53 @@ print("prepare data: ...")
 
 hexagon_count = 37
 
-hexagon_names = set([ f"{hexagon_index + 1}" for hexagon_index in range(hexagon_count)])
+hexagon_names = set([ hexagon_index + 1 for hexagon_index in range(hexagon_count)])
 
 hexagon_adjacents = {}
 
-hexagon_adjacents["1"] = set("2 5 6".split())
-hexagon_adjacents["2"] = set("1 3 6 7".split())
-hexagon_adjacents["3"] = set("2 4 7 8".split())
-hexagon_adjacents["4"] = set("3 8 9".split())
+hexagon_adjacents[1] = set(map(int, "2 5 6".split()))
+hexagon_adjacents[2] = set(map(int, "1 3 6 7".split()))
+hexagon_adjacents[3] = set(map(int, "2 4 7 8".split()))
+hexagon_adjacents[4] = set(map(int, "3 8 9".split()))
 
-hexagon_adjacents["5"] = set("1 6 10 11".split())
-hexagon_adjacents["6"] = set("1 2 5 7 11 12".split())
-hexagon_adjacents["7"] = set("2 3 6 8 12 13".split())
-hexagon_adjacents["8"] = set("3 4 7 9 13 14".split())
-hexagon_adjacents["9"] = set("4 8 14 15".split())
+hexagon_adjacents[5] = set(map(int, "1 6 10 11".split()))
+hexagon_adjacents[6] = set(map(int, "1 2 5 7 11 12".split()))
+hexagon_adjacents[7] = set(map(int, "2 3 6 8 12 13".split()))
+hexagon_adjacents[8] = set(map(int, "3 4 7 9 13 14".split()))
+hexagon_adjacents[9] = set(map(int, "4 8 14 15".split()))
 
-hexagon_adjacents["10"] = set("5 11 16 17".split())
-hexagon_adjacents["11"] = set("5 6 10 12 17 18".split())
-hexagon_adjacents["12"] = set("6 7 11 13 18 19".split())
-hexagon_adjacents["13"] = set("7 8 12 14 19 20".split())
-hexagon_adjacents["14"] = set("8 9 13 15 20 21".split())
-hexagon_adjacents["15"] = set("9 14 21 22".split())
+hexagon_adjacents[10] = set(map(int, "5 11 16 17".split()))
+hexagon_adjacents[11] = set(map(int, "5 6 10 12 17 18".split()))
+hexagon_adjacents[12] = set(map(int, "6 7 11 13 18 19".split()))
+hexagon_adjacents[13] = set(map(int, "7 8 12 14 19 20".split()))
+hexagon_adjacents[14] = set(map(int, "8 9 13 15 20 21".split()))
+hexagon_adjacents[15] = set(map(int, "9 14 21 22".split()))
 
-hexagon_adjacents["16"] = set("10 17 23".split())
-hexagon_adjacents["17"] = set("10 11 16 18 23 24".split())
-hexagon_adjacents["18"] = set("11 12 17 19 24 25".split())
-hexagon_adjacents["19"] = set("12 13 18 20 25 26".split())
-hexagon_adjacents["20"] = set("13 14 19 21 26 27".split())
-hexagon_adjacents["21"] = set("14 15 20 22 27 28".split())
-hexagon_adjacents["22"] = set("15 21 28".split())
+hexagon_adjacents[16] = set(map(int, "10 17 23".split()))
+hexagon_adjacents[17] = set(map(int, "10 11 16 18 23 24".split()))
+hexagon_adjacents[18] = set(map(int, "11 12 17 19 24 25".split()))
+hexagon_adjacents[19] = set(map(int, "12 13 18 20 25 26".split()))
+hexagon_adjacents[20] = set(map(int, "13 14 19 21 26 27".split()))
+hexagon_adjacents[21] = set(map(int, "14 15 20 22 27 28".split()))
+hexagon_adjacents[22] = set(map(int, "15 21 28".split()))
 
-hexagon_adjacents["23"] = set("16 17 24 29".split())
-hexagon_adjacents["24"] = set("17 18 23 25 29 30".split())
-hexagon_adjacents["25"] = set("18 19 24 26 30 31".split())
-hexagon_adjacents["26"] = set("19 20 25 27 31 32".split())
-hexagon_adjacents["27"] = set("20 21 26 28 32 33".split())
-hexagon_adjacents["28"] = set("21 22 27 33".split())
+hexagon_adjacents[23] = set(map(int, "16 17 24 29".split()))
+hexagon_adjacents[24] = set(map(int, "17 18 23 25 29 30".split()))
+hexagon_adjacents[25] = set(map(int, "18 19 24 26 30 31".split()))
+hexagon_adjacents[26] = set(map(int, "19 20 25 27 31 32".split()))
+hexagon_adjacents[27] = set(map(int, "20 21 26 28 32 33".split()))
+hexagon_adjacents[28] = set(map(int, "21 22 27 33".split()))
 
-hexagon_adjacents["29"] = set("23 24 30 34".split())
-hexagon_adjacents["30"] = set("24 25 29 31 34 35".split())
-hexagon_adjacents["31"] = set("25 26 30 32 35 36".split())
-hexagon_adjacents["32"] = set("26 27 31 33 36 37".split())
-hexagon_adjacents["33"] = set("27 28 32 37".split())
+hexagon_adjacents[29] = set(map(int, "23 24 30 34".split()))
+hexagon_adjacents[30] = set(map(int, "24 25 29 31 34 35".split()))
+hexagon_adjacents[31] = set(map(int, "25 26 30 32 35 36".split()))
+hexagon_adjacents[32] = set(map(int, "26 27 31 33 36 37".split()))
+hexagon_adjacents[33] = set(map(int, "27 28 32 37".split()))
 
-hexagon_adjacents["34"] = set("29 30 35".split())
-hexagon_adjacents["35"] = set("30 31 34 36".split())
-hexagon_adjacents["36"] = set("31 32 35 37".split())
-hexagon_adjacents["37"] = set("32 33 36".split())
+hexagon_adjacents[34] = set(map(int, "29 30 35".split()))
+hexagon_adjacents[35] = set(map(int, "30 31 34 36".split()))
+hexagon_adjacents[36] = set(map(int, "31 32 35 37".split()))
+hexagon_adjacents[37] = set(map(int, "32 33 36".split()))
 
 assert set(hexagon_adjacents.keys()) == hexagon_names
 
@@ -82,10 +82,10 @@ print("prepare data: done")
 def compute_distances(adjacents):
     distances = []
     
-    partition = compute_connex_partition(adjacents)
-    assert len(partition) == 1
+    # partition = compute_connex_partition(adjacents)
+    # assert len(partition) == 1
     
-    points = list(adjacents.keys())
+    points = adjacents.keys()
 
     adjacents_dict = {}
     
@@ -101,21 +101,15 @@ def compute_distances(adjacents):
             adjacents_dict[(x, y)] = 1
             adjacents_dict[(y, x)] = 1
             
-
-    x_points = copy.copy(points)
-    y_points = copy.copy(points)
-    z_points = copy.copy(points)
-
     has_new_dxy = True
     while has_new_dxy:
         has_new_dxy = False
-        random.shuffle(x_points)
-        for x in x_points:
-            for y in y_points:
+        for x in points:
+            for y in points:
                 if x > y:
                     if adjacents_dict[(x, y)] is None:
                         has_new_dxy = True
-                        for z in z_points:
+                        for z in points:
                             if z != x and z != y and adjacents_dict[(x, z)] is not None and adjacents_dict[(z, y)] is not None:
                                 dxy = adjacents_dict[(x, z)] + adjacents_dict[(z, y)]
                                 adjacents_dict[(x, y)] = dxy
@@ -125,11 +119,11 @@ def compute_distances(adjacents):
     has_new_dxy = True
     while has_new_dxy:
         has_new_dxy = False
-        for x in x_points:
-            for y in y_points:
+        for x in points:
+            for y in points:
                 if x > y:
                     dxy = adjacents_dict[(x, y)]
-                    for z in z_points:
+                    for z in points:
                         if z != x and z != y:
                             new_dxy = adjacents_dict[(x, z)] + adjacents_dict[(z, y)]
                             if new_dxy < dxy:
@@ -143,7 +137,7 @@ def compute_distances(adjacents):
         for y in points:
             if x > y:
                 distances.append(adjacents_dict[(x, y)])
-        
+      
     return distances
 
 
@@ -155,7 +149,7 @@ def compute_connex_partition(adjacents):
     
     minimal_points = {}
     for x in points:
-        minimal_points[x] = min(x, *adjacents[x])
+        minimal_points[x] = min([x] + list(adjacents[x]))
         
     new_min_found = True
     while new_min_found: 
@@ -248,9 +242,9 @@ def make_statistics_on_donjon_count(mountain_count=0):
     print(f"     mean = {statistics.mean(donjon_count_sample):.1f}")
     print(f"quartiles = {statistics.quantiles(donjon_count_sample, n=4)}")
     print(f"  deciles = {statistics.quantiles(donjon_count_sample, n=10)}")
-    print(f"      min = {min(donjon_count_sample)} ; donjons = {sorted(min_donjon_set, key=int)}")
-    print(f"      max = {max(donjon_count_sample)} ; donjons = {sorted(max_donjon_set, key=int)}")
-    print(f"       10 = donjons = {sorted(ten_donjon_set, key=int)}")
+    print(f"      min = {min(donjon_count_sample)} ; donjons = {sorted(min_donjon_set)}")
+    print(f"      max = {max(donjon_count_sample)} ; donjons = {sorted(max_donjon_set)}")
+    print(f"       10 = donjons = {sorted(ten_donjon_set)}")
         
     for modulo in modulo_list:
         print()
@@ -478,7 +472,7 @@ def make_statistics_on_distances(mountain_count=0):
     distance_q90_sample = []
     distance_max_sample = []
 
-    test_count = 1_000
+    test_count = 100_000
     for test_index in range(test_count):
         
         free_set = set(hexagon_names)
