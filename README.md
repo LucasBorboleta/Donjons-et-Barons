@@ -13,4 +13,6 @@ Voir les fichiers "Word" ou "PDF" pour le détail des règles.
 
 Ce projet est en cours de développement. Les mécaniques sont globalement définies pour 2, 3 ou 4 joueurs. Les ajustements et leurs tests sont en cours.
 
+<img src="./pictures/2024-0330/W1234-pavage.png" style="zoom:60%;" />
+
 ![](./pictures/Donjons-et-Barons-2023-0611-1509.jpg)
