@@ -15,4 +15,4 @@ Ce projet est en cours de développement. Les mécaniques sont globalement défi
 
 <img src="./pictures/2024-0330/W1234-p-pavage.png" style="zoom:60%;" />
 
-![](./pictures/Donjons-et-Barons-2023-0611-1509.jpg)
+<img src="./pictures/Donjons-et-Barons-2023-0611-1509.jpg" style="zoom:60%;" />
