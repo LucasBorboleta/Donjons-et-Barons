@@ -79,8 +79,22 @@ print()
 print("prepare data: done")
 
 
-def compute_distances(adjacents):
+def compute_distance_occurrences(adjacents):
+    
+    adjacents_dict = compute_distances(adjacents)
+                       
     distances = []
+    points = adjacents.keys()
+    for x in points:
+        for y in points:
+            if x > y:
+                distances.append(adjacents_dict[(x, y)])
+                
+    return distances
+
+
+
+def compute_distances(adjacents):
     
     # partition = compute_connex_partition(adjacents)
     # assert len(partition) == 1
@@ -132,13 +146,7 @@ def compute_distances(adjacents):
                     adjacents_dict[(x, y)] = dxy
                     adjacents_dict[(y, x)] = dxy
                         
-                        
-    for x in points:
-        for y in points:
-            if x > y:
-                distances.append(adjacents_dict[(x, y)])
-      
-    return distances
+    return adjacents_dict
 
 
 def compute_connex_partition(adjacents):
@@ -404,6 +412,191 @@ def make_statistics_on_points(mountain_count=0, player_count=2):
     print()
     print("make_statistics_on_points: done")
 
+           
+def make_statistics_on_points_by_moving(mountain_count=0, player_count=2, test_count=100_000):
+    
+    print()
+    print("make_statistics_on_points_by_moving: ...")
+
+    if True:
+        # Four almost equal flavors
+        point_system = {}
+        point_system["r1"]       = (1, 9)
+        point_system["r2"]       = (2, 9)
+        point_system["r3"]       = (3, 9)
+        point_system["r4"]       = (4, 10)
+    
+    total_occurences = 0
+    points_list = []
+    for (key, (points, occurences)) in point_system.items():
+        print(f"{key}: #{occurences} times {points} points")
+        total_occurences += occurences
+        points_list += [points for _ in range(occurences)]
+        
+    assert total_occurences == len(hexagon_names)
+    assert len(points_list) == len(hexagon_names)
+    print()
+    print(f"total points = {sum(points_list)}")
+    print(f"mean points = {statistics.mean(points_list)}")
+
+    
+    points_sample = []
+    player_points_sample = {player_index:[] for player_index in range(player_count)}
+
+    debug_index = 0
+    debug_count = 3
+    
+    for test_index in range(test_count):
+        
+        debug_index += 1
+        if debug_index <= debug_count:
+            print()
+                
+        free_set = set(hexagon_names)
+        donjon_set = set()
+
+        mountain_set = set(random.sample(list(free_set), mountain_count))
+        free_set = free_set - mountain_set
+        assert len(free_set) == len(hexagon_names) - mountain_count
+        
+        hexagon_for_players = copy.copy(free_set)
+         
+        adjacents = {}
+        for (x, x_set) in hexagon_adjacents.items():
+            if x not in mountain_set:
+                new_x_set = set()
+                for y in x_set:
+                    if y not in mountain_set:
+                        new_x_set.add(y)
+                
+                adjacents[x] = new_x_set
+                
+                    
+        partition = compute_connex_partition(adjacents)
+        if len(partition) > 1:
+            continue
+        
+        distances = compute_distances(adjacents)
+  
+        random.shuffle(points_list)
+        points_map = {}
+        for (name_index, name) in enumerate(sorted(list(hexagon_names))):
+            points_map[name] = points_list[name_index]
+        
+        player_points = [0 for player_index in range(player_count)]
+        player_locations = random.sample(list(hexagon_for_players), player_count)
+
+        points = 0
+        player_index = 0
+        
+        iteration_index = 0
+        iteration_count = 100
+        
+        while len(free_set) != 0 and iteration_index < iteration_count:
+            
+            iteration_index += 1
+            
+            fuel = random.choice([1, 2, 3])
+            
+            src = player_locations[player_index]
+            other_player_locations = [player_locations[other_player_index] for other_player_index in range(player_count) if other_player_index != player_index]
+            
+            target_locations = set()
+            target_values = {}
+            
+            # Find the best possible target
+            
+            for dst in hexagon_for_players:
+                src_dst_distance = distances[(src, dst)]
+                if src_dst_distance is not None and src_dst_distance <= fuel:
+                    if dst in free_set and dst not in other_player_locations and points_map[dst] != 0:
+                        target_locations.add(dst)
+                        target_values[dst] = points_map[dst]
+                        
+            if len(target_locations) != 0:
+                max_value = max(target_values.values())
+                target_locations = list(target_locations)
+                random.shuffle(target_locations)
+                for dst in target_locations:
+                    if target_values[dst] == max_value:
+                        player_locations[player_index] = dst
+                        player_points[player_index] += max_value
+                        points += max_value
+                        points_map[dst] = 0
+                        donjon_set.add(dst)
+                        free_set.remove(dst)
+                        free_set = free_set - hexagon_adjacents[dst]
+                        if debug_index <= debug_count:
+                            print(f"at iteration {iteration_index} with {fuel} fuel, player {player_index} moved from {src} to {dst} and gained {max_value} points")
+                        break
+
+            # Or get closest to the best possible target
+            elif len(target_locations) == 0:
+                dst_dst2_distance_min = len(distances.values())
+                max_value = None
+                for dst in hexagon_for_players:
+                    src_dst_distance = distances[(src, dst)]
+                    if src_dst_distance is not None and src_dst_distance <= fuel:
+                        if dst in free_set and dst not in other_player_locations:
+                            for dst2 in hexagon_for_players:
+                                dst_dst2_distance = distances[(dst, dst2)]
+                                if dst_dst2_distance is not None and dst_dst2_distance <= dst_dst2_distance_min:
+                                        if dst2 in free_set and points_map[dst2] != 0:
+                                            if dst_dst2_distance < dst_dst2_distance_min:
+                                                dst_dst2_distance_min = dst_dst2_distance 
+                                                target_locations = set([dst])
+                                                max_value = points_map[dst2]
+                                                
+                                            if points_map[dst2] > max_value:
+                                                target_locations = set([dst])
+                                                max_value = points_map[dst2] 
+                                                
+                                            elif points_map[dst2] == max_value:
+                                                target_locations.add(dst)
+                                                
+                if len(target_locations) != 0:
+                    dst = random.choice(list(target_locations))
+                    player_locations[player_index] = dst
+                    if debug_index <= debug_count:
+                        print(f"at iteration {iteration_index} with {fuel} fuel, player {player_index} moved from {src} to {dst} ; no gain !!!")
+                   
+            
+            player_index = (player_index + 1) % player_count
+            
+        if debug_index <= debug_count:
+            print(f"{points} points gained at test {test_index} after {iteration_index}/{iteration_count} iterations")
+        points_sample.append(points)
+        for player_index in range(player_count):
+            player_points_sample[player_index].append(player_points[player_index])
+            
+
+    print()
+    print(f"--- mountain_count: {mountain_count} ---")
+    print()
+    print(f"    count = {len(points_sample)}")
+    print(f"     mode = {statistics.mode(points_sample)}")
+    print(f"     mean = {statistics.mean(points_sample):.1f}")
+    print(f"quartiles = {statistics.quantiles(points_sample, n=4)}")
+    print(f"  deciles = {statistics.quantiles(points_sample, n=10)}")
+    print(f"      min = {min(points_sample)}")
+    print(f"      max = {max(points_sample)}")
+    print()
+    
+    print()
+    for player_index in range(player_count):
+        print(f"player {player_index}     count = {len(player_points_sample[player_index])}")
+        print(f"player {player_index}      mode = {statistics.mode(player_points_sample[player_index])}")
+        print(f"player {player_index}      mean = {statistics.mean(player_points_sample[player_index]):.1f}")
+        print(f"player {player_index} quartiles = {statistics.quantiles(player_points_sample[player_index], n=4)}")
+        print(f"player {player_index}   deciles = {statistics.quantiles(player_points_sample[player_index], n=10)}")
+        print(f"player {player_index}       min = {min(player_points_sample[player_index])}")
+        print(f"player {player_index}       max = {max(player_points_sample[player_index])}")
+        print()
+       
+
+    print()
+    print("make_statistics_on_points_by_moving: done")
+
     
 def make_statistics_on_partition(mountain_count=0):
 
@@ -495,7 +688,7 @@ def make_statistics_on_distances(mountain_count=0, test_count=100_000):
         if len(partition) > 1:
             continue
         
-        distances = compute_distances(adjacents)
+        distances = compute_distance_occurrences(adjacents)
 
         distance_max_sample.append(max(distances))     
         distance_mean_sample.append(statistics.mean(distances))       
@@ -564,10 +757,14 @@ if False:
 if False:
     make_statistics_on_partition(mountain_count=4)
      
-if True:
+if False:
     make_statistics_on_distances(mountain_count=0, test_count=1)
     make_statistics_on_distances(mountain_count=4)
  
+if True:
+    make_statistics_on_points_by_moving(mountain_count=4, player_count=2, test_count=1_000)
+    make_statistics_on_points_by_moving(mountain_count=4, player_count=3, test_count=1_000)
+    make_statistics_on_points_by_moving(mountain_count=4, player_count=4, test_count=1_000)
         
 print()
 _ = input("main: done ; press enter to terminate")
