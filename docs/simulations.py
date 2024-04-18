@@ -444,7 +444,7 @@ def make_statistics_on_points_by_moving(mountain_count=0, player_count=2, test_c
     player_points_sample = {player_index:[] for player_index in range(player_count)}
 
     debug_index = 0
-    debug_count = 3
+    debug_count = 5
     
     for test_index in range(test_count):
         
@@ -532,33 +532,33 @@ def make_statistics_on_points_by_moving(mountain_count=0, player_count=2, test_c
 
             # Or get closest to the best possible target
             elif len(target_locations) == 0:
-                dst_dst2_distance_min = len(distances.values())
-                max_value = None
+                dst_dst2_distance_min = len(hexagon_names)
+                max_value = -1
                 for dst in hexagon_for_players:
                     src_dst_distance = distances[(src, dst)]
                     if src_dst_distance is not None and src_dst_distance <= fuel:
-                        if dst in free_set and dst not in other_player_locations:
-                            for dst2 in hexagon_for_players:
-                                dst_dst2_distance = distances[(dst, dst2)]
-                                if dst_dst2_distance is not None and dst_dst2_distance <= dst_dst2_distance_min:
-                                        if dst2 in free_set and points_map[dst2] != 0:
-                                            if dst_dst2_distance < dst_dst2_distance_min:
-                                                dst_dst2_distance_min = dst_dst2_distance 
-                                                target_locations = set([dst])
-                                                max_value = points_map[dst2]
-                                                
-                                            if points_map[dst2] > max_value:
-                                                target_locations = set([dst])
-                                                max_value = points_map[dst2] 
-                                                
-                                            elif points_map[dst2] == max_value:
-                                                target_locations.add(dst)
+                        if dst not in other_player_locations:
+                           for dst2 in hexagon_for_players:
+                                if dst2 in free_set and points_map[dst2] != 0:
+                                    dst_dst2_distance = distances[(dst, dst2)]
+                                    if dst_dst2_distance is not None and dst_dst2_distance <= dst_dst2_distance_min:
+                                        if dst_dst2_distance < dst_dst2_distance_min:
+                                            dst_dst2_distance_min = dst_dst2_distance 
+                                            target_locations = set([dst])
+                                            max_value = points_map[dst2]
+                                            
+                                        elif points_map[dst2] > max_value:
+                                            target_locations = set([dst])
+                                            max_value = points_map[dst2] 
+                                            
+                                        elif points_map[dst2] == max_value:
+                                            target_locations.add(dst)
                                                 
                 if len(target_locations) != 0:
                     dst = random.choice(list(target_locations))
                     player_locations[player_index] = dst
                     if debug_index <= debug_count:
-                        print(f"at iteration {iteration_index} with {fuel} fuel, player {player_index} moved from {src} to {dst} ; no gain !!!")
+                        print(f"at iteration {iteration_index} with {fuel} fuel, player {player_index} moved from {src} to {dst} ; chasing for {max_value} points !!!")
                    
             
             player_index = (player_index + 1) % player_count
@@ -762,9 +762,9 @@ if False:
     make_statistics_on_distances(mountain_count=4)
  
 if True:
-    make_statistics_on_points_by_moving(mountain_count=4, player_count=2, test_count=1_000)
-    make_statistics_on_points_by_moving(mountain_count=4, player_count=3, test_count=1_000)
-    make_statistics_on_points_by_moving(mountain_count=4, player_count=4, test_count=1_000)
+    make_statistics_on_points_by_moving(mountain_count=4, player_count=2, test_count=100_000)
+    make_statistics_on_points_by_moving(mountain_count=4, player_count=3, test_count=100_000)
+    make_statistics_on_points_by_moving(mountain_count=4, player_count=4, test_count=100_000)
         
 print()
 _ = input("main: done ; press enter to terminate")
