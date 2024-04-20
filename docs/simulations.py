@@ -268,7 +268,7 @@ def make_statistics_on_donjon_count(mountain_count=0):
 
            
 
-def make_statistics_on_points(mountain_count=0, player_count=2):
+def make_statistics_on_points(mountain_count=0, player_count=2, test_count=100_000, ranking=False):
     
     print()
     print("make_statistics_on_points: ...")
@@ -351,7 +351,6 @@ def make_statistics_on_points(mountain_count=0, player_count=2):
     points_sample = []
     player_points_sample = {player_index:[] for player_index in range(player_count)}
 
-    test_count = 100_000
     for test_index in range(test_count):
         
         free_set = set(hexagon_names)
@@ -366,7 +365,7 @@ def make_statistics_on_points(mountain_count=0, player_count=2):
         for (name_index, name) in enumerate(sorted(list(hexagon_names))):
             points_map[name] = points_list[name_index]
         
-        player_points = {player_index:0 for player_index in range(player_count)}
+        player_points = [0 for player_index in range(player_count)]
 
         points = 0
         player_index = 0
@@ -381,6 +380,9 @@ def make_statistics_on_points(mountain_count=0, player_count=2):
             player_index = (player_index + 1) % player_count
             
         points_sample.append(points)
+        if ranking:
+            player_points.sort(reverse=True)
+            
         for player_index in range(player_count):
             player_points_sample[player_index].append(player_points[player_index])
             
@@ -397,6 +399,9 @@ def make_statistics_on_points(mountain_count=0, player_count=2):
     print(f"      max = {max(points_sample)}")
     print()
     
+    
+    print()
+    print(f"--- points sorted by rank at each test ? : {ranking} ---")
     print()
     for player_index in range(player_count):
         print(f"player {player_index}     count = {len(player_points_sample[player_index])}")
@@ -413,7 +418,7 @@ def make_statistics_on_points(mountain_count=0, player_count=2):
     print("make_statistics_on_points: done")
 
            
-def make_statistics_on_points_by_moving(mountain_count=0, player_count=2, test_count=100_000):
+def make_statistics_on_points_by_moving(mountain_count=0, player_count=2, test_count=100_000, ranking=False):
     
     print()
     print("make_statistics_on_points_by_moving: ...")
@@ -441,10 +446,11 @@ def make_statistics_on_points_by_moving(mountain_count=0, player_count=2, test_c
 
     
     points_sample = []
+    donjon_count_sample = []
     player_points_sample = {player_index:[] for player_index in range(player_count)}
 
     debug_index = 0
-    debug_count = 5
+    debug_count = 3
     
     for test_index in range(test_count):
         
@@ -487,6 +493,7 @@ def make_statistics_on_points_by_moving(mountain_count=0, player_count=2, test_c
         player_locations = random.sample(list(hexagon_for_players), player_count)
 
         points = 0
+        donjon_count = 0
         player_index = 0
         
         iteration_index = 0
@@ -522,6 +529,7 @@ def make_statistics_on_points_by_moving(mountain_count=0, player_count=2, test_c
                         player_locations[player_index] = dst
                         player_points[player_index] += max_value
                         points += max_value
+                        donjon_count += 1
                         points_map[dst] = 0
                         donjon_set.add(dst)
                         free_set.remove(dst)
@@ -566,6 +574,9 @@ def make_statistics_on_points_by_moving(mountain_count=0, player_count=2, test_c
         if debug_index <= debug_count:
             print(f"{points} points gained at test {test_index} after {iteration_index}/{iteration_count} iterations")
         points_sample.append(points)
+        donjon_count_sample.append(donjon_count)
+        if ranking:
+            player_points.sort(reverse=True)
         for player_index in range(player_count):
             player_points_sample[player_index].append(player_points[player_index])
             
@@ -573,16 +584,26 @@ def make_statistics_on_points_by_moving(mountain_count=0, player_count=2, test_c
     print()
     print(f"--- mountain_count: {mountain_count} ---")
     print()
-    print(f"    count = {len(points_sample)}")
-    print(f"     mode = {statistics.mode(points_sample)}")
-    print(f"     mean = {statistics.mean(points_sample):.1f}")
-    print(f"quartiles = {statistics.quantiles(points_sample, n=4)}")
-    print(f"  deciles = {statistics.quantiles(points_sample, n=10)}")
-    print(f"      min = {min(points_sample)}")
-    print(f"      max = {max(points_sample)}")
+    print(f"donjons     count = {len(donjon_count_sample)}")
+    print(f"donjons      mode = {statistics.mode(donjon_count_sample)}")
+    print(f"donjons      mean = {statistics.mean(donjon_count_sample):.1f}")
+    print(f"donjons quartiles = {statistics.quantiles(donjon_count_sample, n=4)}")
+    print(f"donjons   deciles = {statistics.quantiles(donjon_count_sample, n=10)}")
+    print(f"donjons       min = {min(donjon_count_sample)}")
+    print(f"donjons       max = {max(donjon_count_sample)}")
+    
+    print()
+    print(f"points     count = {len(points_sample)}")
+    print(f"points      mode = {statistics.mode(points_sample)}")
+    print(f"points      mean = {statistics.mean(points_sample):.1f}")
+    print(f"points quartiles = {statistics.quantiles(points_sample, n=4)}")
+    print(f"points   deciles = {statistics.quantiles(points_sample, n=10)}")
+    print(f"points       min = {min(points_sample)}")
+    print(f"points       max = {max(points_sample)}")
     print()
     
     print()
+    print(f"--- points sorted by rank at each test ? : {ranking} ---")
     for player_index in range(player_count):
         print(f"player {player_index}     count = {len(player_points_sample[player_index])}")
         print(f"player {player_index}      mode = {statistics.mode(player_points_sample[player_index])}")
@@ -745,9 +766,10 @@ if False:
     make_statistics_on_points(mountain_count=0, player_count=3)
     make_statistics_on_points(mountain_count=0, player_count=4)
 
-    make_statistics_on_points(mountain_count=4, player_count=2)
-    make_statistics_on_points(mountain_count=4, player_count=3)
-    make_statistics_on_points(mountain_count=4, player_count=4)
+if True:
+    make_statistics_on_points(mountain_count=4, player_count=2, test_count=100_000, ranking=True)
+    make_statistics_on_points(mountain_count=4, player_count=3, test_count=100_000, ranking=True)
+    make_statistics_on_points(mountain_count=4, player_count=4, test_count=100_000, ranking=True)
     
 if False:
     partition = compute_connex_partition(hexagon_adjacents)
@@ -761,10 +783,10 @@ if False:
     make_statistics_on_distances(mountain_count=0, test_count=1)
     make_statistics_on_distances(mountain_count=4)
  
-if True:
-    make_statistics_on_points_by_moving(mountain_count=4, player_count=2, test_count=100_000)
-    make_statistics_on_points_by_moving(mountain_count=4, player_count=3, test_count=100_000)
-    make_statistics_on_points_by_moving(mountain_count=4, player_count=4, test_count=100_000)
+if False:
+    make_statistics_on_points_by_moving(mountain_count=4, player_count=2, test_count=100_000, ranking=True)
+    make_statistics_on_points_by_moving(mountain_count=4, player_count=3, test_count=100_000, ranking=True)
+    make_statistics_on_points_by_moving(mountain_count=4, player_count=4, test_count=100_000, ranking=True)
         
 print()
 _ = input("main: done ; press enter to terminate")
