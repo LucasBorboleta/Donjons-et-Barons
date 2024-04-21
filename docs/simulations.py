@@ -4,6 +4,7 @@ Simulations for tuning parameters of the boardgame Donjons-et-Barons
 """
 
 import copy
+import math
 import random
 import statistics
 
@@ -447,6 +448,8 @@ def make_statistics_on_points_by_moving(mountain_count=0, player_count=2, test_c
     
     points_sample = []
     donjon_count_sample = []
+    round_sample = []
+    turn_sample = []
     player_points_sample = {player_index:[] for player_index in range(player_count)}
 
     debug_index = 0
@@ -535,7 +538,8 @@ def make_statistics_on_points_by_moving(mountain_count=0, player_count=2, test_c
                         free_set.remove(dst)
                         free_set = free_set - hexagon_adjacents[dst]
                         if debug_index <= debug_count:
-                            print(f"at iteration {iteration_index} with {fuel} fuel, player {player_index} moved from {src} to {dst} and gained {max_value} points")
+                            print(f"at iteration {iteration_index} with {fuel} fuel, player {player_index} moved from {src} to {dst}" + 
+                                  f" and gained {max_value} points ; accumulating {player_points[player_index]} points")
                         break
 
             # Or get closest to the best possible target
@@ -573,12 +577,25 @@ def make_statistics_on_points_by_moving(mountain_count=0, player_count=2, test_c
             
         if debug_index <= debug_count:
             print(f"{points} points gained at test {test_index} after {iteration_index}/{iteration_count} iterations")
+        
         points_sample.append(points)
+        
+        turn_sample.append(iteration_index)
+        round_sample.append(math.ceil(iteration_index/player_count))
+        
         donjon_count_sample.append(donjon_count)
+        
+        
         if ranking:
             player_points.sort(reverse=True)
+            
+        if debug_index <= debug_count:
+            print(f"points over players : {player_points}")
+            
         for player_index in range(player_count):
             player_points_sample[player_index].append(player_points[player_index])
+
+
             
 
     print()
@@ -600,6 +617,26 @@ def make_statistics_on_points_by_moving(mountain_count=0, player_count=2, test_c
     print(f"points   deciles = {statistics.quantiles(points_sample, n=10)}")
     print(f"points       min = {min(points_sample)}")
     print(f"points       max = {max(points_sample)}")
+    print()
+    
+    print()
+    print(f"turns     count = {len(turn_sample)}")
+    print(f"turns      mode = {statistics.mode(turn_sample)}")
+    print(f"turns      mean = {statistics.mean(turn_sample):.1f}")
+    print(f"turns quartiles = {statistics.quantiles(turn_sample, n=4)}")
+    print(f"turns   deciles = {statistics.quantiles(turn_sample, n=10)}")
+    print(f"turns       min = {min(turn_sample)}")
+    print(f"turns       max = {max(turn_sample)}")
+    print()
+    
+    print()
+    print(f"rounds     count = {len(round_sample)}")
+    print(f"rounds      mode = {statistics.mode(round_sample)}")
+    print(f"rounds      mean = {statistics.mean(round_sample):.1f}")
+    print(f"rounds quartiles = {statistics.quantiles(round_sample, n=4)}")
+    print(f"rounds   deciles = {statistics.quantiles(round_sample, n=10)}")
+    print(f"rounds       min = {min(round_sample)}")
+    print(f"rounds       max = {max(round_sample)}")
     print()
     
     print()
@@ -766,7 +803,7 @@ if False:
     make_statistics_on_points(mountain_count=0, player_count=3)
     make_statistics_on_points(mountain_count=0, player_count=4)
 
-if True:
+if False:
     make_statistics_on_points(mountain_count=4, player_count=2, test_count=100_000, ranking=True)
     make_statistics_on_points(mountain_count=4, player_count=3, test_count=100_000, ranking=True)
     make_statistics_on_points(mountain_count=4, player_count=4, test_count=100_000, ranking=True)
@@ -783,10 +820,10 @@ if False:
     make_statistics_on_distances(mountain_count=0, test_count=1)
     make_statistics_on_distances(mountain_count=4)
  
-if False:
-    make_statistics_on_points_by_moving(mountain_count=4, player_count=2, test_count=100_000, ranking=True)
-    make_statistics_on_points_by_moving(mountain_count=4, player_count=3, test_count=100_000, ranking=True)
-    make_statistics_on_points_by_moving(mountain_count=4, player_count=4, test_count=100_000, ranking=True)
+if True:
+    make_statistics_on_points_by_moving(mountain_count=4, player_count=2, test_count=1_000, ranking=True)
+    make_statistics_on_points_by_moving(mountain_count=4, player_count=3, test_count=1_000, ranking=True)
+    make_statistics_on_points_by_moving(mountain_count=4, player_count=4, test_count=1_000, ranking=True)
         
 print()
 _ = input("main: done ; press enter to terminate")
