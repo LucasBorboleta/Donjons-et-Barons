@@ -5,7 +5,7 @@ Le jeu « Donjons et Barons » est un jeu de plateau d’atmosphère féodale po
 
 Voir situations de jeu sur les photos ci-dessous. Voir les fichiers "Word" ou "PDF" pour le détail des règles.
 
-Ce projet est en phase de test et d'ajustement : quasiment paramétré pour 2 et 3 joueurs  ; test à venir pour 4 joueurs.
+Ce projet est en phase de test et d'ajustement : quasiment paramétré pour 2 et 3 joueurs  ; premier test probant simulant 4 joueurs (carte OK ; objectif OK) ; diminution des troupes à tester afin de raccourcir les parties et aussi exercer la deuxième condition de fin.
 
 ## Informations générales
 
