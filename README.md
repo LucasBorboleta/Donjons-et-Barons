@@ -1,4 +1,4 @@
-# Donjons et Barons: les règles du jeu
+# Donjons et Barons : les règles du jeu
 Le jeu « Donjons et Barons » est un jeu de plateau d’atmosphère féodale pour 2 à 4 joueurs incarnant des barons qui s’opposent dans la construction de donjons sur des territoires aux richesses variées. A chaque tour de jeu, un baron se déplace et ordonne des mouvements à ses troupes ou des opérations sur ses donjons, ou encore déplace ses saboteurs pour bloquer les ordres des barons adverses. Quel baron sera le plus riche avant tous les autres ?
 
 <img src="./pictures/la-boite-donjons-et-barons-202-40611-1930.jpg" style="zoom:10%;" />
