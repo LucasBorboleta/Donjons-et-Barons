@@ -7,17 +7,24 @@ Pourquoi ? Parce que "envoyer des troupes au combat" peut être perçu comme "tr
 Thème de la marine à voile:
 
 - Tuile = Zone maritime
-- Montagne = Mer infranchissable, hauts-fonds
-- Donjon = Base ou  chantier ou arsenal
-- Troupe = Vaisseau de base, transporteur
-- Baron = Vaisseau amiral
-- Saboteur = Vaisseau de chasse, ou frégate
+- Montagne = Mer rugissante
+- Donjon = Base navale ou bien arsenal où les navires transporteurs sont construits
+- Troupe = Transporteur
+- Baron = Navire amiral
+- Saboteur = Frégate
 
-Thème spatial:
+Thème SF dans l'espace interstellaire :
 
 - Tuile = Système stellaire
-- Montaggne = Trou noir
-- Donjon = Base 
-- Toupe = Cargo
-- Baron = Vaisseau/croiseur amiral
+
+- Montagne = Trou noir
+
+- Donjon = Base stellaire où les vaisseaux transporteurs sont construits
+
+- Troupe = Transporteur
+
+- Baron = Croiseur amiral
+
 - Saboteur = Intercepteur
+
+  
