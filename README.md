@@ -9,9 +9,9 @@ Ce projet est en phase de test et de paramétrage.
 
 ## Informations générales
 
-Nombre de joueurs : 2 à 4 / Age minimum : 8 ans / Durée de partie : 45 à 90 minutes
+Nombre de joueurs : 2 à 4 / Age minimum : 10 ans / Durée de partie : 45 à 90 minutes / Jeu expert
 
-Type de jeu : tactique, stratégique, combo, conquête et combat
+Type de jeu : tactique, stratégique, combo-conquête-combat
 
 Petite boîte de rangement 17 cm x 12.5 cm x 4 cm / fabrication simple / deux façons de stopper et de gagner la partie / aléa du tour de jeu limité au bonus de déplacement ou de recrutement / combats sans aléa / terrain mis en place aléatoirement / tensions entre construction, attaque, course, blocage / plusieurs stratégies possibles / ambiance duel cérébral à 2 joueurs, mais aussi ambiance à rebondissements à 3 et 4 joueurs au gré des alliances éphémères
 
