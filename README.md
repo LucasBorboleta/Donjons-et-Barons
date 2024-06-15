@@ -3,7 +3,7 @@ Le jeu « Donjons et Barons » est un jeu de plateau d’atmosphère féodale po
 
 <img src="./pictures/la-boite-donjons-et-barons-202-40611-1930.jpg" style="zoom:10%;" />
 
-Voir situations de jeu sur les photos ci-dessous. Voir les fichiers "Word" ou "PDF" pour le détail des règles.
+Voir situations de jeu sur les photos ci-dessous. Voir les fichiers "[Word](./Donjons-et-Barons-les-regles.docx)" ou "[PDF](./Donjons-et-Barons-les-regles.pdf)" pour le détail des règles.
 
 Ce projet est en phase de test et de paramétrage.
 
