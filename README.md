@@ -22,6 +22,6 @@ Copyright (C) 2023 [lucas.borboleta@free.fr](mailto:lucas.borboleta@free.fr) ; l
 ## Anecdote
 Le concept du choix d'un ordre de dispersion/concentration/recrutement depuis une tuile de commandement est inspiré du jeu « [Realm](https://boardgamegeek.com/boardgame/3024/realm) » (1974) de Philip Orbanes. Le concept de sabotage des communications avec le commandement est inspiré du « [Jeu de la Guerre](https://fr.wikipedia.org/wiki/Le_Jeu_de_la_guerre_(livre)) » (1965) de Guy Debord.
 
-<img src="./pictures/Donjons-et-Barons-2024-0421-1542-02.jpg" style="zoom:60%;" />
+<img src="./pictures/Donjons-et-Barons-2024-0519-1712.jpg" style="zoom:100%;" />
 
-<img src="./pictures/Donjons-et-Barons-2024-0421-1542-01.jpg" style="zoom:60%;" />
+<img src="./pictures/Donjons-et-Barons-zoom-2024-0519-1712.jpg" style="zoom:100%;" />
