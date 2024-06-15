@@ -20,7 +20,7 @@ Petite boîte de rangement 17 cm x 12.5 cm x 4 cm / fabrication simple / deux fa
 Copyright (C) 2023 [lucas.borboleta@free.fr](mailto:lucas.borboleta@free.fr) ; licence Creative Commons BY-NC-SA
 
 ## Anecdote
-Le concept du choix d'un ordre de dispersion/concentration/recrutement depuis une tuile de commandement est inspirée du jeu « [Realm](https://boardgamegeek.com/boardgame/3024/realm) » (1974) de Philip Orbanes. Le concept de sabotage des communications avec le commandement est inspiré du « [Jeu de la Guerre](https://fr.wikipedia.org/wiki/Le_Jeu_de_la_guerre_(livre)) » (1965) de Guy Debord.
+Le concept du choix d'un ordre de dispersion/concentration/recrutement depuis une tuile de commandement est inspiré du jeu « [Realm](https://boardgamegeek.com/boardgame/3024/realm) » (1974) de Philip Orbanes. Le concept de sabotage des communications avec le commandement est inspiré du « [Jeu de la Guerre](https://fr.wikipedia.org/wiki/Le_Jeu_de_la_guerre_(livre)) » (1965) de Guy Debord.
 
 <img src="./pictures/Donjons-et-Barons-2024-0421-1542-02.jpg" style="zoom:60%;" />
 
