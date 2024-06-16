@@ -3,7 +3,7 @@ Le jeu « Donjons et Barons » est un jeu de plateau d’atmosphère féodale po
 
 <img src="./pictures/la-boite-donjons-et-barons-202-40611-1930.jpg" style="zoom:10%;" />
 
-Voir situations de jeu sur les photos ci-dessous. Voir les fichiers "[Word](./Donjons-et-Barons-les-regles.docx)" ou "[PDF](./Donjons-et-Barons-les-regles.pdf)" pour le détail des règles.
+Voir situations de jeu sur les [photos](#Photos) ci-dessous. Voir les fichiers "[Word](./Donjons-et-Barons-les-regles.docx)" ou "[PDF](./Donjons[What is Mikjersi?](#What-is-Mikjersi) -et-Barons-les-regles.pdf)" pour le détail des règles.
 
 Ce projet est en phase de test et de paramétrage.
 
@@ -21,6 +21,8 @@ Copyright (C) 2023 [lucas.borboleta@free.fr](mailto:lucas.borboleta@free.fr) ; l
 
 ## Anecdote
 Le concept du choix d'un ordre de dispersion/concentration/recrutement depuis une tuile de commandement est inspiré du jeu « [Realm](https://boardgamegeek.com/boardgame/3024/realm) » (1974) de Philip Orbanes. Le concept de sabotage des communications avec le commandement est inspiré du « [Jeu de la Guerre](https://fr.wikipedia.org/wiki/Le_Jeu_de_la_guerre_(livre)) » (1965) de Guy Debord.
+
+## Photos
 
 <img src="./pictures/Donjons-et-Barons-2024-0519-1712.jpg" style="zoom:100%;" />
 
