@@ -13,3 +13,15 @@ C'est le but de ce document de recueillir des idées de mécanismes auxiliaires.
   - Neutraliser (le temps du tour seulement) un saboteur adverse au tarif de 12 écus (l'équivalent du dé pour le déplacement de 3 + 1 tuiles d'un de ses propres saboteurs)
   - Recruter un saboteur pour 9 écus, sachant que la partie débuterait avec seulement un baron sur le terrain.
 
+## Commander depuis un donjon
+
+-     Une tuile avec un donjon devient une tuile de commandement, à la façon d’une tuile avec un baron.
+
+-   Avec les mêmes possibilités et contraintes.
+
+-    Sauf l’ordre de recrutement, qui reste le privilège du baron.
+
+-     Donc un donjon peut concentrer et disperser des troupes.
+
+-     Donc le bonus « deux ordres » peut être exécuter depuis une ou deux tuiles de commandement distinctes !
+
