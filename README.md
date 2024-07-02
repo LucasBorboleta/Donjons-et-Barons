@@ -1,5 +1,5 @@
 # Donjons et Barons : les règles du jeu
-Le jeu « Donjons et Barons » est un jeu de plateau d’atmosphère féodale pour 2 à 4 joueurs incarnant des barons qui s’opposent dans la construction de donjons sur des territoires aux richesses variées. A chaque tour de jeu, un baron se déplace et ordonne des mouvements à ses troupes ou des opérations sur ses donjons, ou encore déplace ses saboteurs pour bloquer les ordres des barons adverses. Quel baron sera le plus riche avant tous les autres ?
+Le jeu « Donjons et Barons » est un jeu de plateau d’atmosphère féodale pour 2 à 4 joueurs incarnant des barons qui s’opposent dans la construction de donjons sur des territoires aux richesses variées. A chaque tour de jeu, un baron se déplace et ordonne des mouvements à ses troupes ou des opérations sur ses donjons, ou encore déplace ses chevaliers pour bloquer les ordres des barons adverses. Quel baron sera le plus riche avant tous les autres ?
 
 <img src="./pictures/la-boite-donjons-et-barons-202-40611-1930.jpg" style="zoom:10%;" />
 
@@ -20,7 +20,7 @@ Petite boîte de rangement 17 cm x 12.5 cm x 4 cm / fabrication simple / deux fa
 Copyright (C) 2023 [lucas.borboleta@free.fr](mailto:lucas.borboleta@free.fr) ; licence Creative Commons BY-NC-SA
 
 ## Anecdote
-Le concept du choix d'un ordre de dispersion/concentration/recrutement depuis une tuile de commandement est inspiré du jeu « [Realm](https://boardgamegeek.com/boardgame/3024/realm) » (1974) de Philip Orbanes. Le concept de sabotage des communications avec le commandement est inspiré du « [Jeu de la Guerre](https://fr.wikipedia.org/wiki/Le_Jeu_de_la_guerre_(livre)) » (1965) de Guy Debord.
+Le concept du choix d'un ordre de dispersion/concentration/recrutement depuis une tuile de commandement est inspiré du jeu « [Realm](https://boardgamegeek.com/boardgame/3024/realm) » (1974) de Philip Orbanes. Le concept de blocage des communications avec le commandement est inspiré du « [Jeu de la Guerre](https://fr.wikipedia.org/wiki/Le_Jeu_de_la_guerre_(livre)) » (1965) de Guy Debord.
 
 ## Photos
 
