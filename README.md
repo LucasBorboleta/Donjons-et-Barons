@@ -13,7 +13,7 @@ Nombre de joueurs : 2 à 4 / Age minimum : 10 ans / Durée de partie : 45 à 90 
 
 Type de jeu : tactique, stratégique, combo-conquête-combat
 
-Petite boîte de rangement 17 cm x 12.5 cm x 4 cm / fabrication simple / deux façons de stopper et de gagner la partie / aléa du tour de jeu limité au bonus de déplacement ou de recrutement / combats sans aléa / terrain mis en place aléatoirement / tensions entre construction, attaque, course, blocage / plusieurs stratégies possibles / ambiance duel cérébral à 2 joueurs, mais aussi ambiance à rebondissements à 3 et 4 joueurs au gré des alliances éphémères
+Petite boîte de rangement 17 cm x 12.5 cm x 4 cm / fabrication simple / deux façons de stopper et de gagner la partie / aléa du tour de jeu limité au bonus d'ordre / combats sans aléa / terrain mis en place aléatoirement / tensions entre construction, attaque, course, blocage / plusieurs stratégies possibles / ambiance duel cérébral à 2 joueurs, mais aussi ambiance à rebondissements à 3 et 4 joueurs au gré des alliances éphémères
 
 ![](./pictures/CC-BY-NC-SA.png)Donjons et Barons, règles d'un jeu pour 2 à 4 joueurs.
 
