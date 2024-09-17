@@ -1,13 +1,17 @@
 # Donjons et Barons : les règles du jeu
-Le jeu « Donjons et Barons » est un jeu de plateau d’atmosphère féodale pour 2 à 4 joueurs incarnant des barons qui s’opposent dans la construction de donjons sur des territoires aux richesses variées. A chaque tour de jeu, un baron se déplace et ordonne des mouvements à ses troupes ou des opérations sur ses donjons, ou encore déplace ses chevaliers pour bloquer les ordres des barons adverses. Quel baron sera le plus riche avant tous les autres ?
+Le jeu « Donjons et Barons » est un jeu de plateau d’atmosphère féodale pour 2 à 4 joueurs incarnant des barons qui s’opposent dans la construction de donjons sur des territoires aux richesses variées. 
+
+A chaque tour de jeu, un baron se déplace et ordonne des mouvements à ses troupes ou des opérations sur ses donjons, ou encore déplace ses chevaliers pour bloquer les ordres des barons adverses. 
+
+Quel baron sera le plus riche avant tous les autres ?
 
 <img src="./pictures/la-boite-donjons-et-barons-202-40611-1930.jpg" width="300"/>
 
 Voir situations de jeu sur les [photos](#Photos) ci-dessous. Voir les fichiers "[Word](./Donjons-et-Barons-les-regles.docx)" ou "[PDF](./Donjons-et-Barons-les-regles.pdf)" pour les **règles détaillées**.
 
-Voir la playlist **YouTube** [Donjons-et-Barons](https://www.youtube.com/playlist?list=PLui_B_YF7szNSGDArisupSQ0EuoTJJkg8) pour des **vidéos** sur les règles et des parties filmées
+Voir la playlist **YouTube** [Donjons-et-Barons](https://www.youtube.com/playlist?list=PLui_B_YF7szNSGDArisupSQ0EuoTJJkg8) pour des vidéos sur les **règles** et des **parties** filmées
 
-Ce projet est en phase très avancée de test et de paramétrage, mais reste ouvert à l'exploration d'extension des règles.
+Ce projet est en phase très avancée de test , mais reste ouvert à l'exploration d'extension des règles.
 
 ## Informations générales
 
