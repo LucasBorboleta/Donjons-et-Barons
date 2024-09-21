@@ -7,7 +7,7 @@ Quel baron sera le plus riche avant tous les autres ?
 
 <img src="./pictures/la-boite-donjons-et-barons-202-40611-1930.jpg" width="300"/>
 
-Voir situations de jeu sur les [photos](#Photos) ci-dessous. Voir les fichiers "[Word](./Donjons-et-Barons-les-regles.docx)" ou "[PDF](./Donjons-et-Barons-les-regles.pdf)" pour les **règles détaillées**.
+Voir situations de jeu sur les [photos](#Photos) ci-dessous. Voir les fichiers "[Word](./Donjons-et-Barons-les-regles.docx)" ou "[PDF](./Donjons-et-Barons-les-regles.pdf)" pour les **règles détaillées** (also available in "[English](./Donjons-and-Barons-the-rules.pdf)").
 
 Voir la playlist **YouTube** [Donjons-et-Barons](https://www.youtube.com/playlist?list=PLui_B_YF7szNSGDArisupSQ0EuoTJJkg8) pour des vidéos sur les **règles** et des **parties** filmées
 
