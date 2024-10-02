@@ -13,7 +13,7 @@ Voir la playlist **YouTube** [Donjons-et-Barons](https://www.youtube.com/playlis
 
 Ce projet est en phase très avancée de test , mais reste ouvert à l'exploration d'extension des règles.
 
-[Playtest the game on Tabletopia](https://tabletopia.com/games/donjons-et-barons-qtzv6q/680x340)
+<img src="./pictures/Tabletopia-Logo.png" width="300"/>[Playtest the game on Tabletopia](https://tabletopia.com/games/donjons-et-barons-qtzv6q/680x340) 
 
 ## Informations générales
 
