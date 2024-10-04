@@ -5,6 +5,8 @@ A chaque tour de jeu, un baron se déplace et ordonne des mouvements à ses trou
 
 Quel baron sera le plus riche avant tous les autres ?
 
+Donjons & Barons est un wargame abstrait et léger dans lequel le hasard s'applique aux ressources, mais pas aux batailles
+
 <img src="./pictures/la-boite-donjons-et-barons-202-40611-1930.jpg" width="300"/>
 
 Voir situations de jeu sur les [photos](#Photos) ci-dessous. Voir les fichiers "[Word](./Donjons-et-Barons-les-regles.docx)" ou "[PDF](./Donjons-et-Barons-les-regles.pdf)" pour les **règles détaillées** (also available in "[English](./Donjons-and-Barons-the-rules.pdf)").
