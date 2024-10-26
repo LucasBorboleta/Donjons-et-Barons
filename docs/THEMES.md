@@ -11,20 +11,22 @@ Thème de la marine à voile:
 - Donjon = Base navale ou bien arsenal où les navires transporteurs sont construits
 - Troupe = Transporteur
 - Baron = Navire amiral
-- Saboteur = Frégate
+- Chevalier = Frégate
 
 Thème SF dans l'espace interstellaire :
 
 - Tuile = Système stellaire
-
 - Montagne = Trou noir
-
 - Donjon = Base stellaire où les vaisseaux transporteurs sont construits
-
 - Troupe = Transporteur
-
 - Baron = Croiseur amiral
+- Chevalier = Intercepteur
 
-- Saboteur = Intercepteur
+Thème féodal japonais (bon avec retour des troupes):
 
-  
+* Baron = Daïmio
+* Chevalier = Samouraï
+* Donjon = Château
+* Montagne = Montagne
+* Troupe = Troupe
+* Tuile = Domaine ou Terre
