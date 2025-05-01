@@ -24,20 +24,28 @@ Les idées sont recherchées sur les axes suivants :
 
 ## Passe n°2 de réflexions
 
-- Les jetons spéciaux sont des substituts aux barons et chevaliers :
+- Les effets spéciaux sont des officiers supplémentaires :
   - Vice-baron : même capacité que le baron.
   - Vice-chevalier : même capacité que le chevalier.
-- Les vice-barons et vice-chevaliers sont recrutés, placés et mandatés :
-  - Allégeance : 
-    - A la place d'un ordre au troupe, et à condition d'un jet de dé favorable ou à condition de passer sous un seuil de "faiblesse en troupes"
-    - Parmi une pioche d'officiers faces cachées.
-    - A concurrence de "n" vice-officiers par joueurs.
-  - Mission :
-    - Pioche de deux cartes faces cachées de positions (les mêmes que pour la mise en place en début de partie).
-    - Choix d'une carte de position, et défausse sous la pioche de l'autre.
-  - Mandat :
-    - Un mandat détermine la durée de vie sur le terrain d'un vice-officier.
-    - Un mandat correspond à une dotation.
-    - Tout vice-officier sur le terrain doit être doté.
-      - La dotation d'un vice-baron est plus chère que celle d'un vice-chevalier.
-    - En début de tour, le nombre de vice-officiers sur le terrain doit être ajusté à la dotation
+  - Remarque : ne rendre possible que les vice-chevaliers serait plus simple et peut-être déjà suffisant.
+- Les vice-barons et vice-chevaliers sont nommés et investis :
+  - Nomination et investiture sont deux nouveaux types d'action, qui se combinent aux actions générales à la façon des déplacement d'officiers :
+    - Dans les combos d'actions, "nomination" et "investiture" sont substituables à "déplacement d'officiers".
+  - Nomination : 
+    - Soumis à condition d'un jet de dé favorable ou à condition de passer sous un seuil de "faiblesse en troupes".
+    - Pioche d'une carte d'officiers faces cachées ; maximum de xxx cartes dans la pioche des vice-officiers.
+    - Préparation sécrète de l'investiture :
+      - Pioche de deux cartes faces cachées de positions (les mêmes que pour la mise en place en début de partie).
+      - Choix d'une carte de position, et défausse sous la pioche de l'autre.
+      - La carte gardée correspond à une charge.
+  - Investiture :
+    - Sans condition de dé.
+    - Choix d'un vice officier nommé et d'une charge disponible.
+    - Placement de l'officier nommé à la position de sa charge, sans contredire les règles générales de déplacement (cela concernerait le baron).
+  - Dotation:
+    - Pour chaque vice-officier une dote doit être payée : à l'investiture et en début de chaque tour.
+    - En début de partie, chaque joueur démarre avec un trésor prévu pour la dotation.
+    - A chaque tour, pour maintenir chaque vice-officier, le joueur doit payer sa dote. Sinon, le vice-officier est retiré du terrain.
+    - Le joueur peut décider de la dote versée en début de tour, et ainsi décider quels vice-officiers restent sur le terrain.
+    - Une fois investi, le vice-officier n'est plus distinguable d'un officier mis en place en début de partie. Donc le versement de la dote est associé au nombre de vice-officiers sur le terrain.
+    - La dote d'un vice-baron doit être plus élevée que celle d'un vice-chevalier.
