@@ -20,7 +20,7 @@ Cet usage de "trésor" n'est pas compté dans les deux actions possibles de son 
 
 Un officier est déplacé à la position indiquée par la carte personnelle, qui est ensuite défaussée face cachée. Si le baron est déplacé vers une tuile contenant un baron adverse, alors les deux barons échangent leurs positions.
 
-Cet usage de la "chevauché" est compté comme "déplacement d'officier" ; c'est donc une des deux actions possibles du tour de jeu.
+Cet usage de la "chevauchée" est compté comme "déplacement d'officier" ; c'est donc une des deux actions possibles du tour de jeu.
 
 ## Révision de la mécanique de capture de donjon
 
