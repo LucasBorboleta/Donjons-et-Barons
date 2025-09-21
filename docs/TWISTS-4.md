@@ -26,23 +26,54 @@ Cet usage de la "chevauché" est compté comme "déplacement d'officier" ; c'est
 
 Le coût de la "capture de donjon" a été jugée trop faible par certains testeurs. Une évaluation plus juste conduit à :
 
-- **engager 10 troupes** pour capturer un donjon adverse ;
-- **défausser 3 troupes** ;
-- **renvoyer 7 troupes en réserve**.
+- **engager 12 troupes** pour capturer un donjon adverse (soit le double d'une opération en deux temps) ;
+- **renvoyer 9 troupes en réserve**.
+- **défausser 3 troupes** (qui correspondent à la construction du nouveau donjon).
 
-En comparaison, détruire un donjon réclame 3 troupes qui retournent en réserve, et 3 troupes qui partent à la défausse ; soit un engagement de 6 troupes.
+La justification est que 3 troupes sont nécessaires pour détruire le donjon adverse et qui 3 troupes sont nécessaires pour construire le nouveau donjon, mais que cette opération de capture en 1 seul ordre aux troupes fait économiser au Baron en moyenne de l'ordre de 3.5 tours de jeu, qui aurait permis de recruter en moyenne 2*3.5 = 7 troupes. Donc, en demandant d'engager 6 troupes supplémentaires, le coût de capture d'un donjon reste généreux.
 
-Voici le raisonnement qui justifie ce coût .
+Voici le raisonnement détaillé qui justifie ce coût .
 
-- La capture de donjon évite le déplacement du Baron, ainsi que la construction, c'est à dire le recrutement ou un déplacement de troupes, soit deux ordres aux troupes. Cela économise donc du temps. Ce temps correspond à :
+- En partant d'une tuile de commandement avec 6 troupes (3 pour détruire le donjon adverse, et 3 pour construire le nouveau donjon), la mécanique de capture de donjon évite le déplacement du Baron, un premier ordre aux troupes pour les déplacer et un second pour construire le nouveau donjon. Cela économise donc:
   - un aller-et-retour ;
-  - deux ordres aux troupes qui peuvent être donnés en 1.5 tour en moyenne
-
--  Le case extrême : le baron est au centre (case 19)  et le donjon capturé est au bout de la diagonale (case 37), soit 12 cases pour un aller-et-retour. C'est juste une remarque, car on va s'en tenir au cas moyen.
-- Le cas moyen: le baron est au centre (case 19)  et le donjon capturé est au bout de la diagonale (case 37)  :
-  - soit 6 cases pour un aller-et-retour.
-  - Le bonus permet par tour un déplacement de 2 cases (pour une première action), la seconde action sans bonus permet un déplacent de 1 case. Donc en moyenne, il faut 2 tours pour effectuer un déplacement de 6 cases.
-  - Donc avec les deux ordres aux troupes requis pour construire, c'est, au total, 3.5 tours en moyenne qui sont requis pour aller construire un donjon à la place du donjon adverse détruit.
-  - Or, en 1 tour, on recrute en moyenne 2 troupes ; soit moyenne 7 troupes en 3.5 tours.
-  - Donc, on peut conclure que la mécanique de capture permet une économie équivalente de 7 troupes recrutées pour le cas moyen de capture.
-- Sachant que le cas extrême augmente cette équivalence, et qu'il faut rester avec des règles simples: il semble raisonnable de faire payer 7 troupes. Donc, au total, la capture d'un donjon requiert d'engager 10 troupes, dont 3 sont défaussées et 7 retournent dans la réserve de l'attaquant.
+  - deux ordres aux troupes.
+- Le case extrême : le baron est au centre (case 19)  et le donjon capturé est au bout de la diagonale (case 37), soit 12 cases pour un aller-et-retour. C'est juste une remarque, car on va s'en tenir au cas moyen.
+- Le cas moyen: le baron est au centre (case 19)  et le donjon capturé est au bout de la diagonale (case 37)  : soit 6 cases pour un aller-et-retour.
+- Evaluons le nombre moyen de tours nécessaire pour faire cet aller-retour et passer deux ordres :
+  - Premier tour avec dé {1, 2} : dispersion des 3 troupes de construction + déplacement-aller du baron de 3 cases.
+    - Second tour avec dé {1,2} : construction de donjon + déplacement-retour du baron de 3 cases => fin d'opération en **2 tours** avec la **probabilité 1/9** (occurrence 1)
+    - Second tour avec dé {3, 4} : construction de donjon + déplacement-retour du baron de 2 cases
+      - Troisième tour dé quelconque : requis pour le retour => fin d'opération en **3 tours** avec la **probabilité 1/9** (occurrence 1). 
+    - Second tour avec dé {5, 6} : construction de donjon + déplacement-retour du baron de 1 case 
+      - Troisième tour dé quelconque : requis pour le retour => fin d'opération en **3 tours** avec la **probabilité 1/9 **(occurrence 2).
+  - Premier tour avec dé {3, 4} : dispersion des 3 troupes de construction + déplacement-aller du baron de 2 cases.
+    - Second tour avec dé quelconque : déplacement-aller du baron de 1 case + construction de donjon 
+      - Troisième tour avec dé {1,2} : déplacement-retour du baron de 3 cases => fin d'opération en **3 tours** avec la **probabilité 1/9** (occurrence 3). 
+      - Troisième tour avec dé {3, 4} : déplacement-retour du baron de 2 + 1 cases => fin d'opération en **3 tours** avec la **probabilité 1/9** (occurrence 4).
+      - Troisième tour avec dé {5, 6} : déplacement-retour du baron de 2  cases
+        - Quatrième tour avec dé quelconque : déplacement-aller du baron de 1 case => fin d'opération en **4 tours** avec la **probabilité 1/9** (occurrence 1).
+  - Premier tour avec dé {5, 6} : dispersion des 3 troupes de construction + déplacement-aller du baron de 1 case.
+    - Second tour avec dé {1,2} : déplacement-retour du baron de 2 cases + construction de donjon
+      - Troisième tour avec dé {1,2} : déplacement-retour du baron de 3 cases => fin d'opération en **3 tours** avec la **probabilité 1/9** (occurrence 5).
+      - Troisième tour avec dé {3, 4} : déplacement-retour du baron de 2 + 1 cases => fin d'opération en **3 tours** avec la **probabilité 1/9** (occurrence 6).
+      - Troisième tour avec dé {5, 6} : déplacement-retour du baron de 1 + 1 cases.
+        - Quatrième tour avec dé quelconque : déplacement-aller du baron de 1 case => fin d'opération en **4 tours** avec la **probabilité 1/9** (occurrence 2).
+    - Second tour avec dé {3, 4} : déplacement-retour du baron de 2 +  1 cases 
+      - Troisième tour avec dé {1,2} : construction de donjon + déplacement-retour du baron de 3 cases => fin d'opération en **3 tours** avec la **probabilité 1/9** (occurrence 7).
+      - Troisième tour avec dé {3, 4} : construction de donjon + déplacement-retour du baron de 2 cases 
+        - Quatrième tour avec dé quelconque : déplacement-aller du baron de 1 case => fin d'opération en **4 tours** avec la **probabilité 1/9** (occurrence 3).
+      - Troisième tour avec dé {5, 6} : construction de donjon + déplacement-retour du baron de 1 case
+        - Quatrième tour avec dé quelconque : déplacement-aller du baron de 1 +1 cases => fin d'opération en **4 tours** avec la **probabilité 1/9** (occurrence 4).
+    - Second tour avec dé {5, 6} : déplacement-retour du baron de 1 + 1 cases 
+      - Troisième tour avec dé {1,2} : construction de donjon + déplacement-retour du baron de 3 cases => fin d'opération en **3 tours** avec la **probabilité 1/9** (occurrence 8).
+      - Troisième tour avec dé {3, 4} : construction de donjon + déplacement-retour du baron de 2 cases 
+        - Quatrième tour avec dé quelconque : déplacement-aller du baron de 1 case => fin d'opération en **4 tours** avec la **probabilité 1/9** (occurrence 5).
+      - Troisième tour avec dé {5, 6} : construction de donjon + déplacement-retour du baron de 1 case
+        - Quatrième tour avec dé quelconque : déplacement-aller du baron de 1 + 1 cases => fin d'opération en **4 tours** avec la **probabilité 1/9** (occurrence 6). 
+  - Bilan des scénarios qui chacun ont la même probabilité 1/9 :
+    - Opération en 2 tours : 1
+    - Opération en 3 tours : 8
+    - Opération en 4 tours : 6
+    - Nombre moyen = (3 + 24 + 24)/(1 + 8 + 6) = 51/15 = 3.4 ; que l'on arrondit à 3.5
+    - Or pendant 3.5 tours, on aurait pu en moyenne recruter 3.5*2 = 7 troupes
+    - Il serait donc raisonnable de disposer de 7 troupes en plus des 6 troupes nécessaires à détruire, puis construire ; soit donc un engagement de 13 troupes.
