@@ -30,3 +30,20 @@ Thème féodal japonais (bon avec retour des troupes):
 * Montagne = Montagne
 * Troupe = Troupe
 * Tuile = Domaine ou Terre
+
+# NOM DU JEU
+
+Recherche de noms alternatifs pour le jeu actuellement nommé "Donjons et Barons".
+
+- Terre de Barons ; en anglais, "Land of Barons"
+
+  
+
+# ARTEFACTS
+
+Autres aspects thématiques associés :
+
+- Remplacer "Donjon" par "Tour", ou même par "Château".
+- Remplacer les "éléments" décoratifs des tuiles par des armoiries médiévales simples.
+
+<img src="C:\Users\leand\Documents\GitHub\Donjons-et-Barons\docs\oie.png" width="200"/> <img src="C:\Users\leand\Documents\GitHub\Donjons-et-Barons\docs\poisson.png" width="200"/> <img src="C:\Users\leand\Documents\GitHub\Donjons-et-Barons\docs\loup.png" width="200"/> <img src="./bouquetin.png" width="200"/> <img src="./ours.png" width="200"/>
