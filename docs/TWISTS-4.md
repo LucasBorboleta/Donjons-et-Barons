@@ -32,6 +32,8 @@ Le coût de la "capture de donjon" a été jugée trop faible par certains teste
 
 La justification est que 3 troupes sont nécessaires pour détruire le donjon adverse et qui 3 troupes sont nécessaires pour construire le nouveau donjon, mais que cette opération de capture en 1 seul ordre aux troupes fait économiser au Baron en moyenne de l'ordre de 3.5 tours de jeu, qui aurait permis de recruter en moyenne 2*3.5 = 7 troupes. Donc, en demandant d'engager 6 troupes supplémentaires, le coût de capture d'un donjon reste généreux.
 
+## Calculs du coût de la capture de donjon
+
 Voici le raisonnement détaillé qui justifie ce coût .
 
 - En partant d'une tuile de commandement avec 6 troupes (3 pour détruire le donjon adverse, et 3 pour construire le nouveau donjon), la mécanique de capture de donjon évite le déplacement du Baron, un premier ordre aux troupes pour les déplacer et un second pour construire le nouveau donjon. Cela économise donc:
