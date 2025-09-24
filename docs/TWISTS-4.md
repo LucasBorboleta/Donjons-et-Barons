@@ -40,8 +40,8 @@ La limitation à 6 troupes dans une tuile qui empêche de passer un ordre de rec
 Dans une tuile, les chevaliers se neutralisent mutuellement par mêlées chromatiques :
 
 - Chaque mêlée regroupe automatiquement le maximum de couleurs distinctes et non répétées de chevaliers d'une tuile.
-- La couleur bloquante d'une tuile est celle du chevalier qui n'est pas dans une mêlée (sachant qu'il faut être a minima deux pour faire une mêlée !)
+- La couleur bloquante d'une tuile est celle du chevalier hors d'une mêlée (sachant qu'il faut être au moins deux pour faire une mêlée !)
 
 Pour une partie à 2 joueurs, rien n'est changé. 
 
-Mais les parties à 3 et 4 joueurs sommes impactées ; en effet, il est plus difficile pour 2 joueurs d'en bloquer un troisième.
+Mais les parties à 3 et 4 joueurs sommes impactées. Par exemple, dans une tuile, 2 ou 3 chevaliers adverses de couleurs distincts se neutralisent tous seuls sans nécessiter de chevaliers alliés, et adjoindre 2 chevaliers alliés a pour effet, que le premier chevalier se joint à la mêlée et que le second, hors de la mêlée, bloque la tuile pour les ordres aux troupes des adversaires.
