@@ -35,7 +35,11 @@ Thème féodal japonais (bon avec retour des troupes):
 
 Recherche de noms alternatifs pour le jeu actuellement nommé "Donjons et Barons".
 
-- Terre de Barons ; en anglais, "Land of Barons"
+- **Terre de Barons** ; 
+
+- **Land of Barons**, en anglais ;
+
+- **Terra Baronum**, en latin.
 
   
 
