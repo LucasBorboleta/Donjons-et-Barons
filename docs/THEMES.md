@@ -50,4 +50,6 @@ Autres aspects thématiques associés :
 - Remplacer "Donjon" par "Tour", ou même par "Château".
 - Remplacer les "éléments" décoratifs des tuiles par des armoiries médiévales simples.
 
-<img src="C:\Users\leand\Documents\GitHub\Donjons-et-Barons\docs\oie-3.png" width="200"/> <img src="C:\Users\leand\Documents\GitHub\Donjons-et-Barons\docs\poisson-3.png" width="200"/> <img src="C:\Users\leand\Documents\GitHub\Donjons-et-Barons\docs\loup-3.png" width="200"/> <img src="./bouquetin-3.png" width="200"/> <img src="./ours-3.png" width="200"/>
+<img src="./oie-3.png" width="200"/> <img src="./poisson-3.png" width="200"/> <img src="./loup-3.png" width="200"/> <img src="./bouquetin-3.png" width="200"/> <img src="./ours-3.png" width="200"/>
+
+<img src="h-loup.png" width="200"/> <img src="h-lion.png" width="200"/> <img src="h-aigle.png" width="200"/> <img src="./h-cheval.png" width="200"/> 
