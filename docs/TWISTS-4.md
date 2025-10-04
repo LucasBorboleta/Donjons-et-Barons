@@ -26,10 +26,10 @@ Cet usage de la "chevauchée" est compté comme "déplacement d'officier" ; c'es
 
 Le coût de la "capture de donjon" a été jugée trop faible par certains testeurs. Une évaluation plus juste conduit à la mécanique suivante :
 
-- **engager 12 troupes** pour capturer un donjon adverse (soit le double d'une opération en deux temps) ;
+- **engager 9 troupes** pour capturer un donjon adverse (soit le double d'une opération en deux temps) ;
 - **défausser 3 troupes** (qui correspondent à la construction du nouveau donjon) ;
-- **renvoyer 9 troupes en réserve**.
-- La justification est que 3 troupes sont nécessaires pour détruire le donjon adverse et qui 3 troupes sont nécessaires pour construire le nouveau donjon, mais que cette opération de capture en 1 seul ordre aux troupes fait économiser au Baron en moyenne de l'ordre de 3.15 tours de jeu (pour un scénario moyen de capture depuis le centre vers un bord de plateau, soit 3 tuiles de distance) qui aurait permis de recruter en moyenne 2*3.15 = 6.3 troupes. Lors de ces opérations d'aller-retour et de construction, le Baron aurait pu recruter 0.84 troupes en moyenne. La différence de recrutement de troupes est donc 6.3 - 0.84 = 5.46 troupes. Donc, en demandant d'engager 6 troupes supplémentaires, le coût de capture d'un donjon reste juste, sachant que la distance de 3 tuiles entre le Baron et le donjon est un scénario moyen.
+- **renvoyer 6 troupes en réserve**.
+- La justification est que 3 troupes sont nécessaires pour détruire le donjon adverse et qui 3 troupes sont nécessaires pour construire le nouveau donjon, mais que cette opération de capture en 1 seul ordre aux troupes fait économiser au Baron en moyenne de l'ordre de 3.15 tours de jeu (pour un scénario moyen de capture depuis le centre vers un bord de plateau, soit 3 tuiles de distance) qui aurait permis de recruter en moyenne 2*3.15 = 6.3 troupes. Lors de ces opérations d'aller-retour et de construction, le Baron aurait pu recruter 0.84 troupes en moyenne. La différence de recrutement de troupes est donc 6.3 - 0.84 = 5.46 troupes. Donc, en demandant d'engager 3 troupes supplémentaires, le coût de capture d'un donjon reste bon marché, sachant que la distance de 3 tuiles entre le Baron et le donjon est un scénario moyen.
 
 ## Révision de la limitation de recrutement
 
