@@ -9,7 +9,7 @@ Terre de Barons est un wargame abstrait et léger dans lequel le hasard s'appliq
 
 <img src="./pictures/la-boite-donjons-et-barons-2025-1004-1906.jpg" width="300"/>
 
- <img src="docs/h-lion.png" width="200"/> <img src="docs/h-aigle.png" width="200"/>  <img src="docs/h-loup.png" width="200"/> <img src="./docs/h-cheval.png" width="200"/> 
+<img src="pictures/h-lion.png" width="200"/> <img src="pictures/h-aigle.png" width="200"/> <img src="pictures/h-loup.png" width="200"/> <img src="./pictures/h-cheval.png" width="200"/> 
 
 Voir situations de jeu sur les [photos](#Photos) ci-dessous. Voir les fichiers "[Word](./Donjons-et-Barons-les-regles.docx)" ou "[PDF](./Donjons-et-Barons-les-regles.pdf)" pour les **règles détaillées** (also available in "[English](./Donjons-and-Barons-the-rules.pdf)").
 

@@ -50,6 +50,6 @@ Autres aspects thématiques associés :
 - Remplacer "Donjon" par "Tour", ou même par "Château".
 - Remplacer les "éléments" décoratifs des tuiles par des armoiries médiévales simples.
 
-<img src="./oie-3.png" width="200"/> <img src="./poisson-3.png" width="200"/> <img src="./loup-3.png" width="200"/> <img src="./bouquetin-3.png" width="200"/> <img src="./ours-3.png" width="200"/>
+<img src="../pictures/oie-3.png" width="200"/> <img src="../pictures//poisson-3.png" width="200"/> <img src="../pictures/loup-3.png" width="200"/> <img src="../pictures/bouquetin-3.png" width="200"/> 
 
-<img src="h-loup.png" width="200"/> <img src="h-lion.png" width="200"/> <img src="h-aigle.png" width="200"/> <img src="./h-cheval.png" width="200"/> 
+<img src="../pictures/h-lion.png" width="200"/> <img src="../pictures/h-aigle.png" width="200"/> <img src="../pictures/h-loup.png" width="200"/> <img src="./../pictures/h-cheval.png" width="200"/> 
