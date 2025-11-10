@@ -9,13 +9,13 @@ Terre de Barons est un wargame abstrait et léger dans lequel le hasard s'appliq
 
 <img src="./pictures/la-boite-donjons-et-barons-2025-1004-1906.jpg" width="300"/>
 
-<img src="pictures/h-lion.png" width="200"/> <img src="pictures/h-aigle.png" width="200"/> <img src="pictures/h-loup.png" width="200"/> <img src="./pictures/h-cheval.png" width="200"/> 
+<img src="./pictures/Terre-de-Barons-2025-1109-1024-36.jpg" style="zoom:100%;" />
 
 Voir situations de jeu sur les [photos](#Photos) ci-dessous. Voir les fichiers "[Word](./Donjons-et-Barons-les-regles.docx)" ou "[PDF](./Donjons-et-Barons-les-regles.pdf)" pour les **règles détaillées** (also available in "[English](./Donjons-and-Barons-the-rules.pdf)").
 
 Voir la playlist **YouTube** [Donjons-et-Barons](https://www.youtube.com/playlist?list=PLui_B_YF7szNSGDArisupSQ0EuoTJJkg8) pour des vidéos sur les **règles** et des **parties** filmées.
 
-Ce projet est en phase avancée de test. **Les règles peuvent encore évoluer**, tout comme le design graphique ou même le nom du jeu.
+Ce projet est en phase avancée de test.
 
 <img src="./pictures/Tabletopia-Logo.png" width="100"/>[Playtest "Donjons & Barons" on Tabletopia](https://tabletopia.com/games/donjons-et-barons-qtzv6q/680x340) 
 
@@ -36,6 +36,10 @@ Le concept du choix d'un ordre de dispersion/concentration/recrutement depuis un
 
 ## Photos
 
-<img src="./pictures/Terre-de-Barons-2025-1012-a.jpg" style="zoom:100%;" />
+<img src="./pictures/Terre-de-Barons-2025-1105.jpg" style="zoom:100%;" />
 
-<img src="./pictures/Terre-de-Barons-2025-1012-b.jpg" style="zoom:100%;" />
+<img src="./pictures/Terre-de-Barons-2025-1105-14061.jpg" style="zoom:100%;" />
+
+<img src="./pictures/Terre-de-Barons-2025-1109-0952-42.jpg" style="zoom:100%;" />
+
+<img src="./pictures/Terre-de-Barons-2025-1109-1014-16.jpg" style="zoom:100%;" />
