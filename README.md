@@ -21,7 +21,7 @@ Ce projet est en phase avancée de test.
 
 ## Informations générales
 
-Nombre de joueurs : 2 à 4 / Age minimum : 10 ans / Durée de partie : 45 à 90 minutes / Jeu expert
+Nombre de joueurs : 2 à 4 / Age minimum : 10 ans / Durée de partie : 45 minutes / Joueurs initiés
 
 Type de jeu : tactique, stratégique, combo-conquête-combat
 
