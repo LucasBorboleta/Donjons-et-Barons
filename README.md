@@ -25,11 +25,10 @@ Nombre de joueurs : 2 à 4 / Age minimum : 10 ans / Durée de partie : 45 à 90 
 
 Type de jeu : tactique, stratégique, combo-conquête-combat
 
-Petite boîte de rangement 17 cm x 12.5 cm x 4 cm / fabrication simple / deux façons de stopper et de gagner la partie / aléa limité au bonus d'action / combats sans aléa / terrain mis en place aléatoirement / tensions entre construction, attaque, course, blocage / plusieurs stratégies possibles / ambiance duel cérébral à 2 joueurs, mais aussi ambiance à rebondissements à 3 et 4 joueurs au gré des alliances éphémères
+Deux façons de stopper et de gagner la partie / aléa limité au bonus d'action / combats sans aléa / terrain mis en place aléatoirement / tensions entre construction, attaque, course, blocage / plusieurs stratégies possibles / ambiance duel cérébral à 2 joueurs, mais aussi ambiance à rebondissements à 3 et 4 joueurs au gré des alliances éphémères
 
-![](./pictures/CC-BY-NC-SA.png)*Terre de Barons (anciennement Donjons et Barons)* , règles d'un jeu pour 2 à 4 joueurs.
-
-Copyright (C) 2023 [lucas.borboleta@free.fr](mailto:lucas.borboleta@free.fr) ; licence Creative Commons BY-NC-SA
+![](./pictures/CC-BY-NC-SA.png) *Terre de Barons (anciennement Donjons et Barons) , règles d'un jeu pour 2 à 4 joueurs.
+Copyright (C) 2023 [lucas.borboleta@free.fr](mailto:lucas.borboleta@free.fr) ; licence Creative Commons BY-NC-SA*
 
 ## Anecdote
 Le concept du choix d'un ordre de dispersion/concentration/recrutement depuis une tuile de commandement est inspiré du jeu « [Realm](https://boardgamegeek.com/boardgame/3024/realm) » (1974) de Philip Orbanes. Le concept de blocage des communications avec le commandement est inspiré du « [Jeu de la Guerre](https://fr.wikipedia.org/wiki/Le_Jeu_de_la_guerre_(livre)) » (1965) de Guy Debord.
