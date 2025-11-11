@@ -5,7 +5,7 @@ A votre tour de jeu, vous déplacez vos officiers, un baron et deux chevaliers, 
 
 La course à la terre sera rude, car vos adversaires pourront bloquer vos ordres ou attaquer vos troupes et vos donjons. Quel baron sera le plus riche en terre avant tous les autres ?
 
-Terre de Barons est un wargame abstrait et léger dans lequel le hasard s'applique aux ressources, mais pas aux batailles
+Terre de Barons est un wargame léger dans lequel le hasard s'applique aux ressources du tour de jeu, mais pas aux batailles.
 
 <img src="./pictures/Terre-de-Barons-2025-1105.jpg" style="zoom:100%;" />
 
