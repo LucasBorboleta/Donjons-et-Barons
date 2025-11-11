@@ -7,7 +7,7 @@ La course à la terre sera rude, car vos adversaires pourront bloquer vos ordres
 
 Terre de Barons est un wargame abstrait et léger dans lequel le hasard s'applique aux ressources, mais pas aux batailles
 
-<img src="./pictures/la-boite-donjons-et-barons-2025-1004-1906.jpg" width="300"/>
+<img src="./pictures/Terre-de-Barons-2025-1105.jpg" style="zoom:100%;" />
 
 <img src="./pictures/Terre-de-Barons-2025-1109-1024-36.jpg" style="zoom:100%;" />
 
@@ -42,3 +42,5 @@ Le concept du choix d'un ordre de dispersion/concentration/recrutement depuis un
 <img src="./pictures/Terre-de-Barons-2025-1109-0952-42.jpg" style="zoom:100%;" />
 
 <img src="./pictures/Terre-de-Barons-2025-1109-1014-16.jpg" style="zoom:100%;" />
+
+<img src="./pictures/la-boite-donjons-et-barons-2025-1004-1906.jpg" width="100%"/>
