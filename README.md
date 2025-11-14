@@ -13,7 +13,7 @@ Terre de Barons est un wargame léger dans lequel le hasard s'applique aux resso
 
 Voir situations de jeu sur les [photos](#Photos) ci-dessous. Voir les fichiers "[Word](./Donjons-et-Barons-les-regles.docx)" ou "[PDF](./Donjons-et-Barons-les-regles.pdf)" pour les **règles détaillées** (also available in "[English](./Donjons-and-Barons-the-rules.pdf)").
 
-Voir la playlist **YouTube** [Donjons-et-Barons](https://www.youtube.com/playlist?list=PLui_B_YF7szOCI3bv5orTqHsCmiYBMkyT) pour des vidéos sur les **règles** et des **parties** filmées.
+Voir la playlist **YouTube** [Terre-de-Barons](https://www.youtube.com/playlist?list=PLui_B_YF7szOCI3bv5orTqHsCmiYBMkyT) pour des vidéos sur les **règles** et des **parties** filmées.
 
 Ce projet est en phase avancée de test.
 
