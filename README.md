@@ -17,7 +17,7 @@ Voir la playlist **YouTube** [Terre-de-Barons](https://www.youtube.com/playlist?
 
 Ce projet est en phase avancée de test.
 
-<img src="./pictures/Tabletopia-Logo.png" width="100"/>[Playtest "Donjons & Barons" on Tabletopia](https://tabletopia.com/games/donjons-et-barons-qtzv6q/680x340) 
+<img src="./pictures/Tabletopia-Logo.png" width="100"/>[Playtest "Land of Barons" on Tabletopia](https://tabletopia.com/games/land-of-barons-4zur8p/680x340) 
 
 ## Informations générales
 
