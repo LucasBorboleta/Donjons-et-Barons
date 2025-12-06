@@ -20,6 +20,14 @@ Cet usage de "trésor" n'est pas compté dans les deux actions possibles de son 
 
 Un officier est déplacé à la position indiquée par la carte personnelle, qui est ensuite défaussée face cachée. Si le baron est déplacé vers une tuile contenant un baron adverse, alors les deux barons échangent leurs positions.
 
+Autre option à envisager : défausse face cachée d'un carte tactique et déplacement d'officier jusqu'à 3 tuiles :
+
+- C'est cohérence avec le dé de bonus de valeur 1 qui à permet de collecter au trésor (pioche d'une carte tactique). C'est un usage différent du dé de bonus pour un déplacement long d'officier.
+- C'est aussi une option qui procure plus de flexibilité.
+- Faut-il introduire deux qualificatifs au terme "chevauchée" pour distinguer ces deux types de chevauchée ?
+  - Chevauchée éclair => au plus 3 tuiles
+  - Chevauchée lointaine => saut à la position indiquée sur la carte tactique
+
 Cet usage de la "chevauchée" est compté comme "déplacement d'officier" ; c'est donc une des deux actions possibles du tour de jeu.
 
 ## Révision de la mécanique de capture de donjon
@@ -48,7 +56,7 @@ Mais les parties à 3 et 4 joueurs sommes impactées. Par exemple, dans une tuil
 
 ## Révision du blocage par les troupes
 
-Dans les règles anciennes, la présence de troupes adverses sur une case de commandement bloque le recrutement et la déconstruction.
+Dans les règles anciennes, la présence de troupes adverses sur une case de commandement bloque le recrutement et la déconstruction. Dans les nouvelles règles, il y a obligation de "combo forcé" : recrutement en 1ère action + attaque sans déplacement (qui n'existe pas autre part dans le gameplay).
 
 Analysons les conséquences d'une suppression de ces deux blocages.
 
@@ -62,7 +70,7 @@ Conséquence pour la **déconstruction** :
 
 Conséquence pour le **recrutement** :
 
-- Cela permet un forme d'auto-défense de la tuile de commandement lorsque le tuile de commandement est de type "donjon + chevalier" ; la menace étant la destruction du donjon. Cela implique que l'attaque d'un donjon doit engager directement au moins 3 troupes adverses, plutôt que d'envoyer 2 troupes dans un premier tour, puis 1 troupe fatale dans un second tour. C'est en général un engagement en 1 tour qui est pratiqué. Donc l'auto-défense de la tuile "donjon + chevalier" ne devrait être utilisée que marginalement.
+- Cela permet une forme d'auto-défense de la tuile de commandement lorsque le tuile de commandement est de type "donjon + chevalier" ; la menace étant la destruction du donjon. Cela implique que l'attaque d'un donjon doit engager directement au moins 3 troupes adverses, plutôt que d'envoyer 2 troupes dans un premier tour, puis 1 troupe fatale dans un second tour. C'est en général un engagement en 1 tour qui est pratiqué. Donc l'auto-défense de la tuile "donjon + chevalier" ne devrait être utilisée que marginalement.
 - S'agissant de la libération du recrutement pour la tuile de commandement de type "baron", les conséquences sont différentes. En effet, le baron n'a pas à se défendre en soi, puisqu'il ne peut pas être pris. L'auto-défense, cependant, se conçoit pour une configuration "baron + donjon", dans laquelle le baron défend le donjon qu'il occupe en recrutant des troupes. Donc, là aussi l'auto-défense se justifie, et se n'est pas trop gênant, dans la mesure où, en pratique, la destruction de donjon se fait par engagement direct d'au moins 3 troupes adverses en un seule tour.
 - Parlons maintenant d'une conséquence offensive par recrutement du baron. La tactique offensive du baron serait : déplacer le baron sur une tuile contenant des troupes adverses et recruter pour les attaquer. Un déplacement de 1 case rend possible l'utilisation du bonus pour recruter, donc en 1 tour, cela rend possible une attaque de troupes adverses (bonus 5 ou 6). Un déplacement par "chevauchée éclair" + usage du bonus permet là-encore une destruction de 3 troupes lointaines. Sinon, l'usage du bonus pour le déplacement permet l'attaque d'une troupe adverse distance de 3 tuiles.
 - Jugement :
