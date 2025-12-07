@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Ce mémo recueille des idées de "twists".
+Ce mémo recueille une nouvelle vague d'idées de "twists".
 
 ## Nouvelles mécaniques
 
@@ -22,4 +22,15 @@ Après la mise en place des montagnes, une carte tactique est piochée et retour
 
 - **Cité marchande** : sa **lettre** indique les tuiles qui bénéficient de **2 points supplémentaires** lorsqu'un donjon y est construit.
 - **Ville franche** : sa **position** indique la tuile qui bénéficie de **4 points supplémentaires** lorsqu'un donjon y est construit.
+
+La ville franche n'est pas compté comme "cité marchande".
+
+Cette mécanique place sur le "marché" 4 + 2 + 2 + 2 = 10 points supplémentaires à partager entre les joueurs.
+
+## Révision des points de défi
+
+Compte tenu des remarques des joueurs qui trouvent les parties de "Terre de Barons" pas assez longues, et sachant que les simulations Python ne prennent pas en compte les affrontements, ni les points supplémentaires pour diversité (ni les suppléments de points pour cités marchandes et ville franche), envisageons d'augmenter les points de défi. Pour cela, la simulation est passée de 1_000 à 10_000 parties, et du joueur classé en meilleur position, ce sont ses quantiles 75% qui seront retenus, plutôt que ses quantiles 25%. Cela donne :
+- **19 points** à 2 joueurs (soit +3 points)
+- **14 points** à 3 joueurs (soit +2 points);
+- **12 points** à 4 joueurs (soit +2 points).
 
