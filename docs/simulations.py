@@ -821,9 +821,9 @@ if False:
     make_statistics_on_distances(mountain_count=4)
  
 if True:
-    make_statistics_on_points_by_moving(mountain_count=4, player_count=2, test_count=1_000, ranking=True)
-    make_statistics_on_points_by_moving(mountain_count=4, player_count=3, test_count=1_000, ranking=True)
-    make_statistics_on_points_by_moving(mountain_count=4, player_count=4, test_count=1_000, ranking=True)
+    make_statistics_on_points_by_moving(mountain_count=4, player_count=2, test_count=10_000, ranking=True)
+    make_statistics_on_points_by_moving(mountain_count=4, player_count=3, test_count=10_000, ranking=True)
+    make_statistics_on_points_by_moving(mountain_count=4, player_count=4, test_count=10_000, ranking=True)
         
 print()
 _ = input("main: done ; press enter to terminate")
