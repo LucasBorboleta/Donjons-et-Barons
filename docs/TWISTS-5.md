@@ -10,7 +10,7 @@ Ce mémo recueille des idées de "twists".
 
 En plus des deux chevaliers mis en place en début de partie, le joueur peut mettre en œuvre le recrutement d'un troisième chevalier :
 
-- Le prix à payer est un dé de bonus de valeur 6 et la défausse d'une carte tactique.
+- Le prix à payer est un dé de bonus de valeur 6 et la défausse de 2 cartes tactiques.
 - Le chevalier recruté est placé sur la tuile du baron ou sur une tuile avec un donjon allié.
 - Cette manœuvre compte comme une action d'officier. 
 
@@ -18,8 +18,8 @@ En plus des deux chevaliers mis en place en début de partie, le joueur peut met
 
 Cette mécanique permet d'augmenter les points d'une tuile sur laquelle un donjon est construit.
 
-Après la mise en place des montagnes, une carte tactique est piochée et retournée :
+Après la mise en place des montagnes, une carte tactique est piochée et retournée ; sa lettre et sa position sont exploitée :
 
 - **Cité marchande** : sa lettre indique les tuiles qui bénéficient d'un supplément de 2 points lorsqu'un donjon y est construit.
-- **Ville franche** : Sa position indique la tuile qui bénéficie d'un supplément de 3 points lorsqu'un donjon y est construit.
+- **Ville franche** : sa position indique la tuile qui bénéficie d'un supplément de 4 points lorsqu'un donjon y est construit.
 
