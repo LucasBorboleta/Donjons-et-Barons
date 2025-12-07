@@ -25,7 +25,9 @@ Après la mise en place des montagnes, une carte tactique est piochée et retour
 
 La ville franche n'est pas compté comme "cité marchande".
 
-Cette mécanique place sur le "marché" 4 + 2 + 2 + 2 = 10 points supplémentaires à partager entre les joueurs.
+Au maximum, cette mécanique place sur le "marché" 4 + 2 + 2 + 2 = 10 points supplémentaires à partager entre les joueurs. En effet, les montages peuvent masquer de potentielles cités marchandes, mais jamais la ville franche.
+
+Pour une meilleur expérience des joueurs 3 petits cubes bois naturel + 1 petit cube blanc sont placés en début de partie pour indiquer les tuiles favorables à l'établissement des cités marchandes et de la ville franche.
 
 ## Révision des points de défi
 
