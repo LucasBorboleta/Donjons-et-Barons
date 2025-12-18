@@ -27,3 +27,16 @@ Dans le tour de jeu, le tirage d'une infortune :
 - Nécessite d'utiliser le dé de bonus ET une défausse de carte tactique.
 - Est jouée à la place d'une action d'officier.
 
+## Révision de mécaniques existantes
+
+### Recrutement sur un donjon adverse
+
+Actuellement, la présence d'un donjon adverse dans une tuile de commandement empêche le recrutement. Cependant, la présence de troupes adverses n'empêche pas le recrutement, mais seulement oblige à un combo spécial/forcé "recrutement + attaque de troupes". Idem pour la déconstruction en présence de troupes adverses. Cette situation complique les règles par maque d'uniformité.
+
+Il est donc suggéré de rendre **possible le recrutement en présence d'un donjon adverse**, avec un combo spécial/forcé "recrutement + attaque forcée". Si aucune "attaque forcée" (des éventuelles troupes adverses ou du donjon adverse) n'a lieu, alors une seconde action du joueur est possible.
+
+Examinons divers cas particuliers :
+
+- Présence d'un donjon adverse seul + dé de 6 qui recrute 3 troupes : le donjon adverse est détruit ; fin du tour
+- Présence d'un donjon adverse et de 2 troupes adverses dans une tuile T1 + dé de 6 qui recrute 4 troupes : d'abord les 2 troupes adverses sont détruites, puis le donjon adverse est détruit ; fin du tour.
+- Présence d'un donjon adverse seul + dé de 1 qui recrute 1 troupe : le donjon adverse n'est pas détruit ; une autre action est possible dans le tour.
