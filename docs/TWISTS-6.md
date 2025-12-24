@@ -19,13 +19,23 @@ L'infortune est déterminé par le dé de bonus :
 
 Discussion :
 
-- Il y a 37 tuiles, dont 4 pour les montagnes; ce qui laisse 33 tuiles. Les simulations indiquent qu'en moyenne 10 donjons sont construits en fin de partie, et que par conséquent 23 tuiles sont en moyenne ni des montages, ni des donjons.
+- Il y a 37 tuiles, dont 4 pour les montagnes; ce qui laisse 33 tuiles sélectionnables. Les simulations indiquent qu'en moyenne 10 donjons sont construits en fin de partie, et que par conséquent 23 tuiles ne sont pas des cibles. Typiquement, il y a donc 10 tuiles cibles parmi 33 tuiles sélectionnables.
 
 - Si une position est tirée, alors la probabilité de toucher un donjon est 10/33 = 30%.
 
 - Si deux positions sont tirées, alors la probabilité de toucher au moins un donjon est 1 - 23x22/(33x32) = 52%.
 
 - Si trois positions sont tirées, alors la probabilité de toucher au moins un donjon est 1 - 23x22x21/(33x32x31) = 67.5%.
+
+En fonction du nombre de tuiles cibles, le tableau suivant montre la probabilité de toucher au moins une tuile cible en tirant 3 cartes tactiques d'infortune. En fin de partie à 2 joueurs, si un des joueurs est sur le point de stopper la partie par pénurie de troupes et en même temps de gagner, alors ce joueur aurait typiquement 4 ou 5 tuiles à cibler. La probabilité de toucher une de ses tuiles cibles est alors entre 33% et 40%. C'est assez faible, mais pas trop. Par contre, dans ce genre de situation. Ce mécanisme ne serait en général pas suffisant pour renverser le cours de la partie.
+
+Conclusion : oui, le matériel du jeu permettrait de mettre en place un mécanisme d'infortunes. Mais ce n'est pas l'esprit du jeu. Donc on garde cette idée est réserve pour l'instant.
+
+| Tuiles  sélectionnables                          | 33   | 33   | 33   | 33   | 33   | 33   | 33   | 33   | 33   | 33   | 33   |
+| ------------------------------------------------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
+| Tuiles cibles                                    | 10   | 9    | 8    | 7    | 6    | 5    | 4    | 3    | 2    | 1    | 0    |
+| Tuiles hors  cibles                              | 23   | 24   | 25   | 26   | 27   | 28   | 29   | 30   | 31   | 32   | 33   |
+| Probabilité de  toucher au moins une tuile cible | 68%  | 63%  | 58%  | 52%  | 46%  | 40%  | 33%  | 26%  | 18%  | 9%   | 0%   |
 
 ## Mécanique révisée : Recrutement sur donjon adverse
 
