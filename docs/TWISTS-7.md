@@ -1,0 +1,25 @@
+# TWISTS-7
+
+## Introduction
+
+Ce mémo recueille une nouvelle vague d'idées de "twists".
+
+## Nouvelle mécanique : Combat singulier
+
+Motivation : contre-pouvoir au recrutement de un ou deux chevaliers supplémentaires
+
+**Coût** :  c'est une action d'officier, qui nécessite de défausser une **carte tactique**.
+
+**Condition** : les deux chevaliers en combat singulier doivent être sur une même tuile.
+
+Les **issues** possibles sont contrôlées par le **dé de bonus**, donc le joueur qui déclenche le combat singulier connait à l'avance l'issue :
+
+- dé de 1 ou 2 : les deux chevaliers sont touchés et tous deux retirés du terrain.
+
+- dé de 3 ou 4 : le chevalier adverse est touché et retiré du terrain ; le chevalier qui a provoqué le combat singulier reste sur le terrain.
+
+- dé de 5 ou 6 : les deux chevaliers sont indemnes.
+
+## Mécanique révisée : Recrutement de chevalier
+
+Actuellement, un troisième chevalier peut être recruté. La révision consiste à augmenter jusqu'à 2 chevaliers recrutables.
