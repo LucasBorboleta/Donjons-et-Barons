@@ -4,7 +4,7 @@
 
 Ce mémo recueille une nouvelle vague d'idées de "twists".
 
-## Nouvelle mécanique : Combat singulier
+## Nouvelle mécanique : Combat singulier, bannissement et rançon
 
 Motivation : contre-pouvoir au recrutement de un ou deux chevaliers supplémentaires
 
@@ -20,12 +20,24 @@ Les **issues** possibles sont contrôlées par le **dé de bonus**, donc le joue
 
 - dé de 5 ou 6 : les deux chevaliers sont indemnes.
 
-Autre possibilité, moins punitive :
+Voici une **alternative moins punitive** :
 
 - Le chevalier blessé n'est pas retiré du terrain, mais il est envoyé sur une autre tuile pour se refaire une santé.
-- Pour la métaphore thématique à vérifier que ça pourrait s'appeler un "bannissement" : voir aussi "bouter" et "forclusion".
-- Dans cette variante du "combat singulier", le dé de bonus n'a que deux issues : bannissement ou pas du chevalier adverse.
-- La tuile de bannissement est alors : soit une tuile à une distance d'au plus trois si la carte tactique est défaussée face cachée, soit la position de la carte tactique si celle-ci est défaussé face visible.
+- Pour la métaphore thématique à vérifier que ça pourrait s'appeler un "**bannissement**" : voir aussi "bouter" et "forclusion".
+- Dans cette variante du "combat singulier", le dé de bonus n'a que deux issues : 
+  - bannissement du chevalier adverse si le **dé de bonus** vaut **3 ou 4** ;
+  - sinon pas d'effet
+
+- La tuile de bannissement est alors : 
+  - soit une tuile à une distance d'au plus trois si la **carte tactique** est **défaussée face cachée** ;
+  - soit la position de la **carte tactique** si celle-ci est **défaussé face visible**.
+
+
+Option de **rançon** en **contre** au bannissement 
+
+- L'adversaire annule le bannissement contre la **cession** d'une **carte tactique** en sa possession.
+- Néanmoins, le joueur qui a provoquer le combat singulier doit bien toujours défausser une carte tactique.
+- Le contre par la rançon est annoncé avant que le joueur actif ne désigne la tuile de bannissement.
 
 ## Mécanique révisée : Recrutement de chevalier
 
