@@ -41,9 +41,9 @@ Option de **rançon** en **contre** au bannissement
 
 **Synthèse**:
 
-- Le bannissement est préférable à la mort ; c'est moins punitif !
+- Le bannissement du chevalier est préférable à la mort du chevalier ; c'est moins punitif !
 - La rançon n'est pas nécessaire ; le chevalier banni peut faire son retour express, soit par une chevauchée éclair, soit par une chevauchée lointaine, en attendant son tour de jeu.
-- Le narratif est à affiner.
+- Le narratif est à affiner : bouter 1 chevalier hors de sa tuile, sous-entendu après la perte de son duel contre mon chevalier.
 
 
 
