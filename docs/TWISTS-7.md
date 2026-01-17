@@ -39,6 +39,14 @@ Option de **rançon** en **contre** au bannissement
 - Néanmoins, le joueur qui a provoquer le combat singulier doit bien toujours défausser une carte tactique.
 - Le contre par la rançon est annoncé avant que le joueur actif ne désigne la tuile de bannissement.
 
+**Synthèse**:
+
+- Le bannissement est préférable à la mort ; c'est moins punitif !
+- La rançon n'est pas nécessaire ; le chevalier banni peut faire son retour express, soit par une chevauchée éclair, soit par une chevauchée lointaine, en attendant son tour de jeu.
+- Le narratif est à affiner.
+
+
+
 ## Mécanique révisée : Recrutement de chevalier
 
 Actuellement, un troisième chevalier peut être recruté. La révision consiste à augmenter jusqu'à 2 chevaliers recrutables.
