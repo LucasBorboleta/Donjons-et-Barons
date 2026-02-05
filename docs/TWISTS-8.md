@@ -11,7 +11,9 @@ Motivations :
 - alternative à "bouter/exiler" un chevalier par un chevalier ou un baron
 - contre-pouvoir au harcèlement du baron par des chevaliers
 
-**Action** : un baron peut exiler un chevalier adverse qui se trouve sur sa tuile. Cet exil est limité à un seul chevalier adverse. Le chevalier adverse est déplacé vers une tuile montagne choisie par le joueur courant. Le chevalier exilé pourrait sortir de sa montagne/prison par un déplacement au ton de jeu du joueur qui le possède.
+**Action** : un baron peut exiler un chevalier adverse qui se trouve sur sa tuile. Cet exil est limité à un seul chevalier adverse. Le chevalier adverse est déplacé vers une tuile adjacente à une montagne choisie par le joueur courant. Le chevalier exilé pourrait sortir de sa montagne/prison par un déplacement au ton de jeu du joueur qui le possède.
+
+**Remarque** : exiler à côté d'une montagne est plus efficace que dans une montagne ; cela permet de mettre plus de distance d'éloignement.
 
 **Coût** :  un dé de bonus de 3 ou 4 est requis (le cas échéant forcé par un appel au Trésor) et c'est la seule action du tour de jeu.
 
