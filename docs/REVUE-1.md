@@ -56,12 +56,16 @@ Notamment :
   - 3 crédit d'actions : 1 crédit par déplacement d'une tuile pour un officier ; 1 crédit par troupe recrutée.
   - cartes d'action en main => retour d'un aléa au travers des cartes piochées => mais plus de guidage des joueurs dans les possibilités
 
+- la chevauchée lointaine => comme un déplacement d'officier ordinaire, mais plus long et plus rare
+
   
 
 ## Ce qui pourrait être abandonné
 
 - les cartes tactiques
 - les infortunes
-- le recrutement de chevaliers supplémentaires
-- l'exil de chevaliers adverses par le baron
+- le recrutement de chevaliers supplémentaires ?
+- l'exil de chevaliers adverses par le baron ?
+- la chevauchée éclair
+- la chevauchée lointaine ?
 
