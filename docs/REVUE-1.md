@@ -68,4 +68,5 @@ Notamment :
 - l'exil de chevaliers adverses par le baron ?
 - la chevauchée éclair
 - la chevauchée lointaine ?
+- le recrutement favorable de troupes sur une tuile avec un donjon
 
