@@ -569,11 +569,12 @@ def make_statistics_on_points_by_moving(mountain_count=0, player_count=2, test_c
     donjon_count_sample = []
     round_sample = []
     turn_sample = []
+    max_points_by_round_sample = []
+
     player_points_sample = {player_index:[] for player_index in range(player_count)}
 
     debug_index = 0
     debug_count = 3
-    
     for test_index in range(test_count):
         
         debug_index += 1
@@ -631,19 +632,30 @@ def make_statistics_on_points_by_moving(mountain_count=0, player_count=2, test_c
         player_points = [0 for player_index in range(player_count)]
         player_diversities = [set() for player_index in range(player_count)]
         player_locations = random.sample(list(hexagon_for_players), player_count)
+        
+        fuel_list = []
+        for _ in range(9):
+            fuel_list.append(1)            
+            fuel_list.append(1)            
+            fuel_list.append(2)            
+            fuel_list.append(3)  
+            
+        for _ in range(100 - 9):
+            fuel_list.append(0)            
 
         points = 0
         donjon_count = 0
         player_index = 0
         
         iteration_index = 0
-        iteration_count = 100
+        iteration_count = 200
+        round_index = 0
         
         while len(free_set) != 0 and iteration_index < iteration_count:
             
             iteration_index += 1
             
-            fuel = random.choice([1, 2, 3])
+            fuel = random.choice(fuel_list)
             
             src = player_locations[player_index]
             other_player_locations = [player_locations[other_player_index] for other_player_index in range(player_count) if other_player_index != player_index]
@@ -704,6 +716,11 @@ def make_statistics_on_points_by_moving(mountain_count=0, player_count=2, test_c
                                   f" ; diversity = {player_diversities[player_index]}")
                         break
 
+            # Or skiping turn
+            elif fuel == 0:
+                if debug_index <= debug_count:
+                    print(f"at iteration {iteration_index} with {fuel} fuel, player {player_index} skips his turn !!!")
+            
             # Or get closest to the best possible target
             elif len(target_locations) == 0:
                 dst_dst2_distance_min = len(hexagon_names)
@@ -734,8 +751,18 @@ def make_statistics_on_points_by_moving(mountain_count=0, player_count=2, test_c
                     if debug_index <= debug_count:
                         print(f"at iteration {iteration_index} with {fuel} fuel, player {player_index} moved from {src} to {dst} ; chasing for {max_value} points !!!")
                    
-            
+            if player_index == (player_count - 1):
+                
+                if round_index > (len(max_points_by_round_sample) - 1):
+                    max_points_by_round_sample.append(set())
+                    
+                max_points_by_round_sample[round_index].add(max(player_points))
+                round_index += 1
+                    
             player_index = (player_index + 1) % player_count
+            
+            
+            max_points_by_round_sample
             
         if debug_index <= debug_count:
             print(f"{points} points gained at test {test_index} after {iteration_index}/{iteration_count} iterations")
@@ -756,8 +783,6 @@ def make_statistics_on_points_by_moving(mountain_count=0, player_count=2, test_c
             
         for player_index in range(player_count):
             player_points_sample[player_index].append(player_points[player_index])
-
-
             
 
     print()
@@ -813,6 +838,18 @@ def make_statistics_on_points_by_moving(mountain_count=0, player_count=2, test_c
         print(f"player {player_index}       max = {max(player_points_sample[player_index])}")
         print()
        
+        
+    print()
+    max_points_by_round_min = [ min(sample) for sample in max_points_by_round_sample]
+    max_points_by_round_mean = [ statistics.mean(sample) for sample in max_points_by_round_sample]
+    max_points_by_round_max = [ max(sample) for sample in max_points_by_round_sample]
+    for (round_index, 
+         (round_value_min, 
+         round_value_mean, 
+         round_value_max)) in enumerate(zip(max_points_by_round_min, 
+                                            max_points_by_round_mean, 
+                                            max_points_by_round_max)):
+        print(f"at round {round_index} max value min={round_value_min}, mean={round_value_mean:.1f}, max={round_value_max}")
 
     print()
     print("make_statistics_on_points_by_moving: done")
@@ -871,6 +908,6 @@ if True:
     make_statistics_on_points_by_moving(mountain_count=4, player_count=2, test_count=10_000, ranking=True)
     make_statistics_on_points_by_moving(mountain_count=4, player_count=3, test_count=10_000, ranking=True)
     make_statistics_on_points_by_moving(mountain_count=4, player_count=4, test_count=10_000, ranking=True)
-   
+    
 print()
 _ = input("main: done ; press enter to terminate")

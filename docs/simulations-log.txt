@@ -15,109 +15,322 @@ r4: #10 times 4 points
 total hexagon points = 94
 mean hexagon points = 2.5405405405405403
 
-at iteration 1 with 2 fuel, player 0 moved from 30 to 24 and gained 4 points (+0 diversity) ; accumulating 4 points ; diversity = {4}
-at iteration 2 with 3 fuel, player 1 moved from 20 to 9 and gained 4 points (+0 diversity) ; accumulating 4 points ; diversity = {4}
-at iteration 3 with 3 fuel, player 0 moved from 24 to 26 and gained 4 points (+0 diversity) ; accumulating 8 points ; diversity = {4}
-at iteration 4 with 2 fuel, player 1 moved from 9 to 7 and gained 4 points (+0 diversity) ; accumulating 8 points ; diversity = {4}
-at iteration 5 with 3 fuel, player 0 moved from 26 to 33 and gained 4 points (+0 diversity) ; accumulating 12 points ; diversity = {4}
-at iteration 6 with 2 fuel, player 1 moved from 7 to 5 and gained 5 points (+2 diversity) ; accumulating 13 points ; diversity = {3, 4}
-at iteration 7 with 3 fuel, player 0 moved from 33 to 36 and gained 4 points (+2 diversity) ; accumulating 16 points ; diversity = {2, 4}
-at iteration 8 with 1 fuel, player 1 moved from 5 to 6 ; chasing for 1 points !!!
-at iteration 9 with 2 fuel, player 0 moved from 36 to 34 and gained 2 points (+1 diversity) ; accumulating 18 points ; diversity = {1, 2, 4}
-at iteration 10 with 2 fuel, player 1 moved from 6 to 13 ; chasing for 1 points !!!
-at iteration 11 with 3 fuel, player 0 moved from 34 to 32 ; chasing for 1 points !!!
-at iteration 12 with 3 fuel, player 1 moved from 13 to 21 and gained 2 points (+1 diversity) ; accumulating 15 points ; diversity = {1, 3, 4}
-33 points gained at test 0 after 12/100 iterations
-points over players : [18, 15]
+at iteration 1 with 0 fuel, player 0 moved from 31 to 31 and gained 1 points (+0 diversity) ; accumulating 1 points ; diversity = {1}
+at iteration 2 with 0 fuel, player 1 moved from 34 to 34 and gained 1 points (+0 diversity) ; accumulating 1 points ; diversity = {1}
+at iteration 3 with 0 fuel, player 0 skips his turn !!!
+at iteration 4 with 0 fuel, player 1 skips his turn !!!
+at iteration 5 with 0 fuel, player 0 skips his turn !!!
+at iteration 6 with 1 fuel, player 1 moved from 34 to 29 ; chasing for 3 points !!!
+at iteration 7 with 0 fuel, player 0 skips his turn !!!
+at iteration 8 with 0 fuel, player 1 skips his turn !!!
+at iteration 9 with 2 fuel, player 0 moved from 31 to 27 and gained 6 points (+2 diversity) ; accumulating 7 points ; diversity = {1, 4}
+at iteration 10 with 0 fuel, player 1 skips his turn !!!
+at iteration 11 with 2 fuel, player 0 moved from 27 to 19 and gained 4 points (+1 diversity) ; accumulating 11 points ; diversity = {1, 3, 4}
+at iteration 12 with 0 fuel, player 1 skips his turn !!!
+at iteration 13 with 0 fuel, player 0 skips his turn !!!
+at iteration 14 with 0 fuel, player 1 skips his turn !!!
+at iteration 15 with 0 fuel, player 0 skips his turn !!!
+at iteration 16 with 0 fuel, player 1 skips his turn !!!
+at iteration 17 with 0 fuel, player 0 skips his turn !!!
+at iteration 18 with 0 fuel, player 1 skips his turn !!!
+at iteration 19 with 0 fuel, player 0 skips his turn !!!
+at iteration 20 with 0 fuel, player 1 skips his turn !!!
+at iteration 21 with 3 fuel, player 0 moved from 19 to 11 and gained 4 points (+0 diversity) ; accumulating 15 points ; diversity = {1, 3, 4}
+at iteration 22 with 0 fuel, player 1 skips his turn !!!
+at iteration 23 with 0 fuel, player 0 skips his turn !!!
+at iteration 24 with 3 fuel, player 1 moved from 29 to 16 and gained 6 points (+2 diversity) ; accumulating 7 points ; diversity = {1, 4}
+at iteration 25 with 0 fuel, player 0 skips his turn !!!
+at iteration 26 with 1 fuel, player 1 moved from 16 to 23 ; chasing for 2 points !!!
+at iteration 27 with 0 fuel, player 0 skips his turn !!!
+at iteration 28 with 0 fuel, player 1 skips his turn !!!
+at iteration 29 with 0 fuel, player 0 skips his turn !!!
+at iteration 30 with 2 fuel, player 1 moved from 23 to 24 and gained 3 points (+1 diversity) ; accumulating 10 points ; diversity = {1, 2, 4}
+at iteration 31 with 0 fuel, player 0 skips his turn !!!
+at iteration 32 with 0 fuel, player 1 skips his turn !!!
+at iteration 33 with 2 fuel, player 0 moved from 11 to 1 and gained 3 points (+1 diversity) ; accumulating 18 points ; diversity = {1, 2, 3, 4}
+at iteration 34 with 0 fuel, player 1 skips his turn !!!
+at iteration 35 with 0 fuel, player 0 skips his turn !!!
+at iteration 36 with 0 fuel, player 1 skips his turn !!!
+at iteration 37 with 0 fuel, player 0 skips his turn !!!
+at iteration 38 with 2 fuel, player 1 moved from 24 to 26 ; chasing for 3 points !!!
+at iteration 39 with 0 fuel, player 0 skips his turn !!!
+at iteration 40 with 0 fuel, player 1 skips his turn !!!
+at iteration 41 with 0 fuel, player 0 skips his turn !!!
+at iteration 42 with 0 fuel, player 1 skips his turn !!!
+at iteration 43 with 3 fuel, player 0 moved from 1 to 3 and gained 2 points (+0 diversity) ; accumulating 20 points ; diversity = {1, 2, 3, 4}
+at iteration 44 with 0 fuel, player 1 skips his turn !!!
+at iteration 45 with 0 fuel, player 0 skips his turn !!!
+at iteration 46 with 0 fuel, player 1 skips his turn !!!
+at iteration 47 with 0 fuel, player 0 skips his turn !!!
+at iteration 48 with 0 fuel, player 1 skips his turn !!!
+at iteration 49 with 0 fuel, player 0 skips his turn !!!
+at iteration 50 with 0 fuel, player 1 skips his turn !!!
+at iteration 51 with 0 fuel, player 0 skips his turn !!!
+at iteration 52 with 1 fuel, player 1 moved from 26 to 20 ; chasing for 3 points !!!
+at iteration 53 with 0 fuel, player 0 skips his turn !!!
+at iteration 54 with 0 fuel, player 1 skips his turn !!!
+at iteration 55 with 0 fuel, player 0 skips his turn !!!
+at iteration 56 with 1 fuel, player 1 moved from 20 to 14 and gained 4 points (+1 diversity) ; accumulating 14 points ; diversity = {1, 2, 3, 4}
+at iteration 57 with 1 fuel, player 0 moved from 3 to 4 ; chasing for 1 points !!!
+at iteration 58 with 0 fuel, player 1 skips his turn !!!
+at iteration 59 with 0 fuel, player 0 skips his turn !!!
+at iteration 60 with 0 fuel, player 1 skips his turn !!!
+at iteration 61 with 0 fuel, player 0 skips his turn !!!
+at iteration 62 with 0 fuel, player 1 skips his turn !!!
+at iteration 63 with 0 fuel, player 0 skips his turn !!!
+at iteration 64 with 0 fuel, player 1 skips his turn !!!
+at iteration 65 with 0 fuel, player 0 skips his turn !!!
+at iteration 66 with 0 fuel, player 1 skips his turn !!!
+at iteration 67 with 0 fuel, player 0 skips his turn !!!
+at iteration 68 with 1 fuel, player 1 moved from 14 to 21 ; chasing for 1 points !!!
+at iteration 69 with 3 fuel, player 0 moved from 4 to 22 and gained 1 points (+0 diversity) ; accumulating 21 points ; diversity = {1, 2, 3, 4}
+at iteration 70 with 0 fuel, player 1 skips his turn !!!
+at iteration 71 with 0 fuel, player 0 skips his turn !!!
+at iteration 72 with 0 fuel, player 1 skips his turn !!!
+at iteration 73 with 0 fuel, player 0 skips his turn !!!
+at iteration 74 with 0 fuel, player 1 skips his turn !!!
+at iteration 75 with 1 fuel, player 0 moved from 22 to 15 ; chasing for 2 points !!!
+at iteration 76 with 3 fuel, player 1 moved from 21 to 37 and gained 2 points (+0 diversity) ; accumulating 16 points ; diversity = {1, 2, 3, 4}
+37 points gained at test 0 after 76/200 iterations
+points over players : [21, 16]
 
-at iteration 1 with 2 fuel, player 0 moved from 22 to 33 and gained 3 points (+0 diversity) ; accumulating 3 points ; diversity = {3}
-at iteration 2 with 2 fuel, player 1 moved from 12 to 25 and gained 4 points (+0 diversity) ; accumulating 4 points ; diversity = {4}
-at iteration 3 with 1 fuel, player 0 moved from 33 to 32 ; chasing for 4 points !!!
-at iteration 4 with 3 fuel, player 1 moved from 25 to 36 and gained 4 points (+0 diversity) ; accumulating 8 points ; diversity = {4}
-at iteration 5 with 3 fuel, player 0 moved from 32 to 12 and gained 6 points (+2 diversity) ; accumulating 9 points ; diversity = {3, 4}
-at iteration 6 with 1 fuel, player 1 moved from 36 to 35 ; chasing for 3 points !!!
-at iteration 7 with 1 fuel, player 0 moved from 12 to 7 ; chasing for 3 points !!!
-at iteration 8 with 3 fuel, player 1 moved from 35 to 23 and gained 4 points (+0 diversity) ; accumulating 12 points ; diversity = {4}
-at iteration 9 with 3 fuel, player 0 moved from 7 to 10 and gained 3 points (+0 diversity) ; accumulating 12 points ; diversity = {3, 4}
-at iteration 10 with 2 fuel, player 1 moved from 23 to 34 and gained 5 points (+2 diversity) ; accumulating 17 points ; diversity = {3, 4}
-at iteration 11 with 2 fuel, player 0 moved from 10 to 1 and gained 2 points (+1 diversity) ; accumulating 14 points ; diversity = {1, 3, 4}
-at iteration 12 with 2 fuel, player 1 moved from 34 to 31 ; chasing for 1 points !!!
-at iteration 13 with 3 fuel, player 0 moved from 1 to 3 and gained 3 points (+0 diversity) ; accumulating 17 points ; diversity = {1, 3, 4}
-at iteration 14 with 3 fuel, player 1 moved from 31 to 20 and gained 2 points (+1 diversity) ; accumulating 19 points ; diversity = {1, 3, 4}
-at iteration 15 with 1 fuel, player 0 moved from 3 to 8 ; chasing for 1 points !!!
-at iteration 16 with 2 fuel, player 1 moved from 20 to 22 and gained 3 points (+1 diversity) ; accumulating 22 points ; diversity = {1, 2, 3, 4}
-39 points gained at test 1 after 16/100 iterations
-points over players : [22, 17]
+at iteration 1 with 3 fuel, player 0 moved from 13 to 21 and gained 4 points (+0 diversity) ; accumulating 4 points ; diversity = {4}
+at iteration 2 with 0 fuel, player 1 moved from 37 to 37 and gained 2 points (+0 diversity) ; accumulating 2 points ; diversity = {2}
+at iteration 3 with 2 fuel, player 0 moved from 21 to 19 and gained 5 points (+2 diversity) ; accumulating 9 points ; diversity = {3, 4}
+at iteration 4 with 0 fuel, player 1 skips his turn !!!
+at iteration 5 with 0 fuel, player 0 skips his turn !!!
+at iteration 6 with 0 fuel, player 1 skips his turn !!!
+at iteration 7 with 2 fuel, player 0 moved from 19 to 31 and gained 4 points (+0 diversity) ; accumulating 13 points ; diversity = {3, 4}
+at iteration 8 with 1 fuel, player 1 moved from 37 to 36 ; chasing for 4 points !!!
+at iteration 9 with 3 fuel, player 0 moved from 31 to 34 and gained 4 points (+0 diversity) ; accumulating 17 points ; diversity = {3, 4}
+at iteration 10 with 2 fuel, player 1 moved from 36 to 30 ; chasing for 1 points !!!
+at iteration 11 with 0 fuel, player 0 skips his turn !!!
+at iteration 12 with 0 fuel, player 1 skips his turn !!!
+at iteration 13 with 0 fuel, player 0 skips his turn !!!
+at iteration 14 with 0 fuel, player 1 skips his turn !!!
+at iteration 15 with 1 fuel, player 0 moved from 34 to 29 ; chasing for 1 points !!!
+at iteration 16 with 0 fuel, player 1 skips his turn !!!
+at iteration 17 with 0 fuel, player 0 skips his turn !!!
+at iteration 18 with 0 fuel, player 1 skips his turn !!!
+at iteration 19 with 0 fuel, player 0 skips his turn !!!
+at iteration 20 with 0 fuel, player 1 skips his turn !!!
+at iteration 21 with 0 fuel, player 0 skips his turn !!!
+at iteration 22 with 3 fuel, player 1 moved from 30 to 11 and gained 5 points (+2 diversity) ; accumulating 7 points ; diversity = {2, 3}
+at iteration 23 with 0 fuel, player 0 skips his turn !!!
+at iteration 24 with 0 fuel, player 1 skips his turn !!!
+at iteration 25 with 3 fuel, player 0 moved from 29 to 24 and gained 2 points (+1 diversity) ; accumulating 19 points ; diversity = {1, 3, 4}
+at iteration 26 with 1 fuel, player 1 moved from 11 to 5 ; chasing for 3 points !!!
+at iteration 27 with 2 fuel, player 0 moved from 24 to 11 ; chasing for 3 points !!!
+at iteration 28 with 0 fuel, player 1 skips his turn !!!
+at iteration 29 with 0 fuel, player 0 skips his turn !!!
+at iteration 30 with 3 fuel, player 1 moved from 5 to 1 and gained 3 points (+0 diversity) ; accumulating 10 points ; diversity = {2, 3}
+at iteration 31 with 0 fuel, player 0 skips his turn !!!
+at iteration 32 with 1 fuel, player 1 moved from 1 to 2 ; chasing for 3 points !!!
+at iteration 33 with 0 fuel, player 0 skips his turn !!!
+at iteration 34 with 0 fuel, player 1 skips his turn !!!
+at iteration 35 with 1 fuel, player 0 moved from 11 to 6 ; chasing for 3 points !!!
+at iteration 36 with 3 fuel, player 1 moved from 2 to 4 and gained 5 points (+1 diversity) ; accumulating 15 points ; diversity = {2, 3, 4}
+34 points gained at test 1 after 36/200 iterations
+points over players : [19, 15]
 
-at iteration 1 with 3 fuel, player 0 moved from 23 to 34 and gained 4 points (+0 diversity) ; accumulating 4 points ; diversity = {4}
-at iteration 2 with 1 fuel, player 1 moved from 9 to 15 and gained 4 points (+0 diversity) ; accumulating 4 points ; diversity = {4}
-at iteration 3 with 3 fuel, player 0 moved from 34 to 23 and gained 5 points (+2 diversity) ; accumulating 9 points ; diversity = {3, 4}
-at iteration 4 with 1 fuel, player 1 moved from 15 to 14 ; chasing for 3 points !!!
-at iteration 5 with 1 fuel, player 0 moved from 23 to 24 ; chasing for 2 points !!!
-at iteration 6 with 1 fuel, player 1 moved from 14 to 20 and gained 5 points (+2 diversity) ; accumulating 9 points ; diversity = {3, 4}
-at iteration 7 with 3 fuel, player 0 moved from 24 to 5 and gained 4 points (+0 diversity) ; accumulating 13 points ; diversity = {3, 4}
-at iteration 8 with 1 fuel, player 1 moved from 20 to 27 ; chasing for 4 points !!!
-at iteration 9 with 2 fuel, player 0 moved from 5 to 7 and gained 3 points (+0 diversity) ; accumulating 16 points ; diversity = {3, 4}
-at iteration 10 with 1 fuel, player 1 moved from 27 to 33 and gained 4 points (+0 diversity) ; accumulating 13 points ; diversity = {3, 4}
-at iteration 11 with 2 fuel, player 0 moved from 7 to 4 and gained 3 points (+1 diversity) ; accumulating 19 points ; diversity = {2, 3, 4}
-at iteration 12 with 3 fuel, player 1 moved from 33 to 31 and gained 3 points (+0 diversity) ; accumulating 16 points ; diversity = {3, 4}
-35 points gained at test 2 after 12/100 iterations
-points over players : [19, 16]
+at iteration 1 with 0 fuel, player 0 moved from 37 to 37 and gained 3 points (+0 diversity) ; accumulating 3 points ; diversity = {3}
+at iteration 2 with 0 fuel, player 1 skips his turn !!!
+at iteration 3 with 0 fuel, player 0 skips his turn !!!
+at iteration 4 with 0 fuel, player 1 skips his turn !!!
+at iteration 5 with 0 fuel, player 0 skips his turn !!!
+at iteration 6 with 1 fuel, player 1 moved from 33 to 28 and gained 4 points (+0 diversity) ; accumulating 4 points ; diversity = {4}
+at iteration 7 with 1 fuel, player 0 moved from 37 to 32 ; chasing for 1 points !!!
+at iteration 8 with 0 fuel, player 1 skips his turn !!!
+at iteration 9 with 0 fuel, player 0 skips his turn !!!
+at iteration 10 with 0 fuel, player 1 skips his turn !!!
+at iteration 11 with 1 fuel, player 0 moved from 32 to 31 and gained 3 points (+2 diversity) ; accumulating 6 points ; diversity = {1, 3}
+at iteration 12 with 0 fuel, player 1 skips his turn !!!
+at iteration 13 with 0 fuel, player 0 skips his turn !!!
+at iteration 14 with 0 fuel, player 1 skips his turn !!!
+at iteration 15 with 0 fuel, player 0 skips his turn !!!
+at iteration 16 with 0 fuel, player 1 skips his turn !!!
+at iteration 17 with 0 fuel, player 0 skips his turn !!!
+at iteration 18 with 0 fuel, player 1 skips his turn !!!
+at iteration 19 with 0 fuel, player 0 skips his turn !!!
+at iteration 20 with 0 fuel, player 1 skips his turn !!!
+at iteration 21 with 0 fuel, player 0 skips his turn !!!
+at iteration 22 with 0 fuel, player 1 skips his turn !!!
+at iteration 23 with 0 fuel, player 0 skips his turn !!!
+at iteration 24 with 2 fuel, player 1 moved from 28 to 15 and gained 4 points (+0 diversity) ; accumulating 8 points ; diversity = {4}
+at iteration 25 with 0 fuel, player 0 skips his turn !!!
+at iteration 26 with 0 fuel, player 1 skips his turn !!!
+at iteration 27 with 0 fuel, player 0 skips his turn !!!
+at iteration 28 with 1 fuel, player 1 moved from 15 to 14 ; chasing for 3 points !!!
+at iteration 29 with 2 fuel, player 0 moved from 31 to 24 and gained 5 points (+1 diversity) ; accumulating 11 points ; diversity = {1, 3, 4}
+at iteration 30 with 0 fuel, player 1 skips his turn !!!
+at iteration 31 with 1 fuel, player 0 moved from 24 to 29 ; chasing for 3 points !!!
+at iteration 32 with 0 fuel, player 1 skips his turn !!!
+at iteration 33 with 0 fuel, player 0 skips his turn !!!
+at iteration 34 with 1 fuel, player 1 moved from 14 to 8 and gained 5 points (+2 diversity) ; accumulating 13 points ; diversity = {3, 4}
+at iteration 35 with 0 fuel, player 0 skips his turn !!!
+at iteration 36 with 0 fuel, player 1 skips his turn !!!
+at iteration 37 with 0 fuel, player 0 skips his turn !!!
+at iteration 38 with 0 fuel, player 1 skips his turn !!!
+at iteration 39 with 0 fuel, player 0 skips his turn !!!
+at iteration 40 with 0 fuel, player 1 skips his turn !!!
+at iteration 41 with 0 fuel, player 0 skips his turn !!!
+at iteration 42 with 0 fuel, player 1 skips his turn !!!
+at iteration 43 with 0 fuel, player 0 skips his turn !!!
+at iteration 44 with 1 fuel, player 1 moved from 8 to 7 ; chasing for 4 points !!!
+at iteration 45 with 0 fuel, player 0 skips his turn !!!
+at iteration 46 with 0 fuel, player 1 skips his turn !!!
+at iteration 47 with 0 fuel, player 0 skips his turn !!!
+at iteration 48 with 0 fuel, player 1 skips his turn !!!
+at iteration 49 with 1 fuel, player 0 moved from 29 to 34 and gained 3 points (+0 diversity) ; accumulating 14 points ; diversity = {1, 3, 4}
+at iteration 50 with 0 fuel, player 1 skips his turn !!!
+at iteration 51 with 0 fuel, player 0 skips his turn !!!
+at iteration 52 with 0 fuel, player 1 skips his turn !!!
+at iteration 53 with 2 fuel, player 0 moved from 34 to 23 ; chasing for 1 points !!!
+at iteration 54 with 0 fuel, player 1 skips his turn !!!
+at iteration 55 with 0 fuel, player 0 skips his turn !!!
+at iteration 56 with 0 fuel, player 1 skips his turn !!!
+at iteration 57 with 0 fuel, player 0 skips his turn !!!
+at iteration 58 with 0 fuel, player 1 skips his turn !!!
+at iteration 59 with 1 fuel, player 0 moved from 23 to 16 and gained 1 points (+0 diversity) ; accumulating 15 points ; diversity = {1, 3, 4}
+at iteration 60 with 0 fuel, player 1 skips his turn !!!
+at iteration 61 with 0 fuel, player 0 skips his turn !!!
+at iteration 62 with 0 fuel, player 1 skips his turn !!!
+at iteration 63 with 0 fuel, player 0 skips his turn !!!
+at iteration 64 with 3 fuel, player 1 moved from 7 to 6 and gained 4 points (+0 diversity) ; accumulating 17 points ; diversity = {3, 4}
+at iteration 65 with 1 fuel, player 0 moved from 16 to 17 ; chasing for 1 points !!!
+at iteration 66 with 0 fuel, player 1 skips his turn !!!
+at iteration 67 with 0 fuel, player 0 skips his turn !!!
+at iteration 68 with 0 fuel, player 1 skips his turn !!!
+at iteration 69 with 3 fuel, player 0 moved from 17 to 20 and gained 3 points (+1 diversity) ; accumulating 18 points ; diversity = {1, 2, 3, 4}
+35 points gained at test 2 after 69/200 iterations
+points over players : [18, 17]
 
 --- mountain_count: 4 ---
 
-donjons     count = 9962
-donjons      mode = 9
+donjons     count = 9973
+donjons      mode = 10
 donjons      mean = 9.5
-donjons quartiles = [9.0, 9.0, 10.0]
-donjons   deciles = [8.0, 9.0, 9.0, 9.0, 9.0, 10.0, 10.0, 10.0, 11.0]
+donjons quartiles = [9.0, 10.0, 10.0]
+donjons   deciles = [8.0, 9.0, 9.0, 9.0, 10.0, 10.0, 10.0, 10.0, 11.0]
 donjons       min = 6
 donjons       max = 13
 
-points     count = 9962
+points     count = 9973
 points      mode = 34
-points      mean = 35.2
-points quartiles = [33.0, 35.0, 37.0]
-points   deciles = [31.0, 32.0, 34.0, 34.0, 35.0, 36.0, 37.0, 38.0, 39.0]
-points       min = 24
-points       max = 47
+points      mean = 34.1
+points quartiles = [32.0, 34.0, 36.0]
+points   deciles = [30.0, 31.0, 32.0, 33.0, 34.0, 35.0, 36.0, 37.0, 38.0]
+points       min = 21
+points       max = 46
 
 
-turns     count = 9962
-turns      mode = 14
-turns      mean = 14.5
-turns quartiles = [13.0, 14.0, 16.0]
-turns   deciles = [11.0, 12.0, 13.0, 14.0, 14.0, 15.0, 16.0, 17.0, 18.0]
-turns       min = 7
-turns       max = 27
+turns     count = 9973
+turns      mode = 49
+turns      mean = 52.5
+turns quartiles = [41.0, 51.0, 62.0]
+turns   deciles = [33.0, 39.0, 43.0, 47.0, 51.0, 55.0, 60.0, 65.0, 74.0]
+turns       min = 13
+turns       max = 143
 
 
-rounds     count = 9962
-rounds      mode = 7
-rounds      mean = 7.5
-rounds quartiles = [7.0, 7.0, 8.0]
-rounds   deciles = [6.0, 6.0, 7.0, 7.0, 7.0, 8.0, 8.0, 9.0, 9.0]
-rounds       min = 4
-rounds       max = 14
+rounds     count = 9973
+rounds      mode = 24
+rounds      mean = 26.5
+rounds quartiles = [21.0, 26.0, 31.0]
+rounds   deciles = [17.0, 20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 33.0, 37.0]
+rounds       min = 7
+rounds       max = 72
 
 
 --- points sorted by rank at each test ? : True ---
-player 0     count = 9962
+player 0     count = 9973
 player 0      mode = 20
-player 0      mean = 19.8
-player 0 quartiles = [18.0, 20.0, 21.0]
-player 0   deciles = [17.0, 18.0, 19.0, 19.0, 20.0, 20.0, 21.0, 22.0, 23.0]
-player 0       min = 13
-player 0       max = 30
+player 0      mean = 20.4
+player 0 quartiles = [18.0, 20.0, 22.0]
+player 0   deciles = [17.0, 18.0, 19.0, 19.0, 20.0, 21.0, 22.0, 23.0, 24.0]
+player 0       min = 12
+player 0       max = 34
 
-player 1     count = 9962
+player 1     count = 9973
 player 1      mode = 16
-player 1      mean = 15.4
-player 1 quartiles = [14.0, 16.0, 17.0]
-player 1   deciles = [12.0, 14.0, 15.0, 15.0, 16.0, 16.0, 16.0, 17.0, 18.0]
-player 1       min = 4
-player 1       max = 23
+player 1      mean = 13.7
+player 1 quartiles = [12.0, 14.0, 16.0]
+player 1   deciles = [10.0, 12.0, 12.0, 13.0, 14.0, 15.0, 16.0, 16.0, 17.0]
+player 1       min = 1
+player 1       max = 22
 
+
+at round 0 max value min=1, mean=2.5, max=4
+at round 1 max value min=1, mean=5.0, max=9
+at round 2 max value min=1, mean=7.0, max=13
+at round 3 max value min=1, mean=9.0, max=17
+at round 4 max value min=1, mean=10.5, max=20
+at round 5 max value min=1, mean=11.0, max=21
+at round 6 max value min=1, mean=12.5, max=25
+at round 7 max value min=1, mean=13.0, max=25
+at round 8 max value min=1, mean=13.0, max=25
+at round 9 max value min=1, mean=14.1, max=29
+at round 10 max value min=1, mean=14.6, max=29
+at round 11 max value min=1, mean=15.0, max=29
+at round 12 max value min=1, mean=15.0, max=29
+at round 13 max value min=2, mean=15.9, max=29
+at round 14 max value min=2, mean=15.9, max=29
+at round 15 max value min=4, mean=17.0, max=31
+at round 16 max value min=4, mean=17.0, max=31
+at round 17 max value min=4, mean=17.0, max=31
+at round 18 max value min=4, mean=18.4, max=31
+at round 19 max value min=4, mean=17.9, max=30
+at round 20 max value min=4, mean=18.4, max=31
+at round 21 max value min=4, mean=18.4, max=31
+at round 22 max value min=7, mean=19.5, max=32
+at round 23 max value min=7, mean=19.0, max=31
+at round 24 max value min=7, mean=19.5, max=32
+at round 25 max value min=7, mean=20.0, max=32
+at round 26 max value min=9, mean=21.0, max=34
+at round 27 max value min=10, mean=21.0, max=32
+at round 28 max value min=10, mean=21.0, max=32
+at round 29 max value min=10, mean=21.0, max=32
+at round 30 max value min=11, mean=21.5, max=32
+at round 31 max value min=11, mean=22.0, max=34
+at round 32 max value min=11, mean=21.5, max=32
+at round 33 max value min=11, mean=21.0, max=31
+at round 34 max value min=11, mean=21.0, max=31
+at round 35 max value min=11, mean=21.0, max=31
+at round 36 max value min=12, mean=21.0, max=30
+at round 37 max value min=12, mean=21.0, max=30
+at round 38 max value min=12, mean=21.0, max=30
+at round 39 max value min=13, mean=21.5, max=30
+at round 40 max value min=13, mean=21.5, max=30
+at round 41 max value min=13, mean=21.1, max=30
+at round 42 max value min=13, mean=21.6, max=30
+at round 43 max value min=13, mean=21.0, max=29
+at round 44 max value min=14, mean=21.6, max=30
+at round 45 max value min=15, mean=22.1, max=30
+at round 46 max value min=15, mean=21.6, max=30
+at round 47 max value min=15, mean=21.6, max=30
+at round 48 max value min=15, mean=22.3, max=32
+at round 49 max value min=16, mean=22.5, max=34
+at round 50 max value min=16, mean=21.0, max=26
+at round 51 max value min=16, mean=21.5, max=27
+at round 52 max value min=16, mean=21.0, max=26
+at round 53 max value min=16, mean=21.0, max=26
+at round 54 max value min=16, mean=21.0, max=26
+at round 55 max value min=16, mean=21.0, max=26
+at round 56 max value min=16, mean=20.3, max=24
+at round 57 max value min=16, mean=20.3, max=24
+at round 58 max value min=16, mean=20.3, max=24
+at round 59 max value min=16, mean=20.3, max=24
+at round 60 max value min=16, mean=20.3, max=24
+at round 61 max value min=16, mean=20.3, max=24
+at round 62 max value min=18, mean=21.2, max=24
+at round 63 max value min=18, mean=21.8, max=27
+at round 64 max value min=18, mean=21.0, max=23
+at round 65 max value min=20, mean=22.0, max=24
+at round 66 max value min=22, mean=23.0, max=24
+at round 67 max value min=22, mean=23.0, max=24
+at round 68 max value min=22, mean=23.0, max=24
+at round 69 max value min=24, mean=24.5, max=25
+at round 70 max value min=24, mean=24.0, max=24
 
 make_statistics_on_points_by_moving: done
 
@@ -130,117 +343,250 @@ r4: #10 times 4 points
 total hexagon points = 94
 mean hexagon points = 2.5405405405405403
 
-at iteration 1 with 2 fuel, player 0 moved from 20 to 32 and gained 4 points (+0 diversity) ; accumulating 4 points ; diversity = {4}
-at iteration 2 with 1 fuel, player 1 moved from 11 to 18 and gained 4 points (+0 diversity) ; accumulating 4 points ; diversity = {4}
-at iteration 3 with 3 fuel, player 2 moved from 12 to 15 and gained 4 points (+0 diversity) ; accumulating 4 points ; diversity = {4}
-at iteration 4 with 2 fuel, player 0 moved from 32 to 20 and gained 4 points (+0 diversity) ; accumulating 8 points ; diversity = {4}
-at iteration 5 with 3 fuel, player 1 moved from 18 to 23 and gained 4 points (+0 diversity) ; accumulating 8 points ; diversity = {4}
-at iteration 6 with 2 fuel, player 2 moved from 15 to 4 and gained 5 points (+2 diversity) ; accumulating 9 points ; diversity = {3, 4}
-at iteration 7 with 3 fuel, player 0 moved from 20 to 7 and gained 5 points (+2 diversity) ; accumulating 13 points ; diversity = {3, 4}
-at iteration 8 with 1 fuel, player 1 moved from 23 to 24 ; chasing for 4 points !!!
-at iteration 9 with 1 fuel, player 2 moved from 4 to 9 ; chasing for 3 points !!!
-at iteration 10 with 3 fuel, player 0 moved from 7 to 5 and gained 3 points (+0 diversity) ; accumulating 16 points ; diversity = {3, 4}
-at iteration 11 with 3 fuel, player 1 moved from 24 to 34 and gained 4 points (+0 diversity) ; accumulating 12 points ; diversity = {4}
-37 points gained at test 0 after 11/100 iterations
-points over players : [16, 12, 9]
+at iteration 1 with 0 fuel, player 0 moved from 3 to 3 and gained 1 points (+0 diversity) ; accumulating 1 points ; diversity = {1}
+at iteration 2 with 1 fuel, player 1 moved from 9 to 14 and gained 4 points (+0 diversity) ; accumulating 4 points ; diversity = {4}
+at iteration 3 with 0 fuel, player 2 moved from 16 to 16 and gained 3 points (+0 diversity) ; accumulating 3 points ; diversity = {3}
+at iteration 4 with 1 fuel, player 0 moved from 3 to 7 ; chasing for 4 points !!!
+at iteration 5 with 0 fuel, player 1 skips his turn !!!
+at iteration 6 with 0 fuel, player 2 skips his turn !!!
+at iteration 7 with 0 fuel, player 0 skips his turn !!!
+at iteration 8 with 0 fuel, player 1 skips his turn !!!
+at iteration 9 with 1 fuel, player 2 moved from 16 to 17 ; chasing for 4 points !!!
+at iteration 10 with 0 fuel, player 0 skips his turn !!!
+at iteration 11 with 2 fuel, player 1 moved from 14 to 19 and gained 4 points (+0 diversity) ; accumulating 8 points ; diversity = {4}
+at iteration 12 with 3 fuel, player 2 moved from 17 to 29 and gained 6 points (+2 diversity) ; accumulating 9 points ; diversity = {3, 4}
+at iteration 13 with 0 fuel, player 0 skips his turn !!!
+at iteration 14 with 0 fuel, player 1 skips his turn !!!
+at iteration 15 with 1 fuel, player 2 moved from 29 to 34 ; chasing for 3 points !!!
+at iteration 16 with 0 fuel, player 0 skips his turn !!!
+at iteration 17 with 0 fuel, player 1 skips his turn !!!
+at iteration 18 with 0 fuel, player 2 skips his turn !!!
+at iteration 19 with 0 fuel, player 0 skips his turn !!!
+at iteration 20 with 0 fuel, player 1 skips his turn !!!
+at iteration 21 with 3 fuel, player 2 moved from 34 to 32 and gained 4 points (+0 diversity) ; accumulating 13 points ; diversity = {3, 4}
+at iteration 22 with 0 fuel, player 0 skips his turn !!!
+at iteration 23 with 0 fuel, player 1 skips his turn !!!
+at iteration 24 with 0 fuel, player 2 skips his turn !!!
+at iteration 25 with 0 fuel, player 0 skips his turn !!!
+at iteration 26 with 0 fuel, player 1 skips his turn !!!
+at iteration 27 with 0 fuel, player 2 skips his turn !!!
+at iteration 28 with 0 fuel, player 0 skips his turn !!!
+at iteration 29 with 0 fuel, player 1 skips his turn !!!
+at iteration 30 with 1 fuel, player 2 moved from 32 to 36 ; chasing for 3 points !!!
+at iteration 31 with 0 fuel, player 0 skips his turn !!!
+at iteration 32 with 1 fuel, player 1 moved from 19 to 18 ; chasing for 2 points !!!
+at iteration 33 with 0 fuel, player 2 skips his turn !!!
+at iteration 34 with 3 fuel, player 0 moved from 7 to 6 and gained 6 points (+2 diversity) ; accumulating 7 points ; diversity = {1, 4}
+at iteration 35 with 0 fuel, player 1 skips his turn !!!
+at iteration 36 with 0 fuel, player 2 skips his turn !!!
+at iteration 37 with 0 fuel, player 0 skips his turn !!!
+at iteration 38 with 0 fuel, player 1 skips his turn !!!
+at iteration 39 with 0 fuel, player 2 skips his turn !!!
+at iteration 40 with 0 fuel, player 0 skips his turn !!!
+at iteration 41 with 0 fuel, player 1 skips his turn !!!
+at iteration 42 with 0 fuel, player 2 skips his turn !!!
+at iteration 43 with 0 fuel, player 0 skips his turn !!!
+at iteration 44 with 1 fuel, player 1 moved from 18 to 25 ; chasing for 3 points !!!
+at iteration 45 with 0 fuel, player 2 skips his turn !!!
+at iteration 46 with 0 fuel, player 0 skips his turn !!!
+at iteration 47 with 2 fuel, player 1 moved from 25 to 35 and gained 5 points (+2 diversity) ; accumulating 13 points ; diversity = {3, 4}
+at iteration 48 with 0 fuel, player 2 skips his turn !!!
+at iteration 49 with 0 fuel, player 0 skips his turn !!!
+at iteration 50 with 0 fuel, player 1 skips his turn !!!
+at iteration 51 with 3 fuel, player 2 moved from 36 to 28 and gained 3 points (+0 diversity) ; accumulating 16 points ; diversity = {3, 4}
+36 points gained at test 0 after 51/200 iterations
+points over players : [16, 13, 7]
 
-at iteration 1 with 3 fuel, player 0 moved from 1 to 6 and gained 4 points (+0 diversity) ; accumulating 4 points ; diversity = {4}
-at iteration 2 with 1 fuel, player 1 moved from 17 to 10 and gained 4 points (+0 diversity) ; accumulating 4 points ; diversity = {4}
-at iteration 3 with 2 fuel, player 2 moved from 5 to 17 ; chasing for 2 points !!!
-at iteration 4 with 1 fuel, player 0 moved from 6 to 6 ; chasing for 2 points !!!
-at iteration 5 with 2 fuel, player 1 moved from 10 to 24 and gained 4 points (+2 diversity) ; accumulating 8 points ; diversity = {2, 4}
-at iteration 6 with 1 fuel, player 2 moved from 17 to 23 ; chasing for 3 points !!!
-at iteration 7 with 1 fuel, player 0 moved from 6 to 6 ; chasing for 2 points !!!
-at iteration 8 with 2 fuel, player 1 moved from 24 to 34 and gained 4 points (+1 diversity) ; accumulating 12 points ; diversity = {2, 3, 4}
-at iteration 9 with 1 fuel, player 2 moved from 23 to 24 ; chasing for 1 points !!!
-at iteration 10 with 2 fuel, player 0 moved from 6 to 8 and gained 4 points (+2 diversity) ; accumulating 8 points ; diversity = {2, 4}
-at iteration 11 with 3 fuel, player 1 moved from 34 to 37 and gained 4 points (+0 diversity) ; accumulating 16 points ; diversity = {2, 3, 4}
-at iteration 12 with 1 fuel, player 2 moved from 24 to 29 ; chasing for 1 points !!!
-at iteration 13 with 3 fuel, player 0 moved from 8 to 21 and gained 4 points (+0 diversity) ; accumulating 12 points ; diversity = {2, 4}
-at iteration 14 with 1 fuel, player 1 moved from 37 to 32 ; chasing for 1 points !!!
-at iteration 15 with 1 fuel, player 2 moved from 29 to 24 ; chasing for 1 points !!!
-at iteration 16 with 3 fuel, player 0 moved from 21 to 31 and gained 2 points (+1 diversity) ; accumulating 14 points ; diversity = {1, 2, 4}
-30 points gained at test 1 after 16/100 iterations
-points over players : [16, 14, 0]
+at iteration 1 with 1 fuel, player 0 moved from 18 to 18 and gained 4 points (+0 diversity) ; accumulating 4 points ; diversity = {4}
+at iteration 2 with 0 fuel, player 1 skips his turn !!!
+at iteration 3 with 1 fuel, player 2 moved from 23 to 29 and gained 2 points (+0 diversity) ; accumulating 2 points ; diversity = {2}
+at iteration 4 with 0 fuel, player 0 skips his turn !!!
+at iteration 5 with 3 fuel, player 1 moved from 17 to 13 and gained 4 points (+0 diversity) ; accumulating 4 points ; diversity = {4}
+at iteration 6 with 1 fuel, player 2 moved from 29 to 34 ; chasing for 2 points !!!
+at iteration 7 with 0 fuel, player 0 skips his turn !!!
+at iteration 8 with 0 fuel, player 1 skips his turn !!!
+at iteration 9 with 0 fuel, player 2 skips his turn !!!
+at iteration 10 with 0 fuel, player 0 skips his turn !!!
+at iteration 11 with 0 fuel, player 1 skips his turn !!!
+at iteration 12 with 0 fuel, player 2 skips his turn !!!
+at iteration 13 with 0 fuel, player 0 skips his turn !!!
+at iteration 14 with 0 fuel, player 1 skips his turn !!!
+at iteration 15 with 1 fuel, player 2 moved from 34 to 35 and gained 2 points (+0 diversity) ; accumulating 4 points ; diversity = {2}
+at iteration 16 with 0 fuel, player 0 skips his turn !!!
+at iteration 17 with 0 fuel, player 1 skips his turn !!!
+at iteration 18 with 0 fuel, player 2 skips his turn !!!
+at iteration 19 with 0 fuel, player 0 skips his turn !!!
+at iteration 20 with 0 fuel, player 1 skips his turn !!!
+at iteration 21 with 0 fuel, player 2 skips his turn !!!
+at iteration 22 with 0 fuel, player 0 skips his turn !!!
+at iteration 23 with 1 fuel, player 1 moved from 13 to 20 ; chasing for 4 points !!!
+at iteration 24 with 3 fuel, player 2 moved from 35 to 26 and gained 6 points (+2 diversity) ; accumulating 10 points ; diversity = {2, 4}
+at iteration 25 with 0 fuel, player 0 skips his turn !!!
+at iteration 26 with 0 fuel, player 1 skips his turn !!!
+at iteration 27 with 2 fuel, player 2 moved from 26 to 21 and gained 2 points (+0 diversity) ; accumulating 12 points ; diversity = {2, 4}
+at iteration 28 with 3 fuel, player 0 moved from 18 to 10 and gained 4 points (+0 diversity) ; accumulating 8 points ; diversity = {4}
+at iteration 29 with 0 fuel, player 1 skips his turn !!!
+at iteration 30 with 0 fuel, player 2 skips his turn !!!
+at iteration 31 with 0 fuel, player 0 skips his turn !!!
+at iteration 32 with 0 fuel, player 1 skips his turn !!!
+at iteration 33 with 0 fuel, player 2 skips his turn !!!
+at iteration 34 with 3 fuel, player 0 moved from 10 to 6 and gained 5 points (+2 diversity) ; accumulating 13 points ; diversity = {3, 4}
+at iteration 35 with 0 fuel, player 1 skips his turn !!!
+at iteration 36 with 0 fuel, player 2 skips his turn !!!
+at iteration 37 with 0 fuel, player 0 skips his turn !!!
+at iteration 38 with 0 fuel, player 1 skips his turn !!!
+at iteration 39 with 0 fuel, player 2 skips his turn !!!
+at iteration 40 with 1 fuel, player 0 moved from 6 to 7 ; chasing for 3 points !!!
+at iteration 41 with 0 fuel, player 1 skips his turn !!!
+at iteration 42 with 3 fuel, player 2 moved from 21 to 9 and gained 4 points (+1 diversity) ; accumulating 16 points ; diversity = {2, 3, 4}
+at iteration 43 with 3 fuel, player 0 moved from 7 to 26 ; chasing for 4 points !!!
+at iteration 44 with 0 fuel, player 1 skips his turn !!!
+at iteration 45 with 0 fuel, player 2 skips his turn !!!
+at iteration 46 with 0 fuel, player 0 skips his turn !!!
+at iteration 47 with 2 fuel, player 1 moved from 20 to 31 ; chasing for 4 points !!!
+at iteration 48 with 0 fuel, player 2 skips his turn !!!
+at iteration 49 with 1 fuel, player 0 moved from 26 to 26 ; chasing for 4 points !!!
+at iteration 50 with 0 fuel, player 1 skips his turn !!!
+at iteration 51 with 0 fuel, player 2 skips his turn !!!
+at iteration 52 with 3 fuel, player 0 moved from 26 to 37 and gained 4 points (+0 diversity) ; accumulating 17 points ; diversity = {3, 4}
+37 points gained at test 1 after 52/200 iterations
+points over players : [17, 16, 4]
 
-at iteration 1 with 1 fuel, player 0 moved from 2 to 2 and gained 4 points (+0 diversity) ; accumulating 4 points ; diversity = {4}
-at iteration 2 with 1 fuel, player 1 moved from 12 to 19 and gained 1 points (+0 diversity) ; accumulating 1 points ; diversity = {1}
-at iteration 3 with 2 fuel, player 2 moved from 6 to 5 and gained 4 points (+0 diversity) ; accumulating 4 points ; diversity = {4}
-at iteration 4 with 2 fuel, player 0 moved from 2 to 4 and gained 4 points (+2 diversity) ; accumulating 8 points ; diversity = {2, 4}
-at iteration 5 with 3 fuel, player 1 moved from 19 to 36 and gained 6 points (+2 diversity) ; accumulating 7 points ; diversity = {1, 4}
-at iteration 6 with 3 fuel, player 2 moved from 5 to 16 and gained 4 points (+0 diversity) ; accumulating 8 points ; diversity = {4}
-at iteration 7 with 3 fuel, player 0 moved from 4 to 22 and gained 4 points (+0 diversity) ; accumulating 12 points ; diversity = {2, 4}
-at iteration 8 with 1 fuel, player 1 moved from 36 to 37 ; chasing for 3 points !!!
-at iteration 9 with 1 fuel, player 2 moved from 16 to 23 ; chasing for 2 points !!!
-at iteration 10 with 3 fuel, player 0 moved from 22 to 33 and gained 4 points (+1 diversity) ; accumulating 16 points ; diversity = {2, 3, 4}
-at iteration 11 with 3 fuel, player 1 moved from 37 to 30 and gained 3 points (+1 diversity) ; accumulating 10 points ; diversity = {1, 2, 4}
-at iteration 12 with 3 fuel, player 2 moved from 23 to 26 ; chasing for 3 points !!!
-at iteration 13 with 3 fuel, player 0 moved from 33 to 14 and gained 3 points (+0 diversity) ; accumulating 19 points ; diversity = {2, 3, 4}
-37 points gained at test 2 after 13/100 iterations
-points over players : [19, 10, 8]
+at iteration 1 with 0 fuel, player 0 moved from 17 to 17 and gained 1 points (+0 diversity) ; accumulating 1 points ; diversity = {1}
+at iteration 2 with 0 fuel, player 1 moved from 22 to 22 and gained 4 points (+0 diversity) ; accumulating 4 points ; diversity = {4}
+at iteration 3 with 0 fuel, player 2 moved from 35 to 35 and gained 2 points (+0 diversity) ; accumulating 2 points ; diversity = {2}
+at iteration 4 with 1 fuel, player 0 moved from 17 to 18 ; chasing for 4 points !!!
+at iteration 5 with 0 fuel, player 1 skips his turn !!!
+at iteration 6 with 3 fuel, player 2 moved from 35 to 26 and gained 6 points (+2 diversity) ; accumulating 8 points ; diversity = {2, 4}
+at iteration 7 with 0 fuel, player 0 skips his turn !!!
+at iteration 8 with 0 fuel, player 1 skips his turn !!!
+at iteration 9 with 3 fuel, player 2 moved from 26 to 37 and gained 4 points (+0 diversity) ; accumulating 12 points ; diversity = {2, 4}
+at iteration 10 with 0 fuel, player 0 skips his turn !!!
+at iteration 11 with 3 fuel, player 1 moved from 22 to 9 and gained 3 points (+2 diversity) ; accumulating 7 points ; diversity = {1, 4}
+at iteration 12 with 0 fuel, player 2 skips his turn !!!
+at iteration 13 with 0 fuel, player 0 skips his turn !!!
+at iteration 14 with 0 fuel, player 1 skips his turn !!!
+at iteration 15 with 0 fuel, player 2 skips his turn !!!
+at iteration 16 with 0 fuel, player 0 skips his turn !!!
+at iteration 17 with 2 fuel, player 1 moved from 9 to 3 and gained 4 points (+1 diversity) ; accumulating 11 points ; diversity = {1, 3, 4}
+at iteration 18 with 0 fuel, player 2 skips his turn !!!
+at iteration 19 with 0 fuel, player 0 skips his turn !!!
+at iteration 20 with 0 fuel, player 1 skips his turn !!!
+at iteration 21 with 3 fuel, player 2 moved from 37 to 30 ; chasing for 1 points !!!
+at iteration 22 with 0 fuel, player 0 skips his turn !!!
+at iteration 23 with 1 fuel, player 1 moved from 3 to 2 ; chasing for 4 points !!!
+at iteration 24 with 0 fuel, player 2 skips his turn !!!
+at iteration 25 with 2 fuel, player 0 moved from 18 to 6 and gained 6 points (+2 diversity) ; accumulating 7 points ; diversity = {1, 4}
+at iteration 26 with 1 fuel, player 1 moved from 2 to 2 ; chasing for 1 points !!!
+at iteration 27 with 1 fuel, player 2 moved from 30 to 29 and gained 2 points (+1 diversity) ; accumulating 14 points ; diversity = {1, 2, 4}
+32 points gained at test 2 after 27/200 iterations
+points over players : [14, 11, 7]
 
 --- mountain_count: 4 ---
 
-donjons     count = 9961
-donjons      mode = 9
-donjons      mean = 9.4
-donjons quartiles = [9.0, 9.0, 10.0]
-donjons   deciles = [8.0, 9.0, 9.0, 9.0, 9.0, 10.0, 10.0, 10.0, 11.0]
+donjons     count = 9963
+donjons      mode = 10
+donjons      mean = 9.5
+donjons quartiles = [9.0, 10.0, 10.0]
+donjons   deciles = [8.0, 9.0, 9.0, 9.0, 10.0, 10.0, 10.0, 10.0, 11.0]
 donjons       min = 6
 donjons       max = 13
 
-points     count = 9961
-points      mode = 36
-points      mean = 36.0
-points quartiles = [34.0, 36.0, 38.0]
-points   deciles = [32.0, 33.0, 34.0, 35.0, 36.0, 37.0, 38.0, 39.0, 40.0]
-points       min = 24
+points     count = 9963
+points      mode = 35
+points      mean = 34.4
+points quartiles = [32.0, 34.0, 37.0]
+points   deciles = [29.0, 31.0, 32.0, 33.0, 34.0, 35.0, 36.0, 38.0, 39.0]
+points       min = 20
 points       max = 48
 
 
-turns     count = 9961
-turns      mode = 13
-turns      mean = 14.4
-turns quartiles = [12.0, 14.0, 16.0]
-turns   deciles = [11.0, 12.0, 13.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0]
-turns       min = 7
-turns       max = 29
+turns     count = 9963
+turns      mode = 44
+turns      mean = 50.1
+turns quartiles = [38.0, 48.0, 60.0]
+turns   deciles = [31.0, 36.0, 41.0, 45.0, 48.0, 53.0, 57.0, 63.0, 72.0]
+turns       min = 10
+turns       max = 126
 
 
-rounds     count = 9961
-rounds      mode = 5
-rounds      mean = 5.2
-rounds quartiles = [4.0, 5.0, 6.0]
-rounds   deciles = [4.0, 4.0, 5.0, 5.0, 5.0, 5.0, 6.0, 6.0, 6.0]
-rounds       min = 3
-rounds       max = 10
+rounds     count = 9963
+rounds      mode = 15
+rounds      mean = 17.0
+rounds quartiles = [13.0, 16.0, 20.0]
+rounds   deciles = [11.0, 12.0, 14.0, 15.0, 16.0, 18.0, 19.0, 21.0, 24.0]
+rounds       min = 4
+rounds       max = 42
 
 
 --- points sorted by rank at each test ? : True ---
-player 0     count = 9961
+player 0     count = 9963
 player 0      mode = 16
-player 0      mean = 14.8
-player 0 quartiles = [13.0, 15.0, 16.0]
-player 0   deciles = [12.0, 13.0, 14.0, 14.0, 15.0, 16.0, 16.0, 16.0, 17.0]
-player 0       min = 9
-player 0       max = 26
+player 0      mean = 15.8
+player 0 quartiles = [14.0, 16.0, 17.0]
+player 0   deciles = [12.0, 14.0, 14.0, 15.0, 16.0, 16.0, 17.0, 18.0, 19.0]
+player 0       min = 7
+player 0       max = 30
 
-player 1     count = 9961
+player 1     count = 9963
 player 1      mode = 12
-player 1      mean = 12.0
-player 1 quartiles = [11.0, 12.0, 13.0]
-player 1   deciles = [10.0, 11.0, 12.0, 12.0, 12.0, 12.0, 12.0, 13.0, 14.0]
-player 1       min = 7
+player 1      mean = 11.4
+player 1 quartiles = [10.0, 12.0, 12.0]
+player 1   deciles = [8.4, 9.0, 11.0, 11.0, 12.0, 12.0, 12.0, 13.0, 14.0]
+player 1       min = 2
 player 1       max = 20
 
-player 2     count = 9961
+player 2     count = 9963
 player 2      mode = 8
-player 2      mean = 9.1
-player 2 quartiles = [8.0, 9.0, 11.0]
-player 2   deciles = [7.0, 8.0, 8.0, 8.0, 9.0, 9.0, 11.0, 11.0, 12.0]
+player 2      mean = 7.2
+player 2 quartiles = [6.0, 8.0, 9.0]
+player 2   deciles = [3.0, 4.0, 6.0, 7.0, 8.0, 8.0, 9.0, 9.0, 11.0]
 player 2       min = 0
-player 2       max = 16
+player 2       max = 15
 
+
+at round 0 max value min=1, mean=2.5, max=4
+at round 1 max value min=1, mean=5.0, max=9
+at round 2 max value min=1, mean=7.0, max=13
+at round 3 max value min=1, mean=9.0, max=17
+at round 4 max value min=1, mean=10.5, max=20
+at round 5 max value min=1, mean=11.0, max=22
+at round 6 max value min=1, mean=11.5, max=22
+at round 7 max value min=2, mean=12.0, max=22
+at round 8 max value min=2, mean=13.0, max=24
+at round 9 max value min=2, mean=13.5, max=25
+at round 10 max value min=3, mean=14.0, max=25
+at round 11 max value min=4, mean=15.0, max=26
+at round 12 max value min=4, mean=15.5, max=28
+at round 13 max value min=4, mean=15.1, max=28
+at round 14 max value min=4, mean=16.0, max=28
+at round 15 max value min=4, mean=16.0, max=28
+at round 16 max value min=6, mean=16.5, max=28
+at round 17 max value min=7, mean=17.0, max=28
+at round 18 max value min=7, mean=17.0, max=27
+at round 19 max value min=7, mean=16.0, max=25
+at round 20 max value min=7, mean=16.0, max=25
+at round 21 max value min=7, mean=16.0, max=25
+at round 22 max value min=7, mean=16.0, max=25
+at round 23 max value min=7, mean=16.5, max=26
+at round 24 max value min=8, mean=16.5, max=25
+at round 25 max value min=8, mean=16.1, max=25
+at round 26 max value min=8, mean=16.5, max=25
+at round 27 max value min=8, mean=16.7, max=28
+at round 28 max value min=8, mean=15.9, max=23
+at round 29 max value min=10, mean=16.5, max=23
+at round 30 max value min=10, mean=16.5, max=23
+at round 31 max value min=10, mean=16.5, max=23
+at round 32 max value min=10, mean=16.5, max=23
+at round 33 max value min=10, mean=15.9, max=23
+at round 34 max value min=10, mean=17.6, max=24
+at round 35 max value min=10, mean=17.6, max=24
+at round 36 max value min=10, mean=16.1, max=22
+at round 37 max value min=10, mean=15.6, max=22
+at round 38 max value min=10, mean=15.9, max=24
+at round 39 max value min=13, mean=15.3, max=17
+at round 40 max value min=13, mean=13.0, max=13
+at round 41 max value min=13, mean=13.0, max=13
 
 make_statistics_on_points_by_moving: done
 
@@ -253,132 +599,244 @@ r4: #10 times 4 points
 total hexagon points = 94
 mean hexagon points = 2.5405405405405403
 
-at iteration 1 with 2 fuel, player 0 moved from 2 to 12 and gained 4 points (+0 diversity) ; accumulating 4 points ; diversity = {4}
-at iteration 2 with 1 fuel, player 1 moved from 1 to 1 and gained 3 points (+0 diversity) ; accumulating 3 points ; diversity = {3}
-at iteration 3 with 1 fuel, player 2 moved from 13 to 14 and gained 2 points (+0 diversity) ; accumulating 2 points ; diversity = {2}
-at iteration 4 with 3 fuel, player 3 moved from 17 to 24 and gained 4 points (+0 diversity) ; accumulating 4 points ; diversity = {4}
-at iteration 5 with 2 fuel, player 0 moved from 12 to 10 and gained 5 points (+2 diversity) ; accumulating 9 points ; diversity = {3, 4}
-at iteration 6 with 2 fuel, player 1 moved from 1 to 3 and gained 3 points (+0 diversity) ; accumulating 6 points ; diversity = {3}
-at iteration 7 with 3 fuel, player 2 moved from 14 to 27 and gained 6 points (+2 diversity) ; accumulating 8 points ; diversity = {2, 4}
-at iteration 8 with 1 fuel, player 3 moved from 24 to 30 ; chasing for 4 points !!!
-at iteration 9 with 3 fuel, player 0 moved from 10 to 29 ; chasing for 1 points !!!
-at iteration 10 with 1 fuel, player 1 moved from 3 to 8 ; chasing for 4 points !!!
-at iteration 11 with 3 fuel, player 2 moved from 27 to 35 and gained 4 points (+0 diversity) ; accumulating 12 points ; diversity = {2, 4}
-at iteration 12 with 3 fuel, player 3 moved from 30 to 37 and gained 5 points (+2 diversity) ; accumulating 9 points ; diversity = {3, 4}
-at iteration 13 with 3 fuel, player 0 moved from 29 to 26 ; chasing for 4 points !!!
-at iteration 14 with 1 fuel, player 1 moved from 8 to 14 ; chasing for 4 points !!!
-at iteration 15 with 1 fuel, player 2 moved from 35 to 36 ; chasing for 4 points !!!
-at iteration 16 with 3 fuel, player 3 moved from 37 to 22 and gained 4 points (+0 diversity) ; accumulating 13 points ; diversity = {3, 4}
-40 points gained at test 0 after 16/100 iterations
-points over players : [13, 12, 9, 6]
+at iteration 1 with 0 fuel, player 0 moved from 5 to 5 and gained 2 points (+0 diversity) ; accumulating 2 points ; diversity = {2}
+at iteration 2 with 0 fuel, player 1 moved from 15 to 15 and gained 4 points (+0 diversity) ; accumulating 4 points ; diversity = {4}
+at iteration 3 with 0 fuel, player 2 moved from 8 to 8 and gained 1 points (+0 diversity) ; accumulating 1 points ; diversity = {1}
+at iteration 4 with 0 fuel, player 3 moved from 30 to 30 and gained 4 points (+0 diversity) ; accumulating 4 points ; diversity = {4}
+at iteration 5 with 0 fuel, player 0 skips his turn !!!
+at iteration 6 with 0 fuel, player 1 skips his turn !!!
+at iteration 7 with 1 fuel, player 2 moved from 8 to 13 ; chasing for 2 points !!!
+at iteration 8 with 0 fuel, player 3 skips his turn !!!
+at iteration 9 with 0 fuel, player 0 skips his turn !!!
+at iteration 10 with 0 fuel, player 1 skips his turn !!!
+at iteration 11 with 0 fuel, player 2 skips his turn !!!
+at iteration 12 with 0 fuel, player 3 skips his turn !!!
+at iteration 13 with 0 fuel, player 0 skips his turn !!!
+at iteration 14 with 0 fuel, player 1 skips his turn !!!
+at iteration 15 with 0 fuel, player 2 skips his turn !!!
+at iteration 16 with 0 fuel, player 3 skips his turn !!!
+at iteration 17 with 3 fuel, player 0 moved from 5 to 17 and gained 6 points (+2 diversity) ; accumulating 8 points ; diversity = {2, 4}
+at iteration 18 with 2 fuel, player 1 moved from 15 to 22 ; chasing for 3 points !!!
+at iteration 19 with 1 fuel, player 2 moved from 13 to 19 and gained 4 points (+2 diversity) ; accumulating 5 points ; diversity = {1, 2}
+at iteration 20 with 0 fuel, player 3 skips his turn !!!
+at iteration 21 with 0 fuel, player 0 skips his turn !!!
+at iteration 22 with 0 fuel, player 1 skips his turn !!!
+at iteration 23 with 0 fuel, player 2 skips his turn !!!
+at iteration 24 with 3 fuel, player 3 moved from 30 to 32 and gained 4 points (+0 diversity) ; accumulating 8 points ; diversity = {4}
+at iteration 25 with 1 fuel, player 0 moved from 17 to 11 ; chasing for 1 points !!!
+at iteration 26 with 0 fuel, player 1 skips his turn !!!
+at iteration 27 with 1 fuel, player 2 moved from 19 to 13 ; chasing for 1 points !!!
+at iteration 28 with 0 fuel, player 3 skips his turn !!!
+at iteration 29 with 0 fuel, player 0 skips his turn !!!
+at iteration 30 with 0 fuel, player 1 skips his turn !!!
+at iteration 31 with 1 fuel, player 2 moved from 13 to 13 ; chasing for 1 points !!!
+at iteration 32 with 0 fuel, player 3 skips his turn !!!
+at iteration 33 with 1 fuel, player 0 moved from 11 to 6 ; chasing for 1 points !!!
+at iteration 34 with 0 fuel, player 1 skips his turn !!!
+at iteration 35 with 3 fuel, player 2 moved from 13 to 2 and gained 1 points (+0 diversity) ; accumulating 6 points ; diversity = {1, 2}
+26 points gained at test 0 after 35/200 iterations
+points over players : [8, 8, 6, 4]
 
-at iteration 1 with 3 fuel, player 0 moved from 36 to 24 and gained 4 points (+0 diversity) ; accumulating 4 points ; diversity = {4}
-at iteration 2 with 3 fuel, player 1 moved from 30 to 20 and gained 4 points (+0 diversity) ; accumulating 4 points ; diversity = {4}
-at iteration 3 with 3 fuel, player 2 moved from 22 to 9 and gained 4 points (+0 diversity) ; accumulating 4 points ; diversity = {4}
-at iteration 4 with 2 fuel, player 3 moved from 1 to 6 and gained 4 points (+0 diversity) ; accumulating 4 points ; diversity = {4}
-at iteration 5 with 1 fuel, player 0 moved from 24 to 23 ; chasing for 4 points !!!
-at iteration 6 with 3 fuel, player 1 moved from 20 to 22 and gained 5 points (+2 diversity) ; accumulating 9 points ; diversity = {3, 4}
-at iteration 7 with 3 fuel, player 2 moved from 9 to 26 ; chasing for 2 points !!!
-at iteration 8 with 3 fuel, player 3 moved from 6 to 16 and gained 4 points (+0 diversity) ; accumulating 8 points ; diversity = {4}
-at iteration 9 with 2 fuel, player 0 moved from 23 to 34 and gained 5 points (+2 diversity) ; accumulating 9 points ; diversity = {3, 4}
-at iteration 10 with 3 fuel, player 1 moved from 22 to 37 and gained 2 points (+1 diversity) ; accumulating 11 points ; diversity = {1, 3, 4}
-at iteration 11 with 1 fuel, player 2 moved from 26 to 31 and gained 4 points (+2 diversity) ; accumulating 8 points ; diversity = {2, 4}
-36 points gained at test 1 after 11/100 iterations
-points over players : [11, 9, 8, 8]
+at iteration 1 with 0 fuel, player 0 moved from 6 to 6 and gained 4 points (+0 diversity) ; accumulating 4 points ; diversity = {4}
+at iteration 2 with 3 fuel, player 1 moved from 18 to 17 and gained 4 points (+0 diversity) ; accumulating 4 points ; diversity = {4}
+at iteration 3 with 0 fuel, player 2 skips his turn !!!
+at iteration 4 with 0 fuel, player 3 moved from 13 to 13 and gained 1 points (+0 diversity) ; accumulating 1 points ; diversity = {1}
+at iteration 5 with 0 fuel, player 0 skips his turn !!!
+at iteration 6 with 0 fuel, player 1 skips his turn !!!
+at iteration 7 with 0 fuel, player 2 skips his turn !!!
+at iteration 8 with 1 fuel, player 3 moved from 13 to 8 ; chasing for 4 points !!!
+at iteration 9 with 0 fuel, player 0 skips his turn !!!
+at iteration 10 with 0 fuel, player 1 skips his turn !!!
+at iteration 11 with 3 fuel, player 2 moved from 5 to 3 and gained 4 points (+0 diversity) ; accumulating 4 points ; diversity = {4}
+at iteration 12 with 1 fuel, player 3 moved from 8 to 9 and gained 5 points (+2 diversity) ; accumulating 6 points ; diversity = {1, 3}
+at iteration 13 with 0 fuel, player 0 skips his turn !!!
+at iteration 14 with 2 fuel, player 1 moved from 17 to 30 and gained 5 points (+2 diversity) ; accumulating 9 points ; diversity = {3, 4}
+at iteration 15 with 0 fuel, player 2 skips his turn !!!
+at iteration 16 with 0 fuel, player 3 skips his turn !!!
+at iteration 17 with 2 fuel, player 0 moved from 6 to 19 ; chasing for 3 points !!!
+at iteration 18 with 0 fuel, player 1 skips his turn !!!
+at iteration 19 with 3 fuel, player 2 moved from 3 to 20 ; chasing for 3 points !!!
+at iteration 20 with 0 fuel, player 3 skips his turn !!!
+at iteration 21 with 1 fuel, player 0 moved from 19 to 25 ; chasing for 3 points !!!
+at iteration 22 with 1 fuel, player 1 moved from 30 to 31 ; chasing for 3 points !!!
+at iteration 23 with 0 fuel, player 2 skips his turn !!!
+at iteration 24 with 0 fuel, player 3 skips his turn !!!
+at iteration 25 with 0 fuel, player 0 skips his turn !!!
+at iteration 26 with 0 fuel, player 1 skips his turn !!!
+at iteration 27 with 0 fuel, player 2 skips his turn !!!
+at iteration 28 with 0 fuel, player 3 skips his turn !!!
+at iteration 29 with 0 fuel, player 0 skips his turn !!!
+at iteration 30 with 0 fuel, player 1 skips his turn !!!
+at iteration 31 with 0 fuel, player 2 skips his turn !!!
+at iteration 32 with 1 fuel, player 3 moved from 9 to 15 ; chasing for 3 points !!!
+at iteration 33 with 0 fuel, player 0 skips his turn !!!
+at iteration 34 with 1 fuel, player 1 moved from 31 to 32 and gained 3 points (+0 diversity) ; accumulating 12 points ; diversity = {3, 4}
+at iteration 35 with 0 fuel, player 2 skips his turn !!!
+at iteration 36 with 0 fuel, player 3 skips his turn !!!
+at iteration 37 with 0 fuel, player 0 skips his turn !!!
+at iteration 38 with 0 fuel, player 1 skips his turn !!!
+at iteration 39 with 0 fuel, player 2 skips his turn !!!
+at iteration 40 with 0 fuel, player 3 skips his turn !!!
+at iteration 41 with 0 fuel, player 0 skips his turn !!!
+at iteration 42 with 0 fuel, player 1 skips his turn !!!
+at iteration 43 with 0 fuel, player 2 skips his turn !!!
+at iteration 44 with 0 fuel, player 3 skips his turn !!!
+at iteration 45 with 0 fuel, player 0 skips his turn !!!
+at iteration 46 with 0 fuel, player 1 skips his turn !!!
+at iteration 47 with 3 fuel, player 2 moved from 20 to 28 and gained 5 points (+2 diversity) ; accumulating 9 points ; diversity = {3, 4}
+31 points gained at test 1 after 47/200 iterations
+points over players : [12, 9, 6, 4]
 
-at iteration 1 with 2 fuel, player 0 moved from 5 to 2 and gained 4 points (+0 diversity) ; accumulating 4 points ; diversity = {4}
-at iteration 2 with 2 fuel, player 1 moved from 23 to 16 and gained 4 points (+0 diversity) ; accumulating 4 points ; diversity = {4}
-at iteration 3 with 3 fuel, player 2 moved from 10 to 11 and gained 4 points (+0 diversity) ; accumulating 4 points ; diversity = {4}
-at iteration 4 with 1 fuel, player 3 moved from 6 to 6 ; chasing for 4 points !!!
-at iteration 5 with 3 fuel, player 0 moved from 2 to 4 and gained 4 points (+0 diversity) ; accumulating 8 points ; diversity = {4}
-at iteration 6 with 1 fuel, player 1 moved from 16 to 23 ; chasing for 4 points !!!
-at iteration 7 with 2 fuel, player 2 moved from 11 to 24 and gained 4 points (+0 diversity) ; accumulating 8 points ; diversity = {4}
-at iteration 8 with 1 fuel, player 3 moved from 6 to 11 ; chasing for 1 points !!!
-at iteration 9 with 1 fuel, player 0 moved from 4 to 9 ; chasing for 4 points !!!
-at iteration 10 with 2 fuel, player 1 moved from 23 to 30 ; chasing for 4 points !!!
-at iteration 11 with 2 fuel, player 2 moved from 24 to 31 and gained 4 points (+0 diversity) ; accumulating 12 points ; diversity = {4}
-at iteration 12 with 1 fuel, player 3 moved from 11 to 18 ; chasing for 1 points !!!
-at iteration 13 with 2 fuel, player 0 moved from 9 to 14 and gained 4 points (+0 diversity) ; accumulating 12 points ; diversity = {4}
-at iteration 14 with 2 fuel, player 1 moved from 30 to 34 and gained 4 points (+2 diversity) ; accumulating 8 points ; diversity = {2, 4}
-at iteration 15 with 3 fuel, player 2 moved from 31 to 37 and gained 5 points (+2 diversity) ; accumulating 17 points ; diversity = {3, 4}
-at iteration 16 with 1 fuel, player 3 moved from 18 to 19 and gained 1 points (+0 diversity) ; accumulating 1 points ; diversity = {1}
-at iteration 17 with 1 fuel, player 0 moved from 14 to 15 ; chasing for 2 points !!!
-at iteration 18 with 2 fuel, player 1 moved from 34 to 31 ; chasing for 1 points !!!
-at iteration 19 with 1 fuel, player 2 moved from 37 to 32 ; chasing for 1 points !!!
-at iteration 20 with 2 fuel, player 3 moved from 19 to 27 and gained 1 points (+0 diversity) ; accumulating 2 points ; diversity = {1}
-at iteration 21 with 3 fuel, player 0 moved from 15 to 22 and gained 4 points (+2 diversity) ; accumulating 16 points ; diversity = {2, 4}
-43 points gained at test 2 after 21/100 iterations
-points over players : [17, 16, 8, 2]
+at iteration 1 with 1 fuel, player 0 moved from 17 to 17 and gained 2 points (+0 diversity) ; accumulating 2 points ; diversity = {2}
+at iteration 2 with 0 fuel, player 1 skips his turn !!!
+at iteration 3 with 1 fuel, player 2 moved from 37 to 37 and gained 4 points (+0 diversity) ; accumulating 4 points ; diversity = {4}
+at iteration 4 with 0 fuel, player 3 moved from 5 to 5 and gained 4 points (+0 diversity) ; accumulating 4 points ; diversity = {4}
+at iteration 5 with 0 fuel, player 0 skips his turn !!!
+at iteration 6 with 0 fuel, player 1 skips his turn !!!
+at iteration 7 with 0 fuel, player 2 skips his turn !!!
+at iteration 8 with 0 fuel, player 3 skips his turn !!!
+at iteration 9 with 0 fuel, player 0 skips his turn !!!
+at iteration 10 with 1 fuel, player 1 moved from 23 to 29 and gained 2 points (+0 diversity) ; accumulating 2 points ; diversity = {2}
+at iteration 11 with 0 fuel, player 2 skips his turn !!!
+at iteration 12 with 0 fuel, player 3 skips his turn !!!
+at iteration 13 with 2 fuel, player 0 moved from 17 to 11 ; chasing for 3 points !!!
+at iteration 14 with 0 fuel, player 1 skips his turn !!!
+at iteration 15 with 2 fuel, player 2 moved from 37 to 31 and gained 5 points (+2 diversity) ; accumulating 9 points ; diversity = {3, 4}
+at iteration 16 with 0 fuel, player 3 skips his turn !!!
+at iteration 17 with 0 fuel, player 0 skips his turn !!!
+at iteration 18 with 1 fuel, player 1 moved from 29 to 30 ; chasing for 1 points !!!
+at iteration 19 with 0 fuel, player 2 skips his turn !!!
+at iteration 20 with 0 fuel, player 3 skips his turn !!!
+at iteration 21 with 0 fuel, player 0 skips his turn !!!
+at iteration 22 with 0 fuel, player 1 skips his turn !!!
+at iteration 23 with 0 fuel, player 2 skips his turn !!!
+at iteration 24 with 1 fuel, player 3 moved from 5 to 5 ; chasing for 3 points !!!
+at iteration 25 with 1 fuel, player 0 moved from 11 to 11 ; chasing for 3 points !!!
+at iteration 26 with 0 fuel, player 1 skips his turn !!!
+at iteration 27 with 0 fuel, player 2 skips his turn !!!
+at iteration 28 with 3 fuel, player 3 moved from 5 to 13 and gained 5 points (+2 diversity) ; accumulating 9 points ; diversity = {3, 4}
+at iteration 29 with 0 fuel, player 0 skips his turn !!!
+at iteration 30 with 0 fuel, player 1 skips his turn !!!
+at iteration 31 with 2 fuel, player 2 moved from 31 to 27 and gained 3 points (+1 diversity) ; accumulating 12 points ; diversity = {2, 3, 4}
+at iteration 32 with 0 fuel, player 3 skips his turn !!!
+at iteration 33 with 0 fuel, player 0 skips his turn !!!
+at iteration 34 with 3 fuel, player 1 moved from 30 to 20 ; chasing for 3 points !!!
+at iteration 35 with 1 fuel, player 2 moved from 27 to 21 ; chasing for 3 points !!!
+at iteration 36 with 0 fuel, player 3 skips his turn !!!
+at iteration 37 with 0 fuel, player 0 skips his turn !!!
+at iteration 38 with 3 fuel, player 1 moved from 20 to 4 and gained 6 points (+2 diversity) ; accumulating 8 points ; diversity = {2, 4}
+at iteration 39 with 0 fuel, player 2 skips his turn !!!
+at iteration 40 with 0 fuel, player 3 skips his turn !!!
+at iteration 41 with 0 fuel, player 0 skips his turn !!!
+at iteration 42 with 0 fuel, player 1 skips his turn !!!
+at iteration 43 with 0 fuel, player 2 skips his turn !!!
+at iteration 44 with 2 fuel, player 3 moved from 13 to 15 and gained 3 points (+1 diversity) ; accumulating 12 points ; diversity = {2, 3, 4}
+34 points gained at test 2 after 44/200 iterations
+points over players : [12, 12, 8, 2]
 
 --- mountain_count: 4 ---
 
-donjons     count = 9971
-donjons      mode = 9
-donjons      mean = 9.4
-donjons quartiles = [9.0, 9.0, 10.0]
-donjons   deciles = [8.0, 9.0, 9.0, 9.0, 9.0, 10.0, 10.0, 10.0, 11.0]
+donjons     count = 9967
+donjons      mode = 10
+donjons      mean = 9.5
+donjons quartiles = [9.0, 10.0, 10.0]
+donjons   deciles = [8.0, 9.0, 9.0, 9.0, 10.0, 10.0, 10.0, 10.0, 11.0]
 donjons       min = 6
 donjons       max = 13
 
-points     count = 9971
-points      mode = 36
-points      mean = 36.2
-points quartiles = [34.0, 36.0, 39.0]
-points   deciles = [31.0, 33.0, 34.0, 35.0, 36.0, 37.0, 38.0, 39.0, 41.0]
-points       min = 23
-points       max = 51
+points     count = 9967
+points      mode = 34
+points      mean = 34.0
+points quartiles = [31.0, 34.0, 37.0]
+points   deciles = [29.0, 30.0, 32.0, 33.0, 34.0, 35.0, 36.0, 38.0, 39.0]
+points       min = 19
+points       max = 53
 
 
-turns     count = 9971
-turns      mode = 14
-turns      mean = 14.3
-turns quartiles = [12.0, 14.0, 16.0]
-turns   deciles = [11.0, 12.0, 13.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0]
-turns       min = 7
-turns       max = 30
+turns     count = 9967
+turns      mode = 46
+turns      mean = 48.3
+turns quartiles = [36.0, 46.0, 58.0]
+turns   deciles = [29.0, 34.0, 39.0, 43.0, 46.0, 51.0, 55.6, 61.0, 70.0]
+turns       min = 10
+turns       max = 133
 
 
-rounds     count = 9971
-rounds      mode = 4
-rounds      mean = 3.9
-rounds quartiles = [3.0, 4.0, 4.0]
-rounds   deciles = [3.0, 3.0, 4.0, 4.0, 4.0, 4.0, 4.0, 5.0, 5.0]
-rounds       min = 2
-rounds       max = 8
+rounds     count = 9967
+rounds      mode = 12
+rounds      mean = 12.5
+rounds quartiles = [9.0, 12.0, 15.0]
+rounds   deciles = [8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 16.0, 18.0]
+rounds       min = 3
+rounds       max = 34
 
 
 --- points sorted by rank at each test ? : True ---
-player 0     count = 9971
+player 0     count = 9967
 player 0      mode = 12
-player 0      mean = 12.3
-player 0 quartiles = [12.0, 12.0, 13.0]
-player 0   deciles = [10.0, 11.0, 12.0, 12.0, 12.0, 12.0, 13.0, 13.0, 15.0]
-player 0       min = 8
-player 0       max = 20
+player 0      mean = 13.3
+player 0 quartiles = [12.0, 13.0, 15.0]
+player 0   deciles = [11.0, 12.0, 12.0, 12.0, 13.0, 14.0, 14.0, 15.0, 16.0]
+player 0       min = 7
+player 0       max = 25
 
-player 1     count = 9971
+player 1     count = 9967
 player 1      mode = 9
-player 1      mean = 10.0
-player 1 quartiles = [9.0, 10.0, 11.0]
-player 1   deciles = [8.0, 9.0, 9.0, 9.0, 10.0, 10.0, 11.0, 12.0, 12.0]
-player 1       min = 4
+player 1      mean = 9.8
+player 1 quartiles = [8.0, 9.0, 11.0]
+player 1   deciles = [8.0, 8.0, 9.0, 9.0, 9.0, 10.0, 11.0, 12.0, 12.0]
+player 1       min = 3
 player 1       max = 17
 
-player 2     count = 9971
+player 2     count = 9967
 player 2      mode = 8
-player 2      mean = 8.1
-player 2 quartiles = [8.0, 8.0, 9.0]
-player 2   deciles = [7.0, 7.0, 8.0, 8.0, 8.0, 8.0, 9.0, 9.0, 9.0]
-player 2       min = 2
+player 2      mean = 7.1
+player 2 quartiles = [6.0, 7.0, 8.0]
+player 2   deciles = [4.0, 6.0, 7.0, 7.0, 7.0, 8.0, 8.0, 9.0, 9.0]
+player 2       min = 1
 player 2       max = 13
 
-player 3     count = 9971
+player 3     count = 9967
 player 3      mode = 4
-player 3      mean = 5.8
-player 3 quartiles = [4.0, 6.0, 8.0]
-player 3   deciles = [3.0, 4.0, 4.0, 5.0, 6.0, 7.0, 7.0, 8.0, 8.0]
+player 3      mean = 3.8
+player 3 quartiles = [2.0, 4.0, 6.0]
+player 3   deciles = [1.0, 2.0, 2.0, 3.0, 4.0, 4.0, 5.0, 6.0, 7.0]
 player 3       min = 0
-player 3       max = 11
+player 3       max = 12
 
+
+at round 0 max value min=1, mean=2.5, max=4
+at round 1 max value min=1, mean=5.0, max=9
+at round 2 max value min=1, mean=7.0, max=13
+at round 3 max value min=1, mean=9.0, max=17
+at round 4 max value min=1, mean=10.2, max=21
+at round 5 max value min=2, mean=11.5, max=21
+at round 6 max value min=2, mean=11.5, max=21
+at round 7 max value min=3, mean=12.6, max=23
+at round 8 max value min=3, mean=12.6, max=23
+at round 9 max value min=3, mean=12.0, max=21
+at round 10 max value min=4, mean=13.0, max=22
+at round 11 max value min=4, mean=13.6, max=24
+at round 12 max value min=4, mean=13.5, max=23
+at round 13 max value min=4, mean=13.0, max=22
+at round 14 max value min=4, mean=13.9, max=23
+at round 15 max value min=4, mean=13.9, max=23
+at round 16 max value min=5, mean=14.0, max=23
+at round 17 max value min=6, mean=14.1, max=23
+at round 18 max value min=7, mean=14.1, max=23
+at round 19 max value min=7, mean=14.1, max=23
+at round 20 max value min=8, mean=14.6, max=23
+at round 21 max value min=8, mean=14.0, max=20
+at round 22 max value min=8, mean=14.0, max=20
+at round 23 max value min=8, mean=13.6, max=20
+at round 24 max value min=8, mean=12.5, max=17
+at round 25 max value min=9, mean=13.4, max=17
+at round 26 max value min=11, mean=14.0, max=17
+at round 27 max value min=11, mean=14.0, max=17
+at round 28 max value min=11, mean=13.5, max=16
+at round 29 max value min=11, mean=12.5, max=14
+at round 30 max value min=11, mean=12.0, max=13
+at round 31 max value min=11, mean=11.0, max=11
+at round 32 max value min=11, mean=11.0, max=11
 
 make_statistics_on_points_by_moving: done
