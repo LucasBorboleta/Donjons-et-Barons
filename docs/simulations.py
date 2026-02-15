@@ -191,6 +191,122 @@ def compute_connex_partition(adjacents):
             partition.append(class_list)
     
     return partition
+
+
+    
+def make_statistics_on_partition(mountain_count=0):
+
+    print()
+    print("make_statistics_on_partition: ...")
+    
+    partition_size_sample = []
+    partition_multiparts_count = 0
+
+    test_count = 100_000
+    for test_index in range(test_count):
+        
+        free_set = set(hexagon_names)
+        mountain_set = set(random.sample(list(free_set), mountain_count))
+        free_set = free_set - mountain_set
+        assert len(free_set) == len(hexagon_names) - mountain_count
+        
+        adjacents = {}
+        for (x, x_set) in hexagon_adjacents.items():
+            if x not in mountain_set:
+                new_x_set = set()
+                for y in x_set:
+                    if y not in mountain_set:
+                        new_x_set.add(y)
+                
+                adjacents[x] = new_x_set
+        
+        partition = compute_connex_partition(adjacents)
+        partition_size_sample.append(len(partition)) 
+        
+        if len(partition) > 1:
+            partition_multiparts_count += 1
+            print()
+            print(f"test_index = {test_index}") 
+            print(f"mountain_set = {mountain_set}") 
+            for (part_index, part) in enumerate(partition):
+                print(f"part {part_index} of length {len(part)} = {part}")      
+        
+                
+    print()
+    print(f"--- mountain_count: {mountain_count} ---")
+    print(f"    partition_multiparts_count = {partition_multiparts_count} ; {partition_multiparts_count/test_count*100:.1f}%")
+    print(f"    count = {len(partition_size_sample)}")
+    print(f"     mode = {statistics.mode(partition_size_sample)}")
+    print(f"     mean = {statistics.mean(partition_size_sample):.1f}")
+    print(f"quartiles = {statistics.quantiles(partition_size_sample, n=4)}")
+    print(f"  deciles = {statistics.quantiles(partition_size_sample, n=10)}")
+    print(f"      min = {min(partition_size_sample)}")
+    print(f"      max = {max(partition_size_sample)}")
+ 
+    
+    print()
+    print("make_statistics_on_partition: done")
+
+    
+def make_statistics_on_distances(mountain_count=0, test_count=100_000):
+
+    print()
+    print("make_statistics_on_distances: ...")
+    
+    distance_mean_sample = []
+    distance_std_sample = []
+    distance_q25_sample = []
+    distance_q50_sample = []
+    distance_q75_sample = []
+    distance_q90_sample = []
+    distance_max_sample = []
+
+    
+    for test_index in range(test_count):
+        
+        free_set = set(hexagon_names)
+        mountain_set = set(random.sample(list(free_set), mountain_count))
+        free_set = free_set - mountain_set
+        assert len(free_set) == len(hexagon_names) - mountain_count
+        
+        adjacents = {}
+        for (x, x_set) in hexagon_adjacents.items():
+            if x not in mountain_set:
+                new_x_set = set()
+                for y in x_set:
+                    if y not in mountain_set:
+                        new_x_set.add(y)
+                
+                adjacents[x] = new_x_set
+                
+                    
+        partition = compute_connex_partition(adjacents)
+        if len(partition) > 1:
+            continue
+        
+        distances = compute_distance_occurrences(adjacents)
+
+        distance_max_sample.append(max(distances))     
+        distance_mean_sample.append(statistics.mean(distances))       
+        distance_std_sample.append(statistics.stdev(distances))      
+        distance_q25_sample.append(statistics.quantiles(distances, n=4)[0])       
+        distance_q50_sample.append(statistics.quantiles(distances, n=4)[1])       
+        distance_q75_sample.append(statistics.quantiles(distances, n=4)[-1])       
+        distance_q90_sample.append(statistics.quantiles(distances, n=10)[-1])       
+                
+    print()
+    print(f"--- mountain_count: {mountain_count} ---")
+    print(f"         count  = {len(distance_mean_sample)}")
+    print(f"   mean of max  = {statistics.mean(distance_max_sample):.1f}")
+    print(f"   mean of mean = {statistics.mean(distance_mean_sample):.1f}")
+    print(f"   mean of std  = {statistics.mean(distance_std_sample):.1f}")
+    print(f"   mean of q25  = {statistics.mean(distance_q25_sample):.1f}")
+    print(f"   mean of q50  = {statistics.mean(distance_q50_sample):.1f}")
+    print(f"   mean of q75  = {statistics.mean(distance_q75_sample):.1f}")
+    print(f"   mean of q90  = {statistics.mean(distance_q90_sample):.1f}")
+ 
+    print()
+    print("make_statistics_on_distances: done")
        
 
 def make_statistics_on_donjon_count(mountain_count=0):
@@ -336,17 +452,17 @@ def make_statistics_on_points(mountain_count=0, player_count=2, test_count=100_0
         point_system["r4"]       = (4, 10)
     
     total_occurences = 0
-    points_list = []
+    hexagon_points_list = []
     for (key, (points, occurences)) in point_system.items():
         print(f"{key}: #{occurences} times {points} points")
         total_occurences += occurences
-        points_list += [points for _ in range(occurences)]
+        hexagon_points_list += [points for _ in range(occurences)]
         
     assert total_occurences == len(hexagon_names)
-    assert len(points_list) == len(hexagon_names)
+    assert len(hexagon_points_list) == len(hexagon_names)
     print()
-    print(f"total points = {sum(points_list)}")
-    print(f"mean points = {statistics.mean(points_list)}")
+    print(f"total points = {sum(hexagon_points_list)}")
+    print(f"mean points = {statistics.mean(hexagon_points_list)}")
 
     
     points_sample = []
@@ -361,10 +477,10 @@ def make_statistics_on_points(mountain_count=0, player_count=2, test_count=100_0
         free_set = free_set - mountain_set
         assert len(free_set) == len(hexagon_names) - mountain_count
         
-        random.shuffle(points_list)
+        random.shuffle(hexagon_points_list)
         points_map = {}
         for (name_index, name) in enumerate(sorted(list(hexagon_names))):
-            points_map[name] = points_list[name_index]
+            points_map[name] = hexagon_points_list[name_index]
         
         player_points = [0 for player_index in range(player_count)]
 
@@ -424,26 +540,29 @@ def make_statistics_on_points_by_moving(mountain_count=0, player_count=2, test_c
     print()
     print("make_statistics_on_points_by_moving: ...")
 
-    if True:
-        # Four almost equal flavors
-        point_system = {}
-        point_system["r1"]       = (1, 9)
-        point_system["r2"]       = (2, 9)
-        point_system["r3"]       = (3, 9)
-        point_system["r4"]       = (4, 10)
+    # Four almost equal flavors
+    point_system = {}
+    point_system["r1"]       = (1, 9)
+    point_system["r2"]       = (2, 9)
+    point_system["r3"]       = (3, 9)
+    point_system["r4"]       = (4, 10)
+        
+    city_count = 4
+    city_points = [4, 2, 2, 2]
+    assert len(city_points) == city_count
     
     total_occurences = 0
-    points_list = []
+    hexagon_points_list = []
     for (key, (points, occurences)) in point_system.items():
         print(f"{key}: #{occurences} times {points} points")
         total_occurences += occurences
-        points_list += [points for _ in range(occurences)]
+        hexagon_points_list += [points for _ in range(occurences)]
         
     assert total_occurences == len(hexagon_names)
-    assert len(points_list) == len(hexagon_names)
+    assert len(hexagon_points_list) == len(hexagon_names)
     print()
-    print(f"total points = {sum(points_list)}")
-    print(f"mean points = {statistics.mean(points_list)}")
+    print(f"total hexagon points = {sum(hexagon_points_list)}")
+    print(f"mean hexagon points = {statistics.mean(hexagon_points_list)}")
 
     
     points_sample = []
@@ -468,6 +587,10 @@ def make_statistics_on_points_by_moving(mountain_count=0, player_count=2, test_c
         free_set = free_set - mountain_set
         assert len(free_set) == len(hexagon_names) - mountain_count
         
+        city_set = set(random.sample(list(free_set), city_count))
+        free_set = free_set - city_set
+        assert len(free_set) == len(hexagon_names) - mountain_count - city_count
+        
         hexagon_for_players = copy.copy(free_set)
          
         adjacents = {}
@@ -487,12 +610,26 @@ def make_statistics_on_points_by_moving(mountain_count=0, player_count=2, test_c
         
         distances = compute_distances(adjacents)
   
-        random.shuffle(points_list)
-        points_map = {}
+        random.shuffle(city_points)
+        city_points_map = {}
+        for (name_index, name) in enumerate(sorted(list(city_set))):
+            city_points_map[name] = city_points[name_index]
+  
+        random.shuffle(hexagon_points_list)
+        hexagon_points_map = {}
         for (name_index, name) in enumerate(sorted(list(hexagon_names))):
-            points_map[name] = points_list[name_index]
+            hexagon_points_map[name] = hexagon_points_list[name_index]
+  
+        points_map = {}
+        for name in hexagon_names:
+            if name in hexagon_points_map:
+                points_map[name] = hexagon_points_map[name]
+                
+                if name in city_points_map:
+                    points_map[name] += city_points_map[name]
         
         player_points = [0 for player_index in range(player_count)]
+        player_diversities = [set() for player_index in range(player_count)]
         player_locations = random.sample(list(hexagon_for_players), player_count)
 
         points = 0
@@ -532,6 +669,29 @@ def make_statistics_on_points_by_moving(mountain_count=0, player_count=2, test_c
                         player_locations[player_index] = dst
                         player_points[player_index] += max_value
                         points += max_value
+                        
+                        # account for diversity points
+                        diversity_before = len(player_diversities[player_index])
+                        player_diversities[player_index].add(hexagon_points_map[dst])
+                        diversity_after = len(player_diversities[player_index])
+                        
+                        if diversity_after > diversity_before:
+                            
+                            if diversity_after <= 1:
+                                new_diversity_points = 0
+                                
+                            elif diversity_after == 2:
+                                new_diversity_points = 2
+                                
+                            else:
+                                new_diversity_points = 1
+                                
+                        else:
+                            new_diversity_points = 0
+                                
+                        player_points[player_index] += new_diversity_points
+                        points += new_diversity_points
+                        
                         donjon_count += 1
                         points_map[dst] = 0
                         donjon_set.add(dst)
@@ -539,7 +699,9 @@ def make_statistics_on_points_by_moving(mountain_count=0, player_count=2, test_c
                         free_set = free_set - hexagon_adjacents[dst]
                         if debug_index <= debug_count:
                             print(f"at iteration {iteration_index} with {fuel} fuel, player {player_index} moved from {src} to {dst}" + 
-                                  f" and gained {max_value} points ; accumulating {player_points[player_index]} points")
+                                  f" and gained {max_value + new_diversity_points} points (+{new_diversity_points} diversity)" + 
+                                  f" ; accumulating {player_points[player_index]} points" +
+                                  f" ; diversity = {player_diversities[player_index]}")
                         break
 
             # Or get closest to the best possible target
@@ -654,121 +816,6 @@ def make_statistics_on_points_by_moving(mountain_count=0, player_count=2, test_c
 
     print()
     print("make_statistics_on_points_by_moving: done")
-
-    
-def make_statistics_on_partition(mountain_count=0):
-
-    print()
-    print("make_statistics_on_partition: ...")
-    
-    partition_size_sample = []
-    partition_multiparts_count = 0
-
-    test_count = 100_000
-    for test_index in range(test_count):
-        
-        free_set = set(hexagon_names)
-        mountain_set = set(random.sample(list(free_set), mountain_count))
-        free_set = free_set - mountain_set
-        assert len(free_set) == len(hexagon_names) - mountain_count
-        
-        adjacents = {}
-        for (x, x_set) in hexagon_adjacents.items():
-            if x not in mountain_set:
-                new_x_set = set()
-                for y in x_set:
-                    if y not in mountain_set:
-                        new_x_set.add(y)
-                
-                adjacents[x] = new_x_set
-        
-        partition = compute_connex_partition(adjacents)
-        partition_size_sample.append(len(partition)) 
-        
-        if len(partition) > 1:
-            partition_multiparts_count += 1
-            print()
-            print(f"test_index = {test_index}") 
-            print(f"mountain_set = {mountain_set}") 
-            for (part_index, part) in enumerate(partition):
-                print(f"part {part_index} of length {len(part)} = {part}")      
-        
-                
-    print()
-    print(f"--- mountain_count: {mountain_count} ---")
-    print(f"    partition_multiparts_count = {partition_multiparts_count} ; {partition_multiparts_count/test_count*100:.1f}%")
-    print(f"    count = {len(partition_size_sample)}")
-    print(f"     mode = {statistics.mode(partition_size_sample)}")
-    print(f"     mean = {statistics.mean(partition_size_sample):.1f}")
-    print(f"quartiles = {statistics.quantiles(partition_size_sample, n=4)}")
-    print(f"  deciles = {statistics.quantiles(partition_size_sample, n=10)}")
-    print(f"      min = {min(partition_size_sample)}")
-    print(f"      max = {max(partition_size_sample)}")
- 
-    
-    print()
-    print("make_statistics_on_partition: done")
-
-    
-def make_statistics_on_distances(mountain_count=0, test_count=100_000):
-
-    print()
-    print("make_statistics_on_distances: ...")
-    
-    distance_mean_sample = []
-    distance_std_sample = []
-    distance_q25_sample = []
-    distance_q50_sample = []
-    distance_q75_sample = []
-    distance_q90_sample = []
-    distance_max_sample = []
-
-    
-    for test_index in range(test_count):
-        
-        free_set = set(hexagon_names)
-        mountain_set = set(random.sample(list(free_set), mountain_count))
-        free_set = free_set - mountain_set
-        assert len(free_set) == len(hexagon_names) - mountain_count
-        
-        adjacents = {}
-        for (x, x_set) in hexagon_adjacents.items():
-            if x not in mountain_set:
-                new_x_set = set()
-                for y in x_set:
-                    if y not in mountain_set:
-                        new_x_set.add(y)
-                
-                adjacents[x] = new_x_set
-                
-                    
-        partition = compute_connex_partition(adjacents)
-        if len(partition) > 1:
-            continue
-        
-        distances = compute_distance_occurrences(adjacents)
-
-        distance_max_sample.append(max(distances))     
-        distance_mean_sample.append(statistics.mean(distances))       
-        distance_std_sample.append(statistics.stdev(distances))      
-        distance_q25_sample.append(statistics.quantiles(distances, n=4)[0])       
-        distance_q50_sample.append(statistics.quantiles(distances, n=4)[1])       
-        distance_q75_sample.append(statistics.quantiles(distances, n=4)[-1])       
-        distance_q90_sample.append(statistics.quantiles(distances, n=10)[-1])       
-                
-    print()
-    print(f"--- mountain_count: {mountain_count} ---")
-    print(f"         count  = {len(distance_mean_sample)}")
-    print(f"   mean of max  = {statistics.mean(distance_max_sample):.1f}")
-    print(f"   mean of mean = {statistics.mean(distance_mean_sample):.1f}")
-    print(f"   mean of std  = {statistics.mean(distance_std_sample):.1f}")
-    print(f"   mean of q25  = {statistics.mean(distance_q25_sample):.1f}")
-    print(f"   mean of q50  = {statistics.mean(distance_q50_sample):.1f}")
-    print(f"   mean of q75  = {statistics.mean(distance_q75_sample):.1f}")
-    print(f"   mean of q90  = {statistics.mean(distance_q90_sample):.1f}")
- 
-    print()
-    print("make_statistics_on_distances: done")
     
         
     
@@ -824,6 +871,6 @@ if True:
     make_statistics_on_points_by_moving(mountain_count=4, player_count=2, test_count=10_000, ranking=True)
     make_statistics_on_points_by_moving(mountain_count=4, player_count=3, test_count=10_000, ranking=True)
     make_statistics_on_points_by_moving(mountain_count=4, player_count=4, test_count=10_000, ranking=True)
-        
+   
 print()
 _ = input("main: done ; press enter to terminate")
