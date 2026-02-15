@@ -563,7 +563,23 @@ def make_statistics_on_points_by_moving(mountain_count=0, player_count=2, test_c
     print()
     print(f"total hexagon points = {sum(hexagon_points_list)}")
     print(f"mean hexagon points = {statistics.mean(hexagon_points_list)}")
+        
+    fuel_list = []
+    for _ in range(9):
+        fuel_list.append(1)            
+        fuel_list.append(1)            
+        fuel_list.append(2)            
+        fuel_list.append(3)  
+        
+    for _ in range(100 - len(fuel_list)):
+        fuel_list.append(0)            
+        
+    build_list = []
+    for _ in range(10):
+        build_list.append(True)            
 
+    for _ in range(100 - len(build_list)):
+        build_list.append(False)            
     
     points_sample = []
     donjon_count_sample = []
@@ -632,23 +648,13 @@ def make_statistics_on_points_by_moving(mountain_count=0, player_count=2, test_c
         player_points = [0 for player_index in range(player_count)]
         player_diversities = [set() for player_index in range(player_count)]
         player_locations = random.sample(list(hexagon_for_players), player_count)
-        
-        fuel_list = []
-        for _ in range(9):
-            fuel_list.append(1)            
-            fuel_list.append(1)            
-            fuel_list.append(2)            
-            fuel_list.append(3)  
-            
-        for _ in range(100 - 9):
-            fuel_list.append(0)            
 
         points = 0
         donjon_count = 0
         player_index = 0
         
         iteration_index = 0
-        iteration_count = 200
+        iteration_count = 1_000
         round_index = 0
         
         while len(free_set) != 0 and iteration_index < iteration_count:
@@ -656,6 +662,7 @@ def make_statistics_on_points_by_moving(mountain_count=0, player_count=2, test_c
             iteration_index += 1
             
             fuel = random.choice(fuel_list)
+            build = random.choice(build_list)
             
             src = player_locations[player_index]
             other_player_locations = [player_locations[other_player_index] for other_player_index in range(player_count) if other_player_index != player_index]
@@ -679,42 +686,50 @@ def make_statistics_on_points_by_moving(mountain_count=0, player_count=2, test_c
                 for dst in target_locations:
                     if target_values[dst] == max_value:
                         player_locations[player_index] = dst
-                        player_points[player_index] += max_value
-                        points += max_value
                         
-                        # account for diversity points
-                        diversity_before = len(player_diversities[player_index])
-                        player_diversities[player_index].add(hexagon_points_map[dst])
-                        diversity_after = len(player_diversities[player_index])
-                        
-                        if diversity_after > diversity_before:
+                        if not build:
+                            if debug_index <= debug_count:
+                                print(f"at iteration {iteration_index} with {fuel} fuel, player {player_index} moved from {src} to {dst}" + 
+                                      " ; but waiting for build opportunity !!!")
+                            break
                             
-                            if diversity_after <= 1:
-                                new_diversity_points = 0
-                                
-                            elif diversity_after == 2:
-                                new_diversity_points = 2
-                                
-                            else:
-                                new_diversity_points = 1
-                                
                         else:
-                            new_diversity_points = 0
+                            player_points[player_index] += max_value
+                            points += max_value
+                            
+                            # account for diversity points
+                            diversity_before = len(player_diversities[player_index])
+                            player_diversities[player_index].add(hexagon_points_map[dst])
+                            diversity_after = len(player_diversities[player_index])
+                            
+                            if diversity_after > diversity_before:
                                 
-                        player_points[player_index] += new_diversity_points
-                        points += new_diversity_points
-                        
-                        donjon_count += 1
-                        points_map[dst] = 0
-                        donjon_set.add(dst)
-                        free_set.remove(dst)
-                        free_set = free_set - hexagon_adjacents[dst]
-                        if debug_index <= debug_count:
-                            print(f"at iteration {iteration_index} with {fuel} fuel, player {player_index} moved from {src} to {dst}" + 
-                                  f" and gained {max_value + new_diversity_points} points (+{new_diversity_points} diversity)" + 
-                                  f" ; accumulating {player_points[player_index]} points" +
-                                  f" ; diversity = {player_diversities[player_index]}")
-                        break
+                                if diversity_after <= 1:
+                                    new_diversity_points = 0
+                                    
+                                elif diversity_after == 2:
+                                    new_diversity_points = 2
+                                    
+                                else:
+                                    new_diversity_points = 1
+                                    
+                            else:
+                                new_diversity_points = 0
+                                    
+                            player_points[player_index] += new_diversity_points
+                            points += new_diversity_points
+                            
+                            donjon_count += 1
+                            points_map[dst] = 0
+                            donjon_set.add(dst)
+                            free_set.remove(dst)
+                            free_set = free_set - hexagon_adjacents[dst]
+                            if debug_index <= debug_count:
+                                print(f"at iteration {iteration_index} with {fuel} fuel, player {player_index} moved from {src} to {dst}" + 
+                                      f" and gained {max_value + new_diversity_points} points (+{new_diversity_points} diversity)" + 
+                                      f" ; accumulating {player_points[player_index]} points" +
+                                      f" ; diversity = {player_diversities[player_index]}")
+                            break
 
             # Or skiping turn
             elif fuel == 0:
@@ -840,16 +855,27 @@ def make_statistics_on_points_by_moving(mountain_count=0, player_count=2, test_c
        
         
     print()
-    max_points_by_round_min = [ min(sample) for sample in max_points_by_round_sample]
-    max_points_by_round_mean = [ statistics.mean(sample) for sample in max_points_by_round_sample]
-    max_points_by_round_max = [ max(sample) for sample in max_points_by_round_sample]
+    max_points_by_round_min = [ min(sample) for sample in max_points_by_round_sample ]
+    max_points_by_round_mean = [ statistics.mean(sample) for sample in max_points_by_round_sample ]
+    max_points_by_round_max = [ max(sample) for sample in max_points_by_round_sample ]
+    
+    max_points_by_round_q90 = []
+    for sample in max_points_by_round_sample:
+        if len(sample) > 10:
+            max_points_by_round_q90.append(statistics.quantiles(sample, n=10)[-1])  
+        else:
+            max_points_by_round_q90.append(max(sample))  
+            
+    
     for (round_index, 
          (round_value_min, 
          round_value_mean, 
+         round_value_q90, 
          round_value_max)) in enumerate(zip(max_points_by_round_min, 
                                             max_points_by_round_mean, 
+                                            max_points_by_round_q90, 
                                             max_points_by_round_max)):
-        print(f"at round {round_index} max value min={round_value_min}, mean={round_value_mean:.1f}, max={round_value_max}")
+        print(f"at round {round_index} max value => min={round_value_min}, mean={round_value_mean:.1f}, q90={round_value_q90:.1f}, max={round_value_max}")
 
     print()
     print("make_statistics_on_points_by_moving: done")
