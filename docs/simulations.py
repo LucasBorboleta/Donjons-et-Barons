@@ -880,6 +880,151 @@ def make_statistics_on_points_by_moving(mountain_count=0, player_count=2, test_c
     print()
     print("make_statistics_on_points_by_moving: done")
     
+    
+def make_statistics_on_hands(deck_size, target_size, hand_size, play_rate=None, play_rates=None, test_count=1_000):
+    
+    print()
+    print("make_statistics_on_hands: ...")
+
+    assert play_rate is not None or play_rates is not None
+    assert not (play_rate is None and play_rates is None)
+    
+    if play_rates is None:
+        play_rates = [play_rate]
+        play_rate = None
+        
+    print()
+    print(f"--- deck_size = {deck_size} / target_size = {target_size} / hand_size = {hand_size} / play_rates = {play_rates} ---")
+   
+    assert deck_size > 0
+    assert target_size > 0
+    assert hand_size > 0
+    assert min(play_rates) > 0
+    assert test_count >= 2
+    
+    assert target_size < deck_size
+    assert hand_size < deck_size
+    assert max(play_rates) <= hand_size
+    
+    target_card = 10
+    other_card = 11
+    
+    def occurs(cards):
+        return {target_card:cards.count(target_card), other_card:cards.count(other_card)}
+    
+    print()
+    print(f"target_card = {target_card} / other_card = {other_card}")
+
+    sorted_deck = [target_card for _ in range(target_size)] + [other_card for _ in range(deck_size - target_size)]
+    sorted_deck.sort()
+    
+    assert_count = 10
+    
+    debug_index = 0
+    debug_count = 5
+        
+    turns_sample = []
+    rebuild_sample = []
+    
+    for test_index in range(test_count):
+        
+        debug_index += 1
+        if debug_index <= debug_count:
+            print()
+        
+        deck = copy.deepcopy(sorted_deck)
+        random.shuffle(deck)
+        
+        discard = []
+        hand = deck[:hand_size]
+        deck = deck[hand_size:]
+        if test_index < assert_count:
+            assert len(hand) + len(deck) + len(discard) == deck_size
+            assert len(hand) == hand_size
+            assert list(sorted(hand + deck + discard)) == sorted_deck
+        
+        turn_index = 0
+        rebuild_count = 0
+        
+        if debug_index <= debug_count:
+            print(f"test_index {test_index} / turn_index {turn_index} / hand={occurs(hand)} deck={occurs(deck)} discard={occurs(discard)} targeted={target_card in hand}")
+        
+        while not target_card in hand:
+            
+            play_rate = random.choice(play_rates)
+            
+            random.shuffle(hand)
+            discard += hand[:play_rate]
+            hand = hand[play_rate:]
+            
+            if len(deck) >= play_rate:
+                deck_rebuilt = False
+                
+                hand += deck[:play_rate]
+                deck = deck[play_rate:]
+                
+                if test_index < assert_count:
+                    assert len(hand) + len(deck) + len(discard) == deck_size
+                    assert len(hand) == hand_size
+                    assert list(sorted(hand + deck + discard)) == sorted_deck
+                
+            else:
+                deck_rebuilt = True
+                rebuild_count += 1
+                
+                hand += deck
+                
+                deck = discard
+                random.shuffle(deck)
+                discard = []
+                
+                play_rest = hand_size - len(hand)
+                hand += deck[:play_rest]
+                deck = deck[play_rest:]
+                
+                assert len(hand) + len(deck) + len(discard) == deck_size
+                assert len(hand) == hand_size
+                assert list(sorted(hand + deck + discard)) == sorted_deck
+             
+            turn_index += 1
+        
+            if debug_index <= debug_count:
+                print(f"test_index {test_index} / turn_index {turn_index} / hand={occurs(hand)} deck={occurs(deck)} discard={occurs(discard)}" +
+                      f" targeted={target_card in hand}" +
+                      (" / deck rebuilt" if deck_rebuilt else ""))
+    
+        if test_index < assert_count:
+            assert len(hand) + len(deck) + len(discard) == deck_size
+            assert len(hand) == hand_size
+            assert list(sorted(hand + deck + discard)) == sorted_deck
+
+        turns_sample.append(turn_index)
+        rebuild_sample.append(rebuild_count)
+
+        
+    print()
+    print(f"--- deck_size = {deck_size} / target_size = {target_size} / hand_size = {hand_size} / play_rates = {play_rates} ---")
+    print()
+    print(f"turns to target     count = {len(turns_sample)}")
+    print(f"turns to target      mode = {statistics.mode(turns_sample)}")
+    print(f"turns to target      mean = {statistics.mean(turns_sample):.1f}")
+    print(f"turns to target quartiles = {statistics.quantiles(turns_sample, n=4)}")
+    print(f"turns to target   deciles = {statistics.quantiles(turns_sample, n=10)}")
+    print(f"turns to target       min = {min(turns_sample)}")
+    print(f"turns to target       max = {max(turns_sample)}")
+    print()
+    print(f"deck rebuilds     count = {len(rebuild_sample)}")
+    print(f"deck rebuilds      mode = {statistics.mode(rebuild_sample)}")
+    print(f"deck rebuilds      mean = {statistics.mean(rebuild_sample):.1f}")
+    print(f"deck rebuilds quartiles = {statistics.quantiles(rebuild_sample, n=4)}")
+    print(f"deck rebuilds   deciles = {statistics.quantiles(rebuild_sample, n=10)}")
+    print(f"deck rebuilds       min = {min(rebuild_sample)}")
+    print(f"deck rebuilds       max = {max(rebuild_sample)}")
+    print()
+        
+    print()
+    print("make_statistics_on_hands: done")
+    
         
     
 if False:
@@ -930,10 +1075,32 @@ if False:
     make_statistics_on_distances(mountain_count=0, test_count=1)
     make_statistics_on_distances(mountain_count=4)
  
-if True:
+if False:
     make_statistics_on_points_by_moving(mountain_count=4, player_count=2, test_count=100_000, ranking=True)
     make_statistics_on_points_by_moving(mountain_count=4, player_count=3, test_count=100_000, ranking=True)
     make_statistics_on_points_by_moving(mountain_count=4, player_count=4, test_count=100_000, ranking=True)
+ 
+if False:
+    make_statistics_on_hands(deck_size=100, target_size=10, hand_size=4, play_rate=2, test_count=10_000)
+    make_statistics_on_hands(deck_size=50, target_size=5, hand_size=6, play_rate=2, test_count=10_000)
+
+if False:
+    make_statistics_on_hands(deck_size=40, target_size=6, hand_size=4, play_rate=3, test_count=100_000)
+    make_statistics_on_hands(deck_size=40, target_size=6, hand_size=5, play_rate=3, test_count=100_000)
+    make_statistics_on_hands(deck_size=40, target_size=6, hand_size=6, play_rate=3, test_count=100_000)
+
+if False:
+    make_statistics_on_hands(deck_size=40, target_size=18, hand_size=5, play_rate=3, test_count=100_000)
+    make_statistics_on_hands(deck_size=40, target_size=6, hand_size=5, play_rate=3, test_count=100_000)
+    make_statistics_on_hands(deck_size=40, target_size=4, hand_size=5, play_rate=3, test_count=100_000)
+    make_statistics_on_hands(deck_size=40, target_size=3, hand_size=5, play_rate=3, test_count=100_000)
+    make_statistics_on_hands(deck_size=40, target_size=1, hand_size=5, play_rate=3, test_count=100_000)
+
+if True:
+    make_statistics_on_hands(deck_size=40, target_size=6, hand_size=6, play_rate=3, test_count=100_000)
+    make_statistics_on_hands(deck_size=40, target_size=6, hand_size=6, play_rate=2, test_count=100_000)
+    make_statistics_on_hands(deck_size=40, target_size=6, hand_size=6, play_rates=[1, 2, 3], test_count=100_000)
+    make_statistics_on_hands(deck_size=40, target_size=6, hand_size=6, play_rates=[1, 1, 1, 2, 2, 3], test_count=100_000)
     
 print()
 _ = input("main: done ; press enter to terminate")
