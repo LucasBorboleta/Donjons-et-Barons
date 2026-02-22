@@ -564,22 +564,8 @@ def make_statistics_on_points_by_moving(mountain_count=0, player_count=2, test_c
     print(f"total hexagon points = {sum(hexagon_points_list)}")
     print(f"mean hexagon points = {statistics.mean(hexagon_points_list)}")
         
-    fuel_list = []
-    for _ in range(9):
-        fuel_list.append(1)            
-        fuel_list.append(1)            
-        fuel_list.append(2)            
-        fuel_list.append(3)  
-        
-    for _ in range(100 - len(fuel_list)):
-        fuel_list.append(0)            
-        
-    build_list = []
-    for _ in range(10):
-        build_list.append(True)            
-
-    for _ in range(100 - len(build_list)):
-        build_list.append(False)            
+    fuel_list = [1, 2, 3]
+    build_list = [1, 2, 3]
     
     points_sample = []
     donjon_count_sample = []
@@ -1075,10 +1061,10 @@ if False:
     make_statistics_on_distances(mountain_count=0, test_count=1)
     make_statistics_on_distances(mountain_count=4)
  
-if False:
-    make_statistics_on_points_by_moving(mountain_count=4, player_count=2, test_count=100_000, ranking=True)
-    make_statistics_on_points_by_moving(mountain_count=4, player_count=3, test_count=100_000, ranking=True)
-    make_statistics_on_points_by_moving(mountain_count=4, player_count=4, test_count=100_000, ranking=True)
+if True:
+    make_statistics_on_points_by_moving(mountain_count=4, player_count=2, test_count=10_000, ranking=True)
+    make_statistics_on_points_by_moving(mountain_count=4, player_count=3, test_count=10_000, ranking=True)
+    make_statistics_on_points_by_moving(mountain_count=4, player_count=4, test_count=10_000, ranking=True)
  
 if False:
     make_statistics_on_hands(deck_size=100, target_size=10, hand_size=4, play_rate=2, test_count=10_000)
@@ -1096,7 +1082,7 @@ if False:
     make_statistics_on_hands(deck_size=40, target_size=3, hand_size=5, play_rate=3, test_count=100_000)
     make_statistics_on_hands(deck_size=40, target_size=1, hand_size=5, play_rate=3, test_count=100_000)
 
-if True:
+if False:
     make_statistics_on_hands(deck_size=40, target_size=6, hand_size=6, play_rate=3, test_count=100_000)
     make_statistics_on_hands(deck_size=40, target_size=6, hand_size=6, play_rate=2, test_count=100_000)
     make_statistics_on_hands(deck_size=40, target_size=6, hand_size=6, play_rates=[1, 2, 3], test_count=100_000)
